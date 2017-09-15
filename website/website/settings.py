@@ -10,7 +10,11 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.11/ref/settings/
 """
 
+"""Settings/configuration for this Django project. """
+
 import os
+
+
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -30,13 +34,14 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
+# When you add new apps to INSTALLED_APPS, be sure to run manage.py migrate,
 INSTALLED_APPS = [
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
+    'django.contrib.admin', # The admin site.
+    'django.contrib.auth', #An authentication system.
+    'django.contrib.contenttypes', #A framework for content types.
+    'django.contrib.sessions', # A session framework.
+    'django.contrib.messages',# A messaging framework
+    'django.contrib.staticfiles',#A framework for managing static files
 ]
 
 MIDDLEWARE = [
@@ -75,8 +80,8 @@ WSGI_APPLICATION = 'website.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.sqlite3', #using sqlite
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'), #name of the database
     }
 }
 
@@ -105,7 +110,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'UTC' #chicago timezone
 
 USE_I18N = True
 

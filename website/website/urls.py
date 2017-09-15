@@ -1,3 +1,5 @@
+"""The URL declarations for this Django project; a “table of contents” of your Django-powered site. """
+
 """website URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
