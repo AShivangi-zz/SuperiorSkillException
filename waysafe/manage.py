@@ -2,6 +2,11 @@
 import os
 import sys
 
+"""
+*DON"T make changes to this file*
+
+This file is a program from DJANGO that runs things
+"""
 if __name__ == "__main__":
     os.environ.setdefault("DJANGO_SETTINGS_MODULE", "waysafe.settings")
     try:

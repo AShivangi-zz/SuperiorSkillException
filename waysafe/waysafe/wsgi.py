@@ -1,5 +1,5 @@
 """
-WSGI config for waysafe project.
+"Web Server Gateway Interface" config for waysafe project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
