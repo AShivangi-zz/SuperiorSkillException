@@ -34,8 +34,12 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
-# When you add new apps to INSTALLED_APPS, be sure to run manage.py migrate,
+# When you add new apps to INSTALLED_APPS, be sure to run
+# 1. python manage.py makemigrations polls  (By running makemigrations, you’re telling Django that you’ve made some changes to your models (in this case, you’ve made new ones) and that you’d like the changes to be stored as a migration.)
+# 2. python manage.py migrate, (The migrate command takes all the migrations that haven’t been applied (Django tracks which ones are applied using a special table in your database called django_migrations) and runs them against your database - essentially, synchronizing the changes you made to your models with the schema in the database.)
+# 3. use this to see what the sql would look like: python manage.py sqlmigrate polls 0001
 INSTALLED_APPS = [
+    'polls.apps.PollsConfig',
     'django.contrib.admin', # The admin site.
     'django.contrib.auth', #An authentication system.
     'django.contrib.contenttypes', #A framework for content types.
