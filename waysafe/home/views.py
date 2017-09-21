@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.http import HttpResponse
 
 """
 views are just python functions.
@@ -11,3 +12,5 @@ for the most part, user's will request the webpage so you will just give them th
 
 
 # Create your views here.
+def index(request): #always put in request
+    return HttpResponse("<h1>This is the WaySafe app homepage</h1>")

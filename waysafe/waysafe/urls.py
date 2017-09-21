@@ -20,9 +20,10 @@ this is basically the table of contents for your website.
 This manages the urls
 """
 
-from django.conf.urls import url
+from django.conf.urls import include, url #Include imports from the other url
 from django.contrib import admin
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^$', include('home.urls')), #TB set this so that when you go to xxx.x.x.x:8000 it directs directly to home page
 ]
