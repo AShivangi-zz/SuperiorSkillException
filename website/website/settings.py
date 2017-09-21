@@ -10,11 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.11/ref/settings/
 """
 
-"""Settings/configuration for this Django project. """
-
 import os
-
-
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -24,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'v%l2-7mx*(y*^b5++w2n*66o@wwe+n33djy2)ub!qro=iefma9'
+SECRET_KEY = '4ioxb$zk_m)5zc^z#i7%*h_7$#nj^_tcid$apxsj2h(8v_lkg!'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -34,14 +30,14 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
-# When you add new apps to INSTALLED_APPS, be sure to run manage.py migrate,
 INSTALLED_APPS = [
-    'django.contrib.admin', # The admin site.
-    'django.contrib.auth', #An authentication system.
-    'django.contrib.contenttypes', #A framework for content types.
-    'django.contrib.sessions', # A session framework.
-    'django.contrib.messages',# A messaging framework
-    'django.contrib.staticfiles',#A framework for managing static files
+    'music.apps.MusicConfig',
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
 ]
 
 MIDDLEWARE = [
@@ -80,8 +76,8 @@ WSGI_APPLICATION = 'website.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3', #using sqlite
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'), #name of the database
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
@@ -110,7 +106,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC' #chicago timezone
+TIME_ZONE = 'UTC'
 
 USE_I18N = True
 

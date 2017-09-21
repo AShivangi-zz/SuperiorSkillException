@@ -1,5 +1,3 @@
-""" An entry-point for WSGI-compatible web servers to serve your project"""
-
 """
 WSGI config for website project.
 
