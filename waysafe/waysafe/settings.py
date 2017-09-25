@@ -35,6 +35,12 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'homepage.apps.HomeConfig',
+    'payment.apps.PaymentConfig',
+    'savings.apps.SavingsConfig',
+    'index.apps.IndexConfig',
+    'history.apps.HistoryConfig',
+    'aisle.apps.AisleConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
