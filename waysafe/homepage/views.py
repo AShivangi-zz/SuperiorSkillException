@@ -14,3 +14,12 @@ for the most part, user's will request the webpage so you will just give them th
 # Create your views here.
 def index(request): #always put in request
     return HttpResponse("<h1>This is the WaySafe app homepage</h1>")
+
+def signIn(request):
+    return HttpResponse("<h1>This is Sign in</h1>")
+
+def guest(request):
+    return HttpResponse("<h1>This is guest</h1>")
+
+def createAccount(request):
+    return HttpResponse("<h1>This is create account</h1>")
