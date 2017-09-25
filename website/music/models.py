@@ -8,9 +8,15 @@ class Album(m.Model):#always use models.Model for param
     genre = m.CharField(max_length =100)
     album_logo = m.CharField(max_length = 1000)
 
+    def __str__(self):
+        return self.album_title + ' - ' + self.artist
 class Song(m.Model):
 
     #each song will be linked to an album
     album = m.ForeignKey(Album, on_delete = m.CASCADE) #fooreighKey means get unique ID of album.  On_delete - models.CASCADE means that if an album is deleted, we need to erase the songs associated with it.
     file_type = m.CharField(max_length= 10)
     song_title = m.CharField(max_length= 250)
+    is_favorite = m.BooleanField(default = False)
+
+    def __str__(self):
+        return self.song_title
