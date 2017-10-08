@@ -1,0 +1,32 @@
+﻿/*general navbar*/
+.navbar {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border: 0;
+      border-radius: 0;
+      margin-bottom: 0;
+      font-size: 15px;
+      letter-spacing: 1px;
+	  background-color:#4d4d4d;
+  }
+/*right buttons hover effect*/
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+      color: #ffffff !important;
+      
+  }
+
+/*Haoyang Liu*/
+.navbar-default .navbar-brand {
+       font-family:Georgia; 
+       font-weight: bold;
+       color:#adadad;
+}
+/*Haoyang Liu hover effect*/
+.navbar-default .navbar-brand:hover {
+       color:#ffb31a
+
+}
+
+.navbar-default .navbar-nav>li>a {
+       color:#ffb31a
+}
