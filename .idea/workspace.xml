@@ -1,15 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="18bb1002-3bb2-4656-91c6-66a58d22f355" name="Default" comment="Fixed the im">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/waysafe/homepage/static/images/100X125.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/waysafe/homepage/static/images/1920x500.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/waysafe/homepage/static/images/400X200.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/waysafe/homepage/static/images/40X40.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/waysafe/index/templates/index/base.html" />
+    <list default="true" id="18bb1002-3bb2-4656-91c6-66a58d22f355" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/waysafe/homepage/templates/homepage/index.html" afterPath="$PROJECT_DIR$/waysafe/homepage/templates/homepage/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/waysafe/index/templates/index/index.html" afterPath="$PROJECT_DIR$/waysafe/index/templates/index/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,20 +16,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/waysafe/template/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="900">
-              <caret line="36" column="6" lean-forward="false" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="6" />
-              <folding>
-                <marker date="1507571920456" expanded="false" signature="111:135" ph="..." />
-                <marker date="1507571920456" expanded="false" signature="8252:8259" ph="«" />
-                <marker date="1507571920456" expanded="false" signature="8566:8573" ph="»" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/waysafe/static/waysafe/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="6125">
@@ -46,11 +25,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/waysafe/homepage/templates/homepage/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="525">
-              <caret line="65" column="8" lean-forward="true" selection-start-line="65" selection-start-column="8" selection-end-line="65" selection-end-column="8" />
+              <caret line="65" column="8" lean-forward="false" selection-start-line="65" selection-start-column="8" selection-end-line="65" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -113,6 +92,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="675">
               <caret line="35" column="52" lean-forward="false" selection-start-line="35" selection-start-column="52" selection-end-line="35" selection-end-column="52" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bootstrap.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/waysafe/static/waysafe/css/bootstrap.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-614">
+              <caret line="130" column="6" lean-forward="false" selection-start-line="130" selection-start-column="6" selection-end-line="130" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -303,7 +292,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -706,7 +695,14 @@
       <option name="project" value="LOCAL" />
       <updated>1507572187996</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Fixed the images">
+      <created>1507574707058</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1507574707058</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -721,7 +717,7 @@
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Execute Anonymous" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.07395833" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37447917" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921347" sideWeight="0.49375" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -747,7 +743,8 @@
     <MESSAGE value="integrated nav bar.  Still have to work on it ." />
     <MESSAGE value="Implemented front end with back end framework for the index and nav bar" />
     <MESSAGE value="Included index.html" />
-    <option name="LAST_COMMIT_MESSAGE" value="Included index.html" />
+    <MESSAGE value="Fixed the images" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed the images" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1015,14 +1012,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/waysafe/static/waysafe/css/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3250">
-          <caret line="130" column="6" lean-forward="false" selection-start-line="130" selection-start-column="6" selection-end-line="130" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/waysafe/waysafe/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="900">
@@ -1124,7 +1113,15 @@
     <entry file="file://$PROJECT_DIR$/waysafe/homepage/templates/homepage/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
-          <caret line="65" column="8" lean-forward="true" selection-start-line="65" selection-start-column="8" selection-end-line="65" selection-end-column="8" />
+          <caret line="65" column="8" lean-forward="false" selection-start-line="65" selection-start-column="8" selection-end-line="65" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/waysafe/static/waysafe/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-614">
+          <caret line="130" column="6" lean-forward="false" selection-start-line="130" selection-start-column="6" selection-end-line="130" selection-end-column="6" />
           <folding />
         </state>
       </provider>
