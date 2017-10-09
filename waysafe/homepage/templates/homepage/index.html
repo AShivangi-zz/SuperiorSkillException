@@ -39,6 +39,7 @@
 
 {%  extends 'homepage/base.html' %}
 {% block body %}
+    {% load static %}
 <div class="container">
     <div class="row">
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -49,7 +50,7 @@
             <li data-target="#carousel1" data-slide-to="2" class=""> </li>
           </ol>
           <div class="carousel-inner">
-            <div class="item"> <img class="img-responsive" src="../static/waysafe/images/1920x500.gif" alt="thumb">
+            <div class="item"> <img class="img-responsive" src="{% static 'images/1920x500.gif' %}" alt="thumb"/>
               <div class="carousel-caption"> Carousel caption 1. Here goes slide description. </div>
             </div>
             <div class="item active"> <img class="img-responsive" src="../static/waysafe/images/1920x500.gif" alt="thumb">
@@ -68,7 +69,7 @@
   <div class="row">
     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
       <div class="row">
-        <div class="col-lg-2 col-md-3 col-sm-3 col-xs-2"><img class="img-circle" alt="Free Shipping" src="../static/waysafe/images/40X40.gif"></div>
+        <div class="col-lg-2 col-md-3 col-sm-3 col-xs-2"><img class="img-circle" alt="Free Shipping" src="{% static 'images/40X40.gif' %}"></div>
         <div class="col-lg-6 col-md-9 col-sm-9 col-xs-9">
           <h4>Free Shipping</h4>
         </div>
@@ -76,7 +77,7 @@
     </div>
     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
       <div class="row">
-        <div class="col-lg-2 col-md-3 col-sm-3 col-xs-2"><img class="img-circle" alt="Free Shipping" src="../static/waysafe/images/40X40.gif"></div>
+        <div class="col-lg-2 col-md-3 col-sm-3 col-xs-2"><img class="img-circle" alt="Free Shipping" src="{% static 'images/40X40.gif' %}"/></div>
         <div class="col-lg-6 col-md-9 col-sm-9 col-xs-9">
           <h4>Free Returns</h4>
         </div>
@@ -84,7 +85,7 @@
     </div>
     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
       <div class="row">
-        <div class="col-lg-2 col-md-3 col-sm-3 col-xs-2"><img class="img-circle" alt="Free Shipping" src="../static/waysafe/images/40X40.gif"></div>
+        <div class="col-lg-2 col-md-3 col-sm-3 col-xs-2"><img class="img-circle" alt="Free Shipping" src="{% static 'images/40X40.gif' %}"/></div>
         <div class="col-lg-6 col-md-9 col-sm-9 col-xs-9">
           <h4>Low Prices</h4>
         </div>
