@@ -32,6 +32,8 @@ urlpatterns = [
     url(r'^history/', include('history.urls')),
     url(r'^index/', include('index.urls')),
     url(r'^savings/', include('savings.urls')),
+    url(r'^payment/', include('payment.urls')),
+
 ]
 
 # if settings.DEBUG:
