@@ -1,7 +1,7 @@
-
-{% block body %}
-    {% load static %}
-
+<!DOCTYPE html>
+<html lang="en">
+{% load staticfiles %}
+{% include 'index/base_head.html' %}
 
     <body>
 
@@ -195,11 +195,12 @@ I was looking for a quick and easy food delivery service in San Franciso. I trie
             </div>
         </section>
 
+       {%  include 'index/base_footer.html' %}
+
     </body>
 
-    {%  include 'index/base_footer.html' %}
+
 
 </html>
 
 
-{% endblock %}
