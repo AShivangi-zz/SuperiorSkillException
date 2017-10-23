@@ -2,96 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18bb1002-3bb2-4656-91c6-66a58d22f355" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/waysafe/aisle/static/images/100X125.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/waysafe/aisle/static/images/1920x500.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/waysafe/aisle/static/images/400X200.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/waysafe/aisle/static/images/40X40.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/waysafe/aisle/templates/aisle/base_footer.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/waysafe/aisle/templates/aisle/base_head.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/waysafe/aisle/templates/aisle/base_navBar.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/waysafe/index/templates/index/base_head.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/waysafe/template/base_head.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/waysafe/index/static/resources/css/img/back-customers-min.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/waysafe/index/static/resources/css/img/back-customers.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/waysafe/index/static/resources/css/img/hero-min.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/waysafe/index/static/resources/css/img/hero.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/waysafe/index/static/resources/css/img/market.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/waysafe/index/static/resources/css/queries.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/waysafe/index/static/resources/css/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/waysafe/index/static/resources/css/style2.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/waysafe/index/static/resources/css/style3.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/waysafe/index/static/resources/favicons/android-chrome-144x144.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/waysafe/index/static/resources/favicons/android-chrome-192x192.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/waysafe/index/static/resources/favicons/android-chrome-36x36.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/waysafe/index/static/resources/favicons/android-chrome-48x48.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/waysafe/index/static/resources/favicons/android-chrome-72x72.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/waysafe/index/static/resources/favicons/android-chrome-96x96.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/waysafe/index/static/resources/favicons/apple-touch-icon-114x114.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/waysafe/index/static/resources/favicons/apple-touch-icon-120x120.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/waysafe/index/static/resources/favicons/apple-touch-icon-144x144.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/waysafe/index/static/resources/favicons/apple-touch-icon-152x152.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/waysafe/index/static/resources/favicons/apple-touch-icon-180x180.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/waysafe/index/static/resources/favicons/apple-touch-icon-57x57.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/waysafe/index/static/resources/favicons/apple-touch-icon-60x60.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/waysafe/index/static/resources/favicons/apple-touch-icon-72x72.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/waysafe/index/static/resources/favicons/apple-touch-icon-76x76.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/waysafe/index/static/resources/favicons/apple-touch-icon-precomposed.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/waysafe/index/static/resources/favicons/apple-touch-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/waysafe/index/static/resources/favicons/browserconfig.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/waysafe/index/static/resources/favicons/favicon-16x16.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/waysafe/index/static/resources/favicons/favicon-194x194.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/waysafe/index/static/resources/favicons/favicon-32x32.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/waysafe/index/static/resources/favicons/favicon-96x96.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/waysafe/index/static/resources/favicons/favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/waysafe/index/static/resources/favicons/manifest.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/waysafe/index/static/resources/favicons/mstile-144x144.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/waysafe/index/static/resources/favicons/mstile-150x150.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/waysafe/index/static/resources/favicons/mstile-310x150.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/waysafe/index/static/resources/favicons/mstile-310x310.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/waysafe/index/static/resources/favicons/mstile-70x70.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/waysafe/index/static/resources/img/##1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/waysafe/index/static/resources/img/#1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/waysafe/index/static/resources/img/#2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/waysafe/index/static/resources/img/#3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/waysafe/index/static/resources/img/#4jpg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/waysafe/index/static/resources/img/#5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/waysafe/index/static/resources/img/#6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/waysafe/index/static/resources/img/#7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/waysafe/index/static/resources/img/1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/waysafe/index/static/resources/img/2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/waysafe/index/static/resources/img/3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/waysafe/index/static/resources/img/4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/waysafe/index/static/resources/img/5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/waysafe/index/static/resources/img/6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/waysafe/index/static/resources/img/7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/waysafe/index/static/resources/img/8.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/waysafe/index/static/resources/img/Logo#1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/waysafe/index/static/resources/img/app-iPhone.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/waysafe/index/static/resources/img/back-customers.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/waysafe/index/static/resources/img/background.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/waysafe/index/static/resources/img/berlin.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/waysafe/index/static/resources/img/customer-1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/waysafe/index/static/resources/img/customer-2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/waysafe/index/static/resources/img/customer-3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/waysafe/index/static/resources/img/download-app-android.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/waysafe/index/static/resources/img/download-app.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/waysafe/index/static/resources/img/hero.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/waysafe/index/static/resources/img/lisbon-3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/waysafe/index/static/resources/img/logo-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/waysafe/index/static/resources/img/logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/waysafe/index/static/resources/img/logows copy.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/waysafe/index/static/resources/img/london.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/waysafe/index/static/resources/img/san-francisco.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/waysafe/index/static/resources/js/script.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/waysafe/index/static/vendors/fonts/ionicons.eot" afterPath="$PROJECT_DIR$/waysafe/index/static/vendors/fonts/ionicons.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/waysafe/index/static/vendors/fonts/ionicons.ttf" afterPath="$PROJECT_DIR$/waysafe/index/static/vendors/fonts/ionicons.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/waysafe/index/static/vendors/fonts/ionicons.woff" afterPath="$PROJECT_DIR$/waysafe/index/static/vendors/fonts/ionicons.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/waysafe/index/static/images/background.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/waysafe/aisle/templates/aisle/index.html" afterPath="$PROJECT_DIR$/waysafe/aisle/templates/aisle/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/waysafe/aisle/views.py" afterPath="$PROJECT_DIR$/waysafe/aisle/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/waysafe/index/templates/index/index.html" afterPath="$PROJECT_DIR$/waysafe/index/templates/index/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/waysafe/template/base_footer.html" afterPath="$PROJECT_DIR$/waysafe/template/base_footer.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/waysafe/template/base_navBar.html" afterPath="$PROJECT_DIR$/waysafe/template/base_navBar.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -108,7 +21,7 @@
         <entry file="file://$PROJECT_DIR$/waysafe/aisle/templates/aisle/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="355">
-              <caret line="96" column="0" lean-forward="true" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
+              <caret line="96" column="0" lean-forward="false" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -141,8 +54,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/waysafe/index/templates/index/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4900">
-              <caret line="196" column="0" lean-forward="true" selection-start-line="196" selection-start-column="0" selection-end-line="196" selection-end-column="0" />
+            <state relative-caret-position="75">
+              <caret line="13" column="47" lean-forward="true" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -151,8 +64,8 @@
       <file leaf-file-name="base_head.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/waysafe/template/base_head.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-295">
-              <caret line="13" column="60" lean-forward="false" selection-start-line="13" selection-start-column="60" selection-end-line="13" selection-end-column="60" />
+            <state relative-caret-position="825">
+              <caret line="35" column="26" lean-forward="false" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -201,7 +114,7 @@
       <file leaf-file-name="base_footer.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/waysafe/template/base_footer.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-774">
+            <state relative-caret-position="200">
               <caret line="8" column="16" lean-forward="false" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
               <folding />
             </state>
@@ -232,7 +145,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <push-targets>
-      <push-target-info target-remote="origin" target-branch="TylersOfficialBranch" repo="$PROJECT_DIR$" source="master" />
+      <push-target-info target-remote="origin" target-branch="DevelopmentBranch" repo="$PROJECT_DIR$" source="master" />
     </push-targets>
   </component>
   <component name="IdeDocumentHistory">
@@ -263,8 +176,8 @@
         <option value="$PROJECT_DIR$/waysafe/aisle/templates/aisle/index.html" />
         <option value="$PROJECT_DIR$/waysafe/template/base_head.html" />
         <option value="$PROJECT_DIR$/waysafe/template/base_navBar.html" />
-        <option value="$PROJECT_DIR$/waysafe/index/templates/index/index.html" />
         <option value="$PROJECT_DIR$/waysafe/template/base_footer.html" />
+        <option value="$PROJECT_DIR$/waysafe/index/templates/index/index.html" />
       </list>
     </option>
   </component>
@@ -451,6 +364,32 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WaySafe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WaySafe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="waysafe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -522,6 +461,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="vendors" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WaySafe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WaySafe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="waysafe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="index" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -645,11 +610,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Tyler\PycharmProjects\WaySafe\waysafe\index\static\images" />
       <recent name="C:\Users\Tyler\PycharmProjects\WaySafe\waysafe\index\templates\index" />
       <recent name="C:\Users\Tyler\PycharmProjects\WaySafe\waysafe\aisle\static" />
       <recent name="C:\Users\Tyler\PycharmProjects\WaySafe\waysafe\index\static" />
       <recent name="C:\Users\Tyler\PycharmProjects\WaySafe\waysafe\static" />
-      <recent name="C:\Users\Tyler\PycharmProjects\WaySafe\waysafe\homepage\static" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Tyler\PycharmProjects\WaySafe\waysafe\static" />
@@ -929,11 +894,19 @@
       <option name="project" value="LOCAL" />
       <updated>1508786954333</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Added a base_navBar and base_footer file. and implemented the new index page in index. however still having some small issues with index and the first background.png photo.">
+      <created>1508789426997</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1508789426997</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Debug Logs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -943,7 +916,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Execute Anonymous" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32921347" sideWeight="0.49791667" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21197917" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21197917" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921347" sideWeight="0.48541668" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1241,7 +1214,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#32#0" expanded="true" />
+            <element signature="e#0#32#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1251,7 +1224,7 @@
         <state relative-caret-position="150">
           <caret line="6" column="26" lean-forward="false" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
           <folding>
-            <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#0#35#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1259,7 +1232,7 @@
     <entry file="file://$PROJECT_DIR$/waysafe/aisle/templates/aisle/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="355">
-          <caret line="96" column="0" lean-forward="true" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
+          <caret line="96" column="0" lean-forward="false" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1288,14 +1261,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/waysafe/template/base_head.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-295">
-          <caret line="13" column="60" lean-forward="false" selection-start-line="13" selection-start-column="60" selection-end-line="13" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/waysafe/index/templates/index/base_navBar.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
@@ -1312,14 +1277,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/waysafe/template/base_footer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-774">
-          <caret line="8" column="16" lean-forward="false" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/waysafe/template/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1475">
@@ -1332,10 +1289,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/waysafe/template/base_footer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="16" lean-forward="false" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/waysafe/template/base_head.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="825">
+          <caret line="35" column="26" lean-forward="false" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/waysafe/index/templates/index/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4900">
-          <caret line="196" column="0" lean-forward="true" selection-start-line="196" selection-start-column="0" selection-end-line="196" selection-end-column="0" />
+        <state relative-caret-position="75">
+          <caret line="13" column="47" lean-forward="true" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="47" />
           <folding />
         </state>
       </provider>
