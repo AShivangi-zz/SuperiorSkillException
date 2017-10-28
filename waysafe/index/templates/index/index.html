@@ -11,17 +11,16 @@
         <meta name="description" content="Omnifood is a premium food delivery service with the mission to bring affordable and healty meals to as many people as possible.">
         <meta name="msapplication-config" content="{% static 'resources/favicons/browserconfig.xml' %}">
         <meta name="theme-color" content="#ffffff">
+        <meta name="msapplication-TileColor" content="#da532c">
         <link rel="stylesheet" type="text/css" href="{% static 'vendors/css/normalize.css' %}">
         <link rel="stylesheet" type="text/css" href="{% static 'vendors/css/animate.css' %}">
         <link rel="stylesheet" type="text/css" href="{% static 'vendors/css/grid.css' %}">
         <link rel="stylesheet" type="text/css" href="{% static 'vendors/css/ionicons.min.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'resources/css/queries.css' %}">
         <link rel="stylesheet" type="text/css" href="{% static 'resources/css/style.css' %}">
         <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
 
-        <link rel="stylesheet" href="{% static 'vendors/css/bootstrap.css' %}">
-        <link rel="stylesheet" href="{% static 'vendors/css/navbar.css' %}">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" type="text/css" href="{% static 'vendors/css/normalize.css' %}">
+
 
 
 
@@ -34,7 +33,7 @@
 
 {%  include 'index/base_navBar.html' %}
 
-<section class="section-intro">
+<section class="section-intro ">
     <ul class="meals-showcase clearfix"></ul>
     <li>
 {#        <figure class="background">#}
@@ -50,7 +49,7 @@
 
 
 
-<section class="section-form">
+<section class="section-form ">
     <div class="row">
         <h2>Leave Us A Review</h2>
     </div>
@@ -157,7 +156,7 @@
     </ul>
 </section>
 
-<section class="section-features js--section-features" id="features">
+<section class="section-features js--section-features " id="features">
     <div class="row">
         <h2>Get food delivered fast &mdash; not fast food</h2>
         <p class="long-copy">
@@ -198,7 +197,7 @@
 </section>
 
 
-<section class="section-testimonials">
+<section class="section-testimonials ">
     <div class="row">
         <h2>Our customers can't live without us</h2>
     </div>
