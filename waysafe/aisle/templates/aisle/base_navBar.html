@@ -1,1 +1,117 @@
-{% extends 'base_navBar.html' %}
+{% load staticfiles %}
+
+<style>
+    header{
+    background-color: #7f7a7a;
+    height: 30vh;
+   }
+
+   .img{
+   margin: 20px 0;
+   height: 90px;
+   width: 250 px;
+   }
+
+   .dropdown
+{
+	float:right;
+}
+.dropdown .dropbtn
+{
+    border: none;
+    outline: none;
+    color: #ffffff;
+    padding:5px 25px 10px 25px;
+    background-color: #0055a2;
+}
+.dropdown:hover .dropbtn
+{
+    background-color: #7f7a7a;
+	color:#ffffff;
+}
+.dropdown-content
+{
+    display: none;
+    position: absolute;
+    background-color: #7f7a7a;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a
+{
+    float: none;
+    color: #0055a2;
+	background-color: #7f7a7a;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+.dropdown-content a:hover
+{
+    background-color: #0055a2;
+	color:#ececec
+}
+
+.dropdown:hover .dropdown-content
+{
+    display: block;
+}
+
+li{
+float: left;
+margin-left: 0;
+}
+
+.search{
+    margin-left: auto;
+    margin-right: auto;
+    width: 20em
+    }
+.search input{
+    height: 50px;
+    width: 400px;
+}
+.padding{
+    padding: 0 20px 0 20px;
+    }
+
+</style>
+<header>
+    <nav>
+        <div class="padding">
+            <img  class = "img" src="{% static 'resources/img/logoImage.png' %}" alt="WaySafe logo">
+            <ul class="main-nav js--main-nav">
+
+                <li><a href="#features">Shop by History</a></li>
+                <li><a href="#works">Shop by Aisle</a></li>
+                <li><a href="#cities">Online savings</a></li>
+                <li><a href="#plans">Sign up</a></li>
+                {#<li><form class="navbar-form navbar-right" role="search">#}
+               {# <input type="text" class="form-control" placeholder="Search"></li>#}
+
+
+            <li class="nav navbar-nav navbar-right hidden-sm">
+
+		<div class="dropdown">
+		<button class="dropbtn">My Account<i class="fa fa-caret-down" style = "margin-left:5px"></i></button>
+		<div class="dropdown-content">
+		  <a href="#">My Orders</a>
+		  <a href="#">Account Settings</a>
+		  <a href="#">Sign Out</a>
+		</div>
+		</div>
+      </li>
+                </ul>
+            <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
+        </div>
+
+        <div class="search">
+            <form>
+                <input type="text" placeholder="Search"></form>
+        </div>
+    </nav>
+
+</header>
