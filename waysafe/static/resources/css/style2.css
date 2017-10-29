@@ -202,7 +202,7 @@ input[type=submit]:active {
 
 header {
     background-size: cover;
-    background-color: #0055A2;
+    background-color: #D2D2D2;
     background-position: center;
     height: 20vh;
     background-attachment: fixed;
@@ -220,7 +220,7 @@ header {
 
 .logo {
     height: 100px;
-    width: auto;
+    width: 50px;
     float: left;
     margin-top: 5px;
 }
