@@ -20,7 +20,7 @@ darkk gray: #666666
 
 html,
 body {
-    background-color: #fff;
+    background-color: #ffffff;
     color: #555;
     font-family: 'Lato', 'Arial', sans-serif;
     font-weight: 300;
@@ -60,7 +60,7 @@ section {
 h1,
 h2,
 h3 {
-    font-weight: 300;
+    font-weight: 300 bold;
     text-transform: uppercase;
 }
 
@@ -200,41 +200,63 @@ input[type=submit]:active {
 /* HEADER */
 /* ----------------------------------------------- */
 
+/*
+blue: #0055A2
+gold: #E5A823
+gray: #939597
+light gray: #D2D2D2
+darkk gray: #666666
+
+*/
+
 header {
     background-size: cover;
-    background-color: #D2D2D2;
+    background-color: #666666;
     background-position: center;
-    height: 20vh;
+    height: 10vh;
     background-attachment: fixed;
+    font-size: 24px;
 }
 
 
 .logo {
-    height: 90px;
-    width: 50px;
+    height: 36px;
+    width: auto;
     float: left;
-
+    margin-top: 16px;
+    margin-left: 10px;
+    font-size: 24px;
 }
 
 .logo-black {
     display: none;
-    height: 50px;
+    height: 36px;
     width: auto;
     float: left;
-    margin: 5px 0;
+    margin-top: 16px;
+}
+.logo li a:hover,
+.logo li a:active {
+    border-bottom: 2px solid #E5A823;
 }
 /* --------------------------------- */
 /* Main navi */
 /* --------------------------------- */
 .main-nav {
-    float: right;
+    float: center;
     list-style: none;
-    margin-top: 55px;
+    margin-top: 5px;
+    font-size: 14px;
 }
 
 .main-nav li {
+    height: 24px;
     display: inline-block;
-    margin-left: 20px;
+/*    margin-left: 40px;*/*/
+/*    margin-top: 5px;*/
+/*    margin: 20px;*/*/
+    font-size: 14px;
+    margin: 20px;
 }
 
 .main-nav li a:link,
@@ -247,6 +269,7 @@ header {
     border-bottom: 2px solid transparent;
     -webkit-transition: border-bottom 0.2s;
     transition: border-bottom 0.2s;
+    font: 14px;
 }
 
 .main-nav li a:hover,
@@ -254,6 +277,93 @@ header {
     border-bottom: 2px solid #E5A823;
 }
 
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn,.signupbtn {float:left;width:50%}
+
+/* Add padding to container elements */
+.container {
+    padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #0055A2;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    color: #000;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+    }
+}
 
 /* Mobile navi */
 .mobile-nav-icon {
@@ -261,6 +371,8 @@ header {
     margin-top: 30px;
     cursor: pointer;
     display: none;
+    margin-top: 10px;
+    height: 60px;
 }
 
 .mobile-nav-icon i {
@@ -275,6 +387,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
+    height: 10vh;
     background-color: rgba(255, 255, 255, 0.98);
     box-shadow: 0 2px 2px #efefef;
     z-index: 9999;
@@ -291,20 +404,31 @@ header {
 .sticky .logo { display: none; }
 .sticky .logo-black { display: block; }
 
+/* ----------------------------------------------- */
+/* INTRO */
+/* ----------------------------------------------- */
 
-/* ------------------------------- */
-/* Main navi */
-/* -------------------------------
+section-line{
+/*    opacity: inherit;*/
+    height: 55vh;
+    background: #e9ebee;;
+}
 
 /* ----------------------------------------------- */
 /* INTRO */
 /* ----------------------------------------------- */
 
 .section-intro{
+  border-bottom: 15px solid #0055A2;
+  background-color: rgb(0.0.0);
+  background: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)); 
+  opacity: 0.9;    
   background-image: url("img/market.jpg");
   background-repeat: no repeat;
   background-size:100% 100%;
-  height: 55vh;
+  height: 65vh;
+  font-size: 14px;
+   
 
 
 }
@@ -323,6 +447,7 @@ header {
 
 .section-meals {
     padding: 0;
+     border-bottom: 10px solid #0055A2;
 }
 
 .meals-showcase {
@@ -424,20 +549,6 @@ header {
     margin-right: 10px;
 }
 
-
-/* ----------------------------------------------- */
-/* CITIES */
-/* ----------------------------------------------- */
-
-.box img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 15px;
-}
-
-.city-feature {
-    margin-bottom: 5px;
-}
 
 
 /* ----------------------------------------------- */

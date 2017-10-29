@@ -20,7 +20,7 @@ darkk gray: #666666
 
 html,
 body {
-    background-color: #fff;
+    background-color: #ffffff;
     color: #555;
     font-family: 'Lato', 'Arial', sans-serif;
     font-weight: 300;
@@ -95,6 +95,24 @@ h2:after {
     margin: 0 auto;
     margin-top: 30px;
 }
+h4 {
+    text-decoration-color:crimson; 
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+h4:after {
+    display: block;
+    height: 2px;
+    background-color: #0055A2;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
 
 /* ----- PARAGRAPHS ----- */
 .long-copy {
@@ -135,10 +153,10 @@ h2:after {
 
 a:link,
 a:visited {
-    color: #e67e22;
+    color: ##0055A2;
     text-decoration: none;
     padding-bottom: 1px;
-    border-bottom: 1px solid #e67e22;
+/*    border-bottom: 1px solid #e67e22;*/
     -webkit-transition: border-bottom 0.2s, color 0.2s;
     transition: border-bottom 0.2s, color 0.2s;
 }
@@ -149,7 +167,7 @@ a:active {
     border-bottom: 1px solid transparent;
 }
 
-/* ----- BUTTONS ----- */
+ ----- BUTTONS ----- 
 .btn:link,
 .btn:visited,
 input[type=submit] {
@@ -202,26 +220,29 @@ input[type=submit]:active {
 
 header {
     background-size: cover;
-    background-color: #0055A2;
+    background-color: #666666;
     background-position: center;
-    height: 20vh;
+    height: 10vh;
     background-attachment: fixed;
+    font-size: 24px
 }
 
 
 .logo {
-    height: 100px;
+    height: 36px;
     width: auto;
     float: left;
-    margin-top: 5px;
+    margin-top: 16px;
+    margin-left: 10px;
+    font-size: 24px;
 }
 
 .logo-black {
     display: none;
-    height: 50px;
+    height: 36px;
     width: auto;
     float: left;
-    margin: 5px 0;
+    margin-top: 16px ;
 }
 /* --------------------------------- */
 /* Main navi */
@@ -229,12 +250,21 @@ header {
 .main-nav {
     float: right;
     list-style: none;
-    margin-top: 55px;
+    margin-top: 5px;
+    
 }
-
+.search-input{
+    
+}
 .main-nav li {
+    height: 24px;
     display: inline-block;
-    margin-left: 40px;
+    font-size: 14px;
+/*
+    margin-left: 30px;
+    margin-top: 5px;
+*/
+    margin: 20px;
 }
 
 .main-nav li a:link,
@@ -247,6 +277,7 @@ header {
     border-bottom: 2px solid transparent;
     -webkit-transition: border-bottom 0.2s;
     transition: border-bottom 0.2s;
+    font: 14px;
 }
 
 .main-nav li a:hover,
@@ -261,6 +292,7 @@ header {
     margin-top: 30px;
     cursor: pointer;
     display: none;
+    position: fixed;
 }
 
 .mobile-nav-icon i {
@@ -292,106 +324,38 @@ header {
 .sticky .logo-black { display: block; }
 
 
-/* ----------------------------------------------- */
-/* INTRO */
-/* ----------------------------------------------- */
-
-.section-intro{
-  background-color: #D2D2D2; 
-  background-repeat: no repeat;
-  background-size:100% 100%;
-  height: 55vh;
-
-
 
 /* ----------------------------------------------- */
-/* SIGN UP */
+/* aisle*/
 /* ----------------------------------------------- */
-
-.section-plans {
-    background-color: #f4f4f4;
+.food-dept{
+    padding-top: 15px; 
+    padding-bottom: 15px;
+    height: 96vh;
+   
 }
 
-.plan-box {
-    background-color: #fff;
-    border-radius: 5px;
-    width: 90%;
-    margin-left: 5%;
-    box-shadow: 0 2px 2px #efefef;
+aside{
+    width: 230px;
+    float: left;
+    padding: 0px 0px 0px 20px;
+    font-size: 14px;
+}
+aside section a{
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid #eeeeee;
+}
+aside section a:hover{
+    color:#E5A823;
+    background-color: #e9ebee;
 }
 
-.plan-box div {
-    padding: 15px;
-    border-bottom: 1px solid #e8e8e8;
+a{
+    color: #0055A2;
+    color: #939597;
+    text-decoration: none;
 }
-
-.plan-box div:first-child {
-    background-color: #fcfcfc;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-}
-
-.plan-box div:last-child {
-    text-align: center;
-    border: 0;
-}
-
-
-.plan-price {
-    font-size: 300%;
-    margin-bottom: 10px;
-    font-weight: 100;
-    color: #e67e22;
-}
-
-.plan-price span {
-    font-size: 30%;
-    font-weight: 300;
-}
-
-.plan-price-meal {
-    font-size: 80%;
-}
-
-.plan-box ul {
-    list-style: none;
-}
-
-.plan-box ul li {
-    padding: 5px 0;
-}
-
-
-/* ----------------------------------------------- */
-/* FORM */
-/* ----------------------------------------------- */
-
-.contact-form {
-    width: 60%;
-    margin: 0 auto;
-}
-
-input[type=text],
-input[type=email],
-select,
-textarea {
-    width: 100%;
-    padding: 7px;
-    border-radius: 3px;
-    border: 1px solid #ccc;
-}
-
-textarea {
-    height: 100px;
-}
-
-input[type=checkbox] {
-    margin: 10px 5px 10px 0;
-}
-
-*:focus {outline: none;}
-
-
 /* ----------------------------------------------- */
 /* FOOTER */
 /* ----------------------------------------------- */

@@ -1,96 +1,130 @@
+<!DOCTYPE html>
 <html lang="en">
 
-{% include 'aisle/base_head.html' %}
+
+{% load static %}
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+          content="Omnifood is a premium food delivery service with the mission to bring affordable and healty meals to as many people as possible.">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'vendors/css/normalize.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'vendors/css/grid.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'vendors/css/ionicons.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'vendors/css/animate.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'resources/css/style3.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'resources/css/queries.css' %}">
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+          integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+    <title>WaySafe</title>
+
+    <link rel="apple-touch-icon" sizes="57x57" href="{% static '/resources/favicons/apple-touch-icon-57x57.png' %}">
+    <link rel="apple-touch-icon" sizes="60x60" href="{% static '/resources/favicons/apple-touch-icon-60x60.png' %}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{% static '/resources/favicons/apple-touch-icon-72x72.png' %}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{% static '/resources/favicons/apple-touch-icon-76x76.png' %}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{% static '/resources/favicons/apple-touch-icon-114x114.png' %}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{% static '/resources/favicons/apple-touch-icon-120x120.png' %}">
+    <link rel="apple-touch-icon" sizes="144x144" href="{% static '/resources/favicons/apple-touch-icon-144x144.png' %}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{% static '/resources/favicons/apple-touch-icon-152x152.png' %}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static '/resources/favicons/apple-touch-icon-180x180.png' %}">
+    <link rel="icon" type="image/png" href="{% static '/resources/favicons/favicon-32x32.png' %}" sizes="32x32">
+    <link rel="icon" type="image/png" href="{% static '/resources/favicons/favicon-194x194.png' %}" sizes="194x194">
+    <link rel="icon" type="image/png" href="{% static '/resources/favicons/favicon-96x96.png' %}" sizes="96x96">
+    <link rel="icon" type="image/png" href="{% static '/resources/favicons/android-chrome-192x192.png' %}"
+          sizes="192x192">
+    <link rel="icon" type="image/png" href="{% static '/resources/favicons/favicon-16x16.png' %}" sizes="16x16">
+    <link rel="manifest" href="{% static '/resources/favicons/manifest.json' %}">
+    <link rel="shortcut icon" href="{% static '/resources/favicons/favicon.ico' %}">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="{% static '/resources/favicons/mstile-144x144.png' %}">
+    <meta name="msapplication-config" content="{% static '/resources/favicons/browserconfig.xml' %}">
+    <meta name="theme-color" content="#ffffff">
+
+</head>
+
+<body>
 
 
-    {% load static %}
-    <body>
-    {%  include 'aisle/base_navBar.html' %}
+{% include 'index/base_navBar.html' %}
 
-            <div id="content">
-            <div class="column1">
-                  <ul class="meals-showcase clearfix">
-                      <li>
-                          <figure class="background">
-                              <img src="{% static 'resources/img/back-customers-min.jpg' %}" alt="Famers Market">
-                          </figure>
-                      </li>
-            </div>
-
-            </div>
-    <section class="aisle">
-            <div class="container">
-            <div class="row text-center">
-            <div class="col-sm-4 col-md-4 col-lg-4 col-xs-6">
-            <div class="thumbnail"> <img src="{% static 'images/400X200.gif' %}" alt="Thumbnail Image 1" class="img-responsive">
-            <div class="caption">
-              <h3>Product</h3>
-              <p>description</p>
-              <p><a href="#" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Add to Cart</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-4 col-md-4 col-lg-4 col-xs-6">
-          <div class="thumbnail"> <img src="{% static 'images/400X200.gif' %}" alt="Thumbnail Image 1" class="img-responsive">
-            <div class="caption">
-              <h3>Product</h3>
-              <p>description</p>
-              <p><a href="#" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Add to Cart</a> </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-4 col-md-4 col-lg-4 col-xs-6">
-          <div class="thumbnail"> <img src="{% static 'images/400X200.gif' %}" alt="Thumbnail Image 1" class="img-responsive">
-            <div class="caption">
-              <h3>Product</h3>
-              <p>description</p>
-              <p><a href="#" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Add to Cart</a> </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-4 col-md-4 col-lg-4 col-xs-6 hidden-lg hidden-md hidden-sm">
-          <div class="thumbnail"> <img src="{% static 'images/400X200.gif' %}" alt="Thumbnail Image 1" class="img-responsive">
-            <div class="caption">
-              <h3>Product</h3>
-              <p>description</p>
-              <p><a href="#" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Add to Cart</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row text-center hidden-xs">
-        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-          <div class="thumbnail"> <img src="{% static 'images/400X200.gif' %}" alt="Thumbnail Image 1" class="img-responsive">
-            <div class="caption">
-              <h3>Product</h3>
-              <p>description</p>
-              <p><a href="#" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Add to Cart</a> </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-          <div class="thumbnail"> <img src="{% static 'images/400X200.gif' %}" alt="Thumbnail Image 1" class="img-responsive">
-            <div class="caption">
-              <h3>Product</h3>
-              <p>description</p>
-              <p><a href="#" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Add to Cart</a> </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-          <div class="thumbnail"> <img src="{% static 'images/400X200.gif' %}" alt="Thumbnail Image 1" class="img-responsive">
-            <div class="caption">
-              <h3>Product</h3>
-              <p>description
-              </p>
-              <p><a href="#" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Add to Cart</a> </p>
-            </div>
-          </div>
-        </div>
-      </div>
+<aside>
+    <section class="food-dept">
+        <h4>Departments</h4>
+        <a href=""> Produce</a>
+        <a href=""> Dairy & Eggs</a>
+        <a href=""> Meats</a>
+        <a href=""> Frozen</a>
+        <a href=""> Pastas & Grains</a>
+        <a href=""> Bevarages</a>
     </section>
+</aside>
 
-    </body>
-    {%  include 'aisle/base_footer.html' %}
+<section class="food-dept">
+    <div class="container_12 clearfix">
+        <!--                <img src="resources/img/1.jpg" alt="Mountain View" width="220" height="220">-->
+        <!--                <img src="resources/img/2.jpg" alt="Mountain View" width="220" height="220">-->
+        <!--                <img src="resources/img/2.jpg" alt="Mountain View" width="220" height="220">-->
+        <div class="card column1"
+             style="width:260px; max-width: 100%; height: 300px; float: left; margin: 10px; text-align: center; padding: 10px">
+            <img class="card-img-top" src="{% static 'resources/img/produce.jpg' %}" alt="Card image cap"
+                 style="height: 210px">
+            <div class="card-body" style=" background-color:#e9ebee ">
+                <p class="card-text"><a href=""> Produce</a></p>
+            </div>
+        </div>
+        <div class="card column2"
+             style="width:260px; max-width: 100%; height: 300px; float: left; margin: 10px; text-align: center; padding: 10px ">
+            <img class="card-img-top" src="{% static 'resources/img/eggs.jpg' %}" alt="Card image cap"
+                 style="height: 210px">
+            <div class="card-body" style=" background-color:#e9ebee ">
+                <p class="card-text"><a href=""> Dairy & Eggs</a></p>
+            </div>
+        </div>
+        <div class="card column3"
+             style="width: 260px; max-width: 100%; height: 300px; float:left; margin: 10px; text-align: center; padding: 10px;">
+            <img class="card-img-top" src="{% static 'resources/img/filet.jpg' %}" alt="Card img cap"
+                 style="height: 210px">
+            <div class="card-body" style="background-color: #e9ebee">
+                <p class="card-text"><a href="">Meats</a></p>
+            </div>
+        </div>
+        <div class="card column1"
+             style="width:260px; max-width: 100%;height: 300px; float: left; margin: 10px; text-align: center; padding: 10px">
+            <img class="card-img-top" src="{% static 'resources/img/frozen.jpg' %}" alt="Card image cap"
+                 style="height: 210px">
+            <div class="card-body" style=" background-color:#e9ebee ">
+                <p class="card-text"><a href=""> Frozen</a></p>
+            </div>
+        </div>
+        <div class="card column2"
+             style="width:260px; max-width:100%;float: left; margin: 10px; text-align: center; padding: 10px ">
+            <img class="card-img-top" src="{% static 'resources/img/pasta.jpg' %}" alt="Card image cap"
+                 style="height: 210px">
+            <div class="card-body" style=" background-color:#e9ebee ">
+                <p class="card-text"><a href=""> Pasta & Grains</a></p>
+            </div>
+        </div>
+        <div class="card column3"
+             style="width: 260px; max-width:100%; height: auto; float:left; margin: 10px; text-align: center; padding: 10px;">
+            <img class="card-img-top" src="{% static 'resources/img/bevmo.jpg' %}" alt="Card img cap"
+                 style="height: 210px">
+            <div class="card-body" style="background-color: #e9ebee">
+                <p class="card-text"><a href="">Bevarages</a></p>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+{% include 'index/base_footer.html' %}
+
+
+</body>
+
+
 </html>
 
