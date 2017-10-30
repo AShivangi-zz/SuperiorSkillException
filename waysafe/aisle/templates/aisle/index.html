@@ -3,6 +3,33 @@
 
 
 {% load static %}
+<style>
+
+.dropdown
+{
+	float:left;
+}
+.dropdown .dropbtn
+{
+    border: none;
+    outline: none;
+    color: #ffffff;
+    padding:5px 25px 10px 25px;
+    background-color: #0055a2;
+}
+.dropdown:hover .dropbtn
+{
+    background-color: #7f7a7a;
+	color:#ffffff;
+}
+
+
+.dropdown:hover
+{
+    display: block;
+}
+
+</style>
 
 <head>
     <meta charset="utf-8">
@@ -49,72 +76,34 @@
 
 <aside>
     <section class="food-dept">
-        <h4>Departments</h4>
-        <a href=""> Produce</a>
-        <a href=""> Dairy & Eggs</a>
-        <a href=""> Meats</a>
-        <a href=""> Frozen</a>
-        <a href=""> Pastas & Grains</a>
-        <a href=""> Bevarages</a>
+        <center><h2>Departments</h2></center>
     </section>
 </aside>
 
-<section class="food-dept">
-    <div class="container_12 clearfix">
-        <!--                <img src="resources/img/1.jpg" alt="Mountain View" width="220" height="220">-->
-        <!--                <img src="resources/img/2.jpg" alt="Mountain View" width="220" height="220">-->
-        <!--                <img src="resources/img/2.jpg" alt="Mountain View" width="220" height="220">-->
-        <div class="card column1"
-             style="width:260px; max-width: 100%; height: 300px; float: left; margin: 10px; text-align: center; padding: 10px">
-            <img class="card-img-top" src="{% static 'resources/img/produce.jpg' %}" alt="Card image cap"
-                 style="height: 210px">
-            <div class="card-body" style=" background-color:#e9ebee ">
-                <p class="card-text"><a href=""> Produce</a></p>
-            </div>
-        </div>
-        <div class="card column2"
-             style="width:260px; max-width: 100%; height: 300px; float: left; margin: 10px; text-align: center; padding: 10px ">
-            <img class="card-img-top" src="{% static 'resources/img/eggs.jpg' %}" alt="Card image cap"
-                 style="height: 210px">
-            <div class="card-body" style=" background-color:#e9ebee ">
-                <p class="card-text"><a href=""> Dairy & Eggs</a></p>
-            </div>
-        </div>
-        <div class="card column3"
-             style="width: 260px; max-width: 100%; height: 300px; float:left; margin: 10px; text-align: center; padding: 10px;">
-            <img class="card-img-top" src="{% static 'resources/img/filet.jpg' %}" alt="Card img cap"
-                 style="height: 210px">
-            <div class="card-body" style="background-color: #e9ebee">
-                <p class="card-text"><a href="">Meats</a></p>
-            </div>
-        </div>
-        <div class="card column1"
-             style="width:260px; max-width: 100%;height: 300px; float: left; margin: 10px; text-align: center; padding: 10px">
-            <img class="card-img-top" src="{% static 'resources/img/frozen.jpg' %}" alt="Card image cap"
-                 style="height: 210px">
-            <div class="card-body" style=" background-color:#e9ebee ">
-                <p class="card-text"><a href=""> Frozen</a></p>
-            </div>
-        </div>
-        <div class="card column2"
-             style="width:260px; max-width:100%;float: left; margin: 10px; text-align: center; padding: 10px ">
-            <img class="card-img-top" src="{% static 'resources/img/pasta.jpg' %}" alt="Card image cap"
-                 style="height: 210px">
-            <div class="card-body" style=" background-color:#e9ebee ">
-                <p class="card-text"><a href=""> Pasta & Grains</a></p>
-            </div>
-        </div>
-        <div class="card column3"
-             style="width: 260px; max-width:100%; height: auto; float:left; margin: 10px; text-align: center; padding: 10px;">
-            <img class="card-img-top" src="{% static 'resources/img/bevmo.jpg' %}" alt="Card img cap"
-                 style="height: 210px">
-            <div class="card-body" style="background-color: #e9ebee">
-                <p class="card-text"><a href="">Bevarages</a></p>
-            </div>
-        </div>
-    </div>
+ <section class="aisle">
+            <div class="container">
+            <div class="row text-center">
+            <div class="col-sm-4 col-md-4 col-lg-4 col-xs-6">
+            <div class="thumbnail"> <img src="{% static 'resources/img/produce.jpg' %}"  height = "200" width = "400" alt="Thumbnail Image 1" class="img-responsive">
+              &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <img src="{% static 'resources/img/eggs.jpg' %}" height = "200" width = "400"  alt="Thumbnail Image 1" class="img-responsive">
+            <div class="caption"><a href="#">
 
-</section>
+                    <div class="dropdown"> <button class="dropbtn">BABY CARE</button></div></a>
+		</div>
+                  &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <div class="caption"><a href="#">
+                    <div class="dropdown"> <button class="dropbtn">BEVERAGES</button></div></a>
+		</div>
+                <br>
+
+		</div>
+
+            </div>
+          </div>
+        </div>
+
+        </section>
 
 {% include 'aisle/base_footer.html' %}
 

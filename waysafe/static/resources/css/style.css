@@ -149,51 +149,7 @@ a:active {
     border-bottom: 1px solid transparent;
 }
 
-/* ----- BUTTONS ----- */
-.btn:link,
-.btn:visited,
-input[type=submit] {
-    display: inline-block;
-    padding: 10px 30px;
-    font-weight: 300;
-    text-decoration: none;
-    border-radius: 200px;
-    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
-    transition: background-color 0.2s, border 0.2s, color 0.2s;
-}
 
-.btn-full:link,
-.btn-full:visited,
-input[type=submit] {
-    background-color: #0055A2;
-    border: 1px solid #0055A2;
-    color: #fff;
-    margin-right: 15px;
-}
-
-.btn-ghost:link,
-.btn-ghost:visited {
-    border: 1px solid #0055A2;
-    color: #0055A2;
-}
-
-.btn:hover,
-.btn:active,
-input[type=submit]:hover,
-input[type=submit]:active {
-    background-color: #0055A2;
-}
-
-.btn-full:hover,
-.btn-full:active {
-    border: 1px solid #0055A2;
-}
-
-.btn-ghost:hover,
-.btn-ghost:active {
-    border: 1px solid #0055A2;
-    color: #fff;
-}
 
 
 /* ----------------------------------------------- */
