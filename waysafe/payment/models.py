@@ -1,5 +1,17 @@
 from django.db import models
 from homepage.models import customer
+from aisle.models import Item
+
+class Cart(models.Model):
+    user = models.ForeignKey(customer)
+    item = models.ForeignKey(Item)
+    active = models.BooleanField(default=True)
+    order_date = models.DateField(null=True)
+    payment_type = models.CharField(max_length=100, null=True)
+    payment_id = models.CharField(max_length=100, null=True)
+
+    def __unicode__(self):
+            return "%s" % (self.user)
 
  #Create your models here.
 class payment(models.Model):
@@ -12,3 +24,4 @@ class payment(models.Model):
 
     def __str__(self):
         return self.card_number
+
