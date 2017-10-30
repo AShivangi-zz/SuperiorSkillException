@@ -22,6 +22,12 @@ def myCart(request):
 def aisles(request):
     return HttpResponse("<h1>This is aisle</h1>")
 
+def login(request):
+    return HttpResponse("<h1>This is guest</h1>")
+
+def guest(request):
+    return HttpResponse("<h1>This is guest</h1>")
+
 def searchresults(request):
     all_items = Item.objects.all()
     holdoriginal = ""
