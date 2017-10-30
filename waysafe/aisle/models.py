@@ -2,7 +2,7 @@ from django.db import models
 from homepage.models import customer
 
 # Create your models here.
-class item(models.Model):
+class Item(models.Model):
     item_name = models.CharField(max_length = 40)
     category = models.CharField(max_length = 40)
     sub_category = models.CharField(max_length = 40)

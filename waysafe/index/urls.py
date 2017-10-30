@@ -10,5 +10,6 @@ urlpatterns = [
     url(r'^help/$', views.help, name='help'),
     url(r'^myCart/$', views.myCart, name='myCart'),
     url(r'^aisles/$', views.aisles, name='aisles'),
+    url(r'^searchresults/$', views.searchresults, name='searchresults'),
 
 ]
