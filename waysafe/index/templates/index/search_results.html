@@ -48,15 +48,18 @@
 <br><br>
 
 {% if all_items %}
-<ul>
+
     {%  for modelitems in all_items %}
     {% if query in modelitems|lower|cut:" "%}
-    <li><a href = "#">{{ modelitems}} </a></li>
+<div class="container_12 clearfix" style="margin-left: 80px">
+                 <div  style="width:260px; max-width: 100%; height: 300px; float: left; margin: 10px; text-align: center; padding: 10px ">
+                     <a href="baby_care_subcategory"><div class="dropdown"> <button class="dropbtn">{{ modelitems}} </button></div></a></div></div>
     {% endif %}
     {%   endfor %}
-</ul>
+
 {% endif %}
-    <br><br>
+   
+
 
     </div>
 
