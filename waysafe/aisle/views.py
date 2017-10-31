@@ -14,7 +14,7 @@ def aisle(request):
 
 
 def baby_care_subcategory(request):
-    template_name = 'aisle/baby_care_subcategory.html'
+    template_name = 'aisle/babycare.html'
     return render(request, template_name)
 
 def bevrages_subcategory(request):

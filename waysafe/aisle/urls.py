@@ -5,7 +5,7 @@ urlpatterns = [
     #^$ means this is the default homepage page of the section..
     #/aisle/
     url(r'^$', views.index, name='index'),
-    url(r'^baby_care_subcategory/$', views.baby_care_subcategory, name='baby_care_subcategory'),
+    url(r'^babycare/$', views.baby_care_subcategory, name='babycare'),
     url(r'^dairy_subcategory/$', views.dairy_subcategory, name='dairy_subcategory'),
     url(r'^frozen_subcategory/$', views.frozen_subcategory, name='frozen_subcategory'),
     url(r'^meat_subcategory/$', views.meat_subcategory, name='meat_subcategory'),
