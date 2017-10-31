@@ -4,7 +4,8 @@ from django.http import HttpResponse
 # Create your views here.
 # Create your views here.
 def index(request): #always put in request
-    return HttpResponse("<h1>This is the WaySafe app history</h1>")
+    template_name = 'history/index.html'
+    return render(request,template_name)
 
 def lastOrder(request):
     return HttpResponse("<h1>This is the last order</h1>")

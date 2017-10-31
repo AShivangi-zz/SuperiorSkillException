@@ -3,7 +3,8 @@ from django.http import HttpResponse
 
 # Create your views here.
 def index(request): #always put in request
-    return HttpResponse("<h1>This is the WaySafe app savings</h1>")
+    template_name = 'savings/index.html'
+    return render(request,template_name)
 
 def coupons(request):
     return HttpResponse("<h1>This is the coupons</h1>")
