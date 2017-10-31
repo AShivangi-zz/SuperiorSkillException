@@ -17,12 +17,12 @@ def baby_care_subcategory(request):
     template_name = 'aisle/babycare.html'
     return render(request, template_name)
 
-def bevrages_subcategory(request):
-    template_name = 'aisle/bevrages_subcategory.html'
+def beverages_subcategory(request):
+    template_name = 'aisle/beverages.html'
     return render(request, template_name)
 
 def dairy_subcategory(request):
-    template_name = 'aisle/dairy_subcategory.html'
+    template_name = 'aisle/dairy.html'
     return render(request, template_name)
 
 def frozen_subcategory(request):
