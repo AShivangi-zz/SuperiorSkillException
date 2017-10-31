@@ -1,5 +1,5 @@
 {% load staticfiles %}
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
     header{
     background-color: #7f7a7a;
@@ -82,15 +82,16 @@ margin-left: 0;
 <header>
     <nav>
         <div class="padding">
-            <img  class = "img" src="{% static 'resources/img/logoImage.png' %}" alt="WaySafe logo">
-            <ul class="main-nav js--main-nav">
+            <a href="/index"><img  class = "img" src="{% static 'resources/img/logoImage.png' %}" alt="WaySafe logo">
+            </a>
+                <ul class="main-nav js--main-nav">
 
                 <li><a href="#features">Shop by History</a></li>
-                <li><a href="#works">Shop by Aisle</a></li>
+                <li><a href="/aisle">Shop by Aisle</a></li>
                 <li><a href="#cities">Online savings</a></li>
                 <li><a href="#plans">Sign up</a></li>
                 {#<li><form class="navbar-form navbar-right" role="search">#}
-               {# <input type="text" class="form-control" placeholder="Search"></li>#}
+                    {# <input type="text" class="form-control" placeholder="Search"></form>></li>#}
 
 
             <li class="nav navbar-nav navbar-right hidden-sm">
@@ -115,8 +116,8 @@ margin-left: 0;
                 <i class="fa fa-search" aria-hidden="true"> </i>
             </button>
             </div>
+        </form>>
             </center>
-        </form>
     </nav>
 
 </header>
