@@ -1,25 +1,41 @@
 <!DOCTYPE html>
 <html>
+
+{% load staticfiles %}
 <head>
     <meta charset="UTF-8">
     <title>Log In Form</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="loginBox">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/User_icon_2.svg/220px-User_icon_2.svg.png" class="user">
-		<h2>Log In Here</h2>
-		<form>
-			<p>Email</p>
-			<input type="text" name="" placeholder="Enter Email">
-			<p>Password</p>
-			<input type="password" name="" placeholder="......">
-			<input type="submit" name="" value="Log In">
-			<a href="#">Forget Password</a>
+	 <link rel="stylesheet" type="text/css" href="{% static 'vendors/css/normalize.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'vendors/css/grid.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'vendors/css/ionicons.min.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'vendors/css/animate.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'resources/css/style.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'resources/css/queries.css' %}">
+        <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
+        <title>WaySafe</title>
 
-     </div>>
-</body>
-</html>
+        <link rel="apple-touch-icon" sizes="57x57" href="{% static 'resources/favicons/apple-touch-icon-57x57.png' %}">
+        <link rel="apple-touch-icon" sizes="60x60" href="{% static 'resources/favicons/apple-touch-icon-60x60.png' %}">
+        <link rel="apple-touch-icon" sizes="72x72" href="{% static 'resources/favicons/apple-touch-icon-72x72.png' %}">
+        <link rel="apple-touch-icon" sizes="76x76" href="{% static 'resources/favicons/apple-touch-icon-76x76.png' %}">
+        <link rel="apple-touch-icon" sizes="114x114" href="{% static 'resources/favicons/apple-touch-icon-114x114.png' %}">
+        <link rel="apple-touch-icon" sizes="120x120" href="{% static 'resources/favicons/apple-touch-icon-120x120.png' %}">
+        <link rel="apple-touch-icon" sizes="144x144" href="{% static 'resources/favicons/apple-touch-icon-144x144.png' %}">
+        <link rel="apple-touch-icon" sizes="152x152" href="{% static 'resources/favicons/apple-touch-icon-152x152.png' %}">
+        <link rel="apple-touch-icon" sizes="180x180" href="{% static 'resources/favicons/apple-touch-icon-180x180.png' %}">
+        <link rel="icon" type="image/png" href="{% static 'resources/favicons/favicon-32x32.png' %}" sizes="32x32">
+        <link rel="icon" type="image/png" href="{% static 'resources/favicons/favicon-194x194.png' %}" sizes="194x194">
+        <link rel="icon" type="image/png" href="{% static 'resources/favicons/favicon-96x96.png' %}" sizes="96x96">
+        <link rel="icon" type="image/png" href="{% static 'resources/favicons/android-chrome-192x192.png' %}" sizes="192x192">
+        <link rel="icon" type="image/png" href="{% static 'resources/favicons/favicon-16x16.png' %}" sizes="16x16">
+        <link rel="manifest" href="{% static 'resources/favicons/manifest.json' %}">
+        <link rel="shortcut icon" href="{% static 'resources/favicons/favicon.ico' %}">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="msapplication-TileImage" content="{% static 'resources/favicons/mstile-144x144.png' %}">
+        <meta name="msapplication-config" content="{% static 'resources/favicons/browserconfig.xml' %}">
+        <meta name="theme-color" content="#ffffff">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
 
 <style>
     body
@@ -28,14 +44,13 @@
         padding: 0;
         background: url(http://www.planwallpaper.com/static/images/new-wallpaper-161_5CayiWd.jpg);
         background-size: cover;
-        font-family: sans-serif;
     }
     .loginBox
     {
-        position: absolute;
+        position: float;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(140%);
         width: 350px;
         height: 420px;
         padding: 80px 40px;
@@ -114,3 +129,29 @@ h2
 		font-weight: bold;
 		text-decoration: none;
 	}
+</style>
+{% block body %}
+<body>
+
+{%  include 'index/base_navBar.html' %}
+<section class="section-form ">
+    <div class="loginBox" >
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/User_icon_2.svg/220px-User_icon_2.svg.png" class="user">
+		<h2>Log In Here</h2>
+		<form>
+			<p>Email</p>
+			<input type="text" name="" placeholder="Enter Email">
+			<p>Password</p>
+			<input type="password" name="" placeholder="......">
+			<input type="submit" name="" value="Log In">
+			<a href="#">Forget Password</a></form>
+
+     </div>
+</section>
+
+{%  include 'index/base_footer.html' %}
+</body>
+
+{% endblock %}
+</html>
+
