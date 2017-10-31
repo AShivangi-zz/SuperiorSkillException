@@ -52,7 +52,8 @@ def login(request):
 
 
 def guest(request):
-    return HttpResponse("<h1>This is guest</h1>")
+    template_name = 'aisle/index.html'
+    return render(request, template_name)
 
 def searchresults(request):
     all_items = Item.objects.all()
