@@ -13,6 +13,6 @@ urlpatterns = [
     url(r'^searchresults/$', views.searchresults, name='searchresults'),
     url(r'^login.html/$', views.login, name='login'),
     url(r'^guest.html/$', views.guest, name='guest'),
-
+    url(r'^index/register.html/$', views.register, name='register')
 
 ]

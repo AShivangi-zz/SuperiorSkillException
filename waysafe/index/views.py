@@ -25,6 +25,11 @@ def myCart(request):
 
 def aisles(request):
     return HttpResponse("<h1>This is aisle</h1>")
+
+def register(request):
+    template_name="index/register.html"
+    return render(request, template_name)
+
 #
 #def login(request):
 
