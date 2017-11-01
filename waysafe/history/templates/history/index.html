@@ -54,6 +54,48 @@
         <h2>history</h2>
     </div>
 
+ <section class="food-dept" style="height: 155vh;">
+      <div id="page">
+      <table id="cart">
+        <thead>
+          <tr>
+            <th class="first" style="padding: 40px 40px 40px 40px">Product</th>
+            <th class="third" style="padding: 40px 40px 40px 40px">Qty</th>
+            <th class="fourth" style="padding: 40px 40px 40px 40px">Price</th>
+            <th class="fifth" style="padding: 40px 40px 40px 40px">&nbsp;</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- shopping cart contents -->
+          <tr class="productitm" style="width: 800px; max-width: 500px; ">
+            <!-- http://www.inkydeals.com/deal/ginormous-bundle/ -->
+            <td style="padding: 40px 40px 40px 40px"><img src="{% static 'resources/img/baby_care.jpg' %}"  class="thumb" style="height: 200px;">
+                    <br>Aveno Wash and Shampoo </td>
+            <td style="padding: 40px 40px 40px 40px"><input type="number" value="1" min="0" max="99" class="qtyinput"></td>
+            <td style="padding: 40px 40px 40px 40px">$4.95</td>
+            <td style="padding: 40px 40px 40px 40px">
+               <a class="btn btn-full js" href="#" style="border-radius: 25px; padding: 10px; width: 110px; text-align:center;">Add Cart</a>
+       </td>
+          </tr>
+
+        <tr class="productitm" style="width: 800px; max-width: 500px; ">
+            <!-- http://www.inkydeals.com/deal/ginormous-bundle/ -->
+            <td style="padding: 40px 40px 40px 40px"><img src="{% static 'resources/img/baby_care.jpg' %}"  class="thumb" style="height: 200px;">
+                    <br>Aveno Wash and Shampoo </td>
+            <td style="padding: 40px 40px 40px 40px"><input type="number" value="1" min="0" max="99" class="qtyinput"></td>
+            <td style="padding: 40px 40px 40px 40px">$4.95</td>
+            <td style="padding: 40px 40px 40px 40px">
+               <a class="btn btn-full js" href="#" style="border-radius: 25px; padding: 10px; width: 110px; text-align:center;">Add Cart</a>
+       </td>
+          </tr>
+        
+        </tbody>
+      </table>
+    </div>
+        </section>
+
+
+
 {%  include 'index/base_footer.html' %}
 
 </body>
