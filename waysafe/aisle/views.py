@@ -36,3 +36,7 @@ def meat_subcategory(request):
 def pasta_and_grains_subcategory(request):
     template_name = 'aisle/pasta_and_grains_subcategory.html'
     return render(request, template_name)
+
+def babycare_item(request):
+    template_name = 'aisle/babycare_item.html'
+    return render(request,template_name)
