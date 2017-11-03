@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 {% load staticfiles %}
+{% load update %}
+
 <head>
 
 <!-- Bootstrap -->
@@ -48,20 +50,17 @@
 <br><br>
 
 {% if all_items %}
-
-    {%  for modelitems in all_items %}
-    {% if query in modelitems|lower|cut:" "%}
-<div class="container_12 clearfix" style="margin-left: 80px">
-                 <div  style="width:260px; max-width: 100%; height: 300px; float: left; margin: 10px; text-align: center; padding: 10px ">
-                     <a href="baby_care_subcategory"><div class="dropdown"> <button class="dropbtn">{{ modelitems}} </button></div></a></div></div>
+    {% if flagcheck == True %}
+        <div class="container_12 clearfix" style="margin-left: 80px">
+            <div  style="width:260px; max-width: 100%; height: 300px; float: left; margin: 10px; text-align: center; padding: 10px ">
+                <a href="baby_care_subcategory"><div class="dropdown"> <button class="dropbtn">{{ itemname }} </button></div></a>
+            </div>
+        </div>
+    {% else %}
+        <h1> Search result for: {{ query }} not found </h1>
     {% endif %}
-    {%   endfor %}
-
 {% endif %}
-   
-
-
-    </div>
+</div>
 
 
 {%  include 'index/base_footer.html' %}

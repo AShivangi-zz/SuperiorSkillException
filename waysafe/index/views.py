@@ -62,8 +62,9 @@ def guest(request):
 
 def searchresults(request):
     all_items = Item.objects.all()
-    holdoriginal = ""
+    flagcheck = False
     html =''
+    captureword = ''
 
     #   for formatitems in all_items:
     #       holdoriginal = formatitems
@@ -71,11 +72,24 @@ def searchresults(request):
     ##        {%  if modelitems in originalitems%}
     ##        {% endfor    %}
     ##
+
+
+
     query = request.GET['q']
     html = str(query)
-    context = {'all_items': all_items, 'query': html, 'holdoriginal': holdoriginal}
     if request.method == 'GET' and query != '':
-        return render(request, 'index/search_results.html', context)
+        for modelitems in all_items:
+            if str(query) in (modelitems.item_name).lower():
+                flagcheck = True
+                captureword = modelitems.item_name
+
+        if (flagcheck):
+            context = {'all_items': all_items, 'flagcheck': flagcheck, 'itemname': captureword}
+            return render(request, 'index/search_results.html', context)
+        else:
+            newcontext = {'all_items': all_items, 'query': html, 'flagcheck': flagcheck}
+            return render(request, 'index/search_results.html', newcontext)
+
     else:
         return render(request, 'index/index.html')
 
