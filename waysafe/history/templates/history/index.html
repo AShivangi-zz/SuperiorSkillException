@@ -41,6 +41,26 @@
         <meta name="msapplication-config" content="{% static 'resources/favicons/browserconfig.xml' %}">
         <meta name="theme-color" content="#ffffff">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.sidenav a {
+    padding: 6px 6px 6px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #f8cc05;
+    display: block;
+    background-color:#0055a2
+}
+
+a:hover, a:active
+{
+    border-bottom:0px solid
+}
+
+table
+{
+    border-collapse:initial
+}
+</style>
 </head>
 {% block body %}
 
@@ -50,41 +70,50 @@
 {%  include 'index/base_navBar.html' %}
 
 <div class="row">
-	<br><br>
-        <h2>history</h2>
+	<br/><br/>
+        <h2>Last Orders</h2>
     </div>
 
- <div class="food-dept" style="height: 155vh;">
-      <div id="page">
-      <table id="cart" style="margin: 0 25%">
+<div class="sidenav" style = "width:15%; float:left;border:inset;margin-left:5px">
+  <a href="/history" style = "background-color:#ffffff;color:#0055a2">History</a>
+    <hr/>
+  <a href="#">Last Orders</a>
+  <a href="#">Complete List</a>
+  <a href="#">Editing List</a>
+</div>
+
+ <div  style="height: 145vh;">
+      <div>
+      <table style="margin: 0 25%">
         <thead>
           <tr >
-            <th class="first" style="padding: 40px 40px 40px 40px">Product</th>
-            <th class="third" style="padding: 40px 40px 40px 40px">Qty</th>
-            <th class="fourth" style="padding: 40px 40px 40px 40px">Price</th>
-            <th class="fifth" style="padding: 40px 40px 40px 40px">&nbsp;</th>
+            <th class="first" style="padding: 10px">Product</th>
+            <th class="third" style="padding: 10px">Qty</th>
+            <th class="fourth" style="padding: 10px">Price</th>
+            <th class="fifth" style="padding: 10px">&nbsp;</th>
           </tr>
         </thead>
         <tbody>
           <!-- shopping cart contents -->
           <tr class="productitm" style="width: 800px; max-width: 500px; border: 3px solid black ; margin: 10px 10px 10px 10px">
             <!-- http://www.inkydeals.com/deal/ginormous-bundle/ -->
-            <td style="padding: 40px 40px 40px 40px"><img src="{% static 'resources/img/baby_care.jpg' %}"  class="thumb" style="height: 200px;">
+            <td style="padding: 10px"><img src="{% static 'resources/img/baby_care.jpg' %}"  class="thumb" style="height: 200px;">
                     <br>Aveno Wash and Shampoo </td>
-            <td style="padding: 40px 40px 40px 40px"><input type="number" value="1" min="0" max="99" class="qtyinput"></td>
-            <td style="padding: 40px 40px 40px 40px">$4.95</td>
-            <td style="padding: 40px 40px 40px 40px">
+            <td style="padding: 10px"><input type="number" value="1" min="0" max="99" class="qtyinput"></td>
+            <td style="padding: 10px">$4.95</td>
+            <td style="padding: 10px">
                <a class="btn btn-full js" href="#" style="border-radius: 25px; padding: 10px; width: 110px; text-align:center;">Add Cart</a>
        </td>
           </tr>
+
 
         <tr class="productitm" style="width: 800px; max-width: 500px; border: 3px solid black ; margin: 10px 10px 10px 10px">
             <!-- http://www.inkydeals.com/deal/ginormous-bundle/ -->
             <td style="padding: 40px 40px 40px 40px"><img src="{% static 'resources/img/baby_care.jpg' %}"  class="thumb" style="height: 200px;">
                     <br>Aveno Wash and Shampoo </td>
-            <td style="padding: 40px 40px 40px 40px"><input type="number" value="1" min="0" max="99" class="qtyinput"></td>
-            <td style="padding: 40px 40px 40px 40px">$4.95</td>
-            <td style="padding: 40px 40px 40px 40px">
+            <td style="padding: 10px"><input type="number" value="1" min="0" max="99" class="qtyinput"></td>
+            <td style="padding: 10px">$4.95</td>
+            <td style="padding: 10px">
                <a class="btn btn-full js" href="#" style="border-radius: 25px; padding: 10px; width: 110px; text-align:center;">Add Cart</a>
        </td>
           </tr>
