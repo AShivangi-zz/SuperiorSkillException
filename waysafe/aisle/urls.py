@@ -12,5 +12,5 @@ urlpatterns = [
     url(r'^pasta_and_grains_subcategory/$', views.pasta_and_grains_subcategory, name='pasta_and_grains_subcategory'),
     url(r'^babycare/babycare_item/$', views.babycare_item, name='babycare_item'),
 
-    url(r'^aisle/$', views.aisle, name='aisle'),
+    # url(r'^aisle/$', views.aisle, name='aisle'),
 ]
