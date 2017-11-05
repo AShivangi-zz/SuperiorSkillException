@@ -69,12 +69,12 @@
           {% if babycareitems %}
           {% for items in babycareitems %}
           <tr class="productitm" style="width: 800px; max-width: 500px; border: 3px solid black ; margin: 10px 10px 10px 10px">
-            <td style="padding: 40px 40px 40px 40px"><img src="{% static '/resources/img/pasta.jpg' %}"  class="thumb" style="height: 200px;">
+            <td style="padding: 40px 40px 40px 40px"><img src={{ items.item_logo}} class="thumb" style="height: 200px;">
                     <br>{{items.item_name}}</td>
             <td style="padding: 40px 40px 40px 40px"><input type="number" value="1" min="0" max="99" class="qtyinput"></td>
             <td style="padding: 40px 40px 40px 40px">$ {{items.price|floatformat:2 }}</td>
             <td style="padding: 40px 40px 40px 40px">
-               <a class="btn btn-full js" href="#" style="border-radius: 25px; padding: 10px; width: 110px; text-align:center;">Add Cart</a>
+               <a class="btn btn-full js" href="#" style="border-radius: 25px; padding: 10px; width: 110px; text-align:center;">Add to Cart</a>
             </td>
           </tr>
         {% endfor %}
