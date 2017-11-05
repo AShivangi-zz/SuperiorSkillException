@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18bb1002-3bb2-4656-91c6-66a58d22f355" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/waysafe/history/templates/history/editingList.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/waysafe/history/templates/history/lastOrder.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/waysafe/history/templates/history/index.html" afterPath="$PROJECT_DIR$/waysafe/history/templates/history/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/waysafe/history/urls.py" afterPath="$PROJECT_DIR$/waysafe/history/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/waysafe/history/views.py" afterPath="$PROJECT_DIR$/waysafe/history/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/waysafe/template/base_navBar.html" afterPath="$PROJECT_DIR$/waysafe/template/base_navBar.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,11 +40,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tests.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/waysafe/cart/tests.py">
+      <file leaf-file-name="base_navBar.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/waysafe/template/base_navBar.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="409">
+              <caret line="101" column="24" lean-forward="false" selection-start-line="101" selection-start-column="24" selection-end-line="101" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -76,7 +72,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/waysafe/history/templates/history/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="385">
@@ -201,7 +197,6 @@
         <option value="$PROJECT_DIR$/waysafe/aisle/templates/aisle/index.html" />
         <option value="$PROJECT_DIR$/waysafe/savings/templates/savings/index.html" />
         <option value="$PROJECT_DIR$/waysafe/index/templates/index/signup.html" />
-        <option value="$PROJECT_DIR$/waysafe/template/base_navBar.html" />
         <option value="$PROJECT_DIR$/waysafe/index/templates/index/register.html" />
         <option value="$PROJECT_DIR$/waysafe/homepage/models.py" />
         <option value="$PROJECT_DIR$/waysafe/accounts/views.py" />
@@ -225,6 +220,7 @@
         <option value="$PROJECT_DIR$/waysafe/history/views.py" />
         <option value="$PROJECT_DIR$/waysafe/history/urls.py" />
         <option value="$PROJECT_DIR$/waysafe/history/templates/history/index.html" />
+        <option value="$PROJECT_DIR$/waysafe/template/base_navBar.html" />
       </list>
     </option>
   </component>
@@ -301,6 +297,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="waysafe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SuperiorSkillException2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SuperiorSkillException2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="waysafe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="template" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -798,7 +812,14 @@
       <option name="project" value="LOCAL" />
       <updated>1509505279667</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Made some changes to the history page.">
+      <created>1509919270290</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1509919270290</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -892,7 +913,8 @@
     <MESSAGE value="Added models for cart in payment" />
     <MESSAGE value="Fixed errors on homepage index so that it will display without throwing an error. homepage html looks ugly and needs to be fixed." />
     <MESSAGE value="Fixed errors on homepage index so that it will display without throwing an error. homepage html looks ugly and needs to be fixed. ALso added the footer code. Looks like CSS or JS is causing the page to look weird." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed errors on homepage index so that it will display without throwing an error. homepage html looks ugly and needs to be fixed. ALso added the footer code. Looks like CSS or JS is causing the page to look weird." />
+    <MESSAGE value="Made some changes to the history page." />
+    <option name="LAST_COMMIT_MESSAGE" value="Made some changes to the history page." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -980,13 +1002,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
           <caret line="80" column="69" lean-forward="false" selection-start-line="80" selection-start-column="69" selection-end-line="80" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/waysafe/template/base_navBar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="91" column="48" lean-forward="false" selection-start-line="91" selection-start-column="48" selection-end-line="91" selection-end-column="48" />
         </state>
       </provider>
     </entry>
@@ -1197,26 +1212,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/waysafe/cart/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/waysafe/cart/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/waysafe/cart/tests.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1281,6 +1276,34 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="385">
           <caret line="72" column="14" lean-forward="true" selection-start-line="72" selection-start-column="14" selection-end-line="72" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/waysafe/cart/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/waysafe/cart/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/waysafe/template/base_navBar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="409">
+          <caret line="101" column="24" lean-forward="false" selection-start-line="101" selection-start-column="24" selection-end-line="101" selection-end-column="24" />
           <folding />
         </state>
       </provider>
