@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18bb1002-3bb2-4656-91c6-66a58d22f355" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/waysafe/history/templates/history/completeList.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/waysafe/aisle/urls.py" afterPath="$PROJECT_DIR$/waysafe/aisle/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/waysafe/history/templates/history/index.html" afterPath="$PROJECT_DIR$/waysafe/history/templates/history/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/waysafe/history/urls.py" afterPath="$PROJECT_DIR$/waysafe/history/urls.py" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -105,8 +103,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/waysafe/history/templates/history/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="85" column="11" lean-forward="true" selection-start-line="85" selection-start-column="11" selection-end-line="85" selection-end-column="11" />
+            <state relative-caret-position="498">
+              <caret line="84" column="30" lean-forward="true" selection-start-line="84" selection-start-column="30" selection-end-line="84" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -884,7 +882,14 @@
       <option name="project" value="LOCAL" />
       <updated>1509919837872</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Fixed history links on the history main page">
+      <created>1509920293722</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1509920293722</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -980,7 +985,8 @@
     <MESSAGE value="Fixed errors on homepage index so that it will display without throwing an error. homepage html looks ugly and needs to be fixed. ALso added the footer code. Looks like CSS or JS is causing the page to look weird." />
     <MESSAGE value="Made some changes to the history page." />
     <MESSAGE value="added cart to my orders link" />
-    <option name="LAST_COMMIT_MESSAGE" value="added cart to my orders link" />
+    <MESSAGE value="Fixed history links on the history main page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed history links on the history main page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1375,8 +1381,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/waysafe/history/templates/history/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="85" column="11" lean-forward="true" selection-start-line="85" selection-start-column="11" selection-end-line="85" selection-end-column="11" />
+        <state relative-caret-position="498">
+          <caret line="84" column="30" lean-forward="true" selection-start-line="84" selection-start-column="30" selection-end-line="84" selection-end-column="30" />
           <folding />
         </state>
       </provider>
