@@ -51,7 +51,7 @@
 
 <div class="row">
 	<br><br>
-        <h2>baby care</h2>
+        <h2>baby accessories</h2>
     </div>
 
  <div class="food-dept" style="height: 155vh;">
@@ -66,28 +66,19 @@
           </tr>
         </thead>
         <tbody>
-          <!-- shopping cart contents -->
+          {% if babycareitems %}
+          {% for items in babycareitems %}
           <tr class="productitm" style="width: 800px; max-width: 500px; border: 3px solid black ; margin: 10px 10px 10px 10px">
-            <!-- http://www.inkydeals.com/deal/ginormous-bundle/ -->
-            <td style="padding: 40px 40px 40px 40px"><img src="{% static 'resources/img/baby_care.jpg' %}"  class="thumb" style="height: 200px;">
-                    <br>Aveno Wash and Shampoo </td>
+            <td style="padding: 40px 40px 40px 40px"><img src="{% static '/resources/img/pasta.jpg' %}"  class="thumb" style="height: 200px;">
+                    <br>{{items.item_name}}</td>
             <td style="padding: 40px 40px 40px 40px"><input type="number" value="1" min="0" max="99" class="qtyinput"></td>
-            <td style="padding: 40px 40px 40px 40px">$4.95</td>
+            <td style="padding: 40px 40px 40px 40px">$ {{items.price|floatformat:2 }}</td>
             <td style="padding: 40px 40px 40px 40px">
                <a class="btn btn-full js" href="#" style="border-radius: 25px; padding: 10px; width: 110px; text-align:center;">Add Cart</a>
-       </td>
+            </td>
           </tr>
-
-        <tr class="productitm" style="width: 800px; max-width: 500px; border: 3px solid black ; margin: 10px 10px 10px 10px">
-            <!-- http://www.inkydeals.com/deal/ginormous-bundle/ -->
-            <td style="padding: 40px 40px 40px 40px"><img src="{% static 'resources/img/baby_care.jpg' %}"  class="thumb" style="height: 200px;">
-                    <br>Aveno Wash and Shampoo </td>
-            <td style="padding: 40px 40px 40px 40px"><input type="number" value="1" min="0" max="99" class="qtyinput"></td>
-            <td style="padding: 40px 40px 40px 40px">$4.95</td>
-            <td style="padding: 40px 40px 40px 40px">
-               <a class="btn btn-full js" href="#" style="border-radius: 25px; padding: 10px; width: 110px; text-align:center;">Add Cart</a>
-       </td>
-          </tr>
+        {% endfor %}
+        {% endif %}
 
         </tbody>
       </table>
