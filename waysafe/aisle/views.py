@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from .models import Item
 from django.template import loader
 
 # Create your views here.
@@ -38,5 +39,7 @@ def pasta_and_grains_subcategory(request):
     return render(request, template_name)
 
 def babycare_item(request):
+    babycareitems = Item.objects.all()
     template_name = 'aisle/babycare_item.html'
-    return render(request,template_name)
+    context = {"babycareitems": babycareitems}
+    return render(request,template_name, context)
