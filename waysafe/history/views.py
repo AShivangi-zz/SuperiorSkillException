@@ -10,7 +10,16 @@ def index(request): #always put in request
     return render(request,template_name)
 
 def lastOrder(request):
-    return HttpResponse("<h1>This is the last order</h1>")
+    template_name = 'history/lastOrder.html'
+    return render(request, template_name)
+
+def completeList(request):
+    template_name = 'history/completeList.html'
+    return render(request, template_name)
+
+def editingList(request):
+    template_name = 'history/editingList.html'
+    return render(request, template_name)
 
 
 def previousOrders(request):
