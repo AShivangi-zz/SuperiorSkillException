@@ -2,9 +2,16 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from aisle.models import Item
 from django.shortcuts import render, redirect
-from django.contrib.auth import authenticate, login
 from django.views.generic import View
-from .forms import UserForm
+
+from django.contrib.auth import (
+    authenticate,
+    get_user_model,
+    login,
+    logout,
+)
+
+from .forms import UserLoginForm, UserRegisterForm
 
 # Create your views here.
 def index(request): #always put in request
@@ -35,25 +42,62 @@ def register(request):
 
 #    template_name='index/login.html'
 #    return render(request,template_name)
-def login(request):
-        form = UserForm(request.POST or None)
-        if form.is_valid():
-            user = form.save(commit=False)
-            username = form.cleaned_data['username']
-            password = form.cleaned_data['password']
-            user.set_password(password)
-            user.save()
-            user = authenticate(username=username, password=password)
-            if user is not None:
-                if user.is_active:
-                    login(request, user)
-                    template_name = 'index/index.html'
-                    return render(request, template_name)
-        context = {
-            "form": form,
-        }
-        return render(request, 'index/login.html', context)
+#11/4def login(request):
+#        form = UserForm(request.POST or None)
+#        if form.is_valid():
+#            user = form.save(commit=False)
+#            username = form.cleaned_data['username']
+#            password = form.cleaned_data['password']
+#            user.set_password(password)
+#            user.save()
+#            user = authenticate(username=username, password=password)
+#            if user is not None:
+#                if user.is_active:
+#                    login(request, user)
+#                    template_name = 'index/index.html'
+#                    return render(request, template_name)
+#        context = {
+#            "form": form,
+#        }
+#        return render(request, 'index/login.html', context)
 
+def login_view(request):
+    title="Login"
+    form = UserLoginForm(request.POST or None)
+    if form.is_valid():
+        username = form.cleaned_data.get("username")
+        password = form.cleaned_data.get("password")
+        user = authenticate(username=username, password=password)
+        login(request, user)
+        print(request.user.is_authenticated())
+        #redirect
+        return redirect("/aisle")
+
+    return render(request, "index/login.html", {"form":form, "title": title})
+
+
+def register_view(request):
+    title = "Register"
+    form = UserRegisterForm(request.POST or None)
+    if form.is_valid():
+        user=form.save(commit=False)
+        password = form.cleaned_data.get('password')
+        user.set_password(password)
+        user.save()
+
+        new_user = authenticate(username=user.username, password=password)
+        login(request, user)
+        return redirect("/aisle")
+
+    context ={
+        "form": form,
+        "title": title,
+    }
+    return render(request, "index/login.html", context)
+
+def logout_view(request):
+    logout(request)
+    return render(request, "form.html", {})
 
 
 def guest(request):
