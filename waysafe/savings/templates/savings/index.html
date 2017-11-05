@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load staticfiles %}
+<style>
+
+.dropdown
+{
+	float:left;
+}
+.dropdown .dropbtn
+{
+    border: none;
+    outline: none;
+    color: #ffffff;
+    padding:5px 25px 10px 25px;
+    background-color: #0055a2;
+    width: 220px;
+}
+.dropdown:hover .dropbtn
+{
+    background-color: #7f7a7a;
+	color:#ffffff;
+}
+
+
+.dropdown:hover
+{
+    display: block;
+}
+
+</style>
+<head>
+
+<!-- Bootstrap -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Omnifood is a premium food delivery service with the mission to bring affordable and healty meals to as many people as possible.">
+
+
+
+        <link rel="stylesheet" type="text/css" href="{% static 'vendors/css/normalize.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'vendors/css/grid.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'vendors/css/ionicons.min.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'vendors/css/animate.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'resources/css/style.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'resources/css/queries.css' %}">
+        <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
+        <title>WaySafe</title>
+
+        <link rel="apple-touch-icon" sizes="57x57" href="{% static 'resources/favicons/apple-touch-icon-57x57.png' %}">
+        <link rel="apple-touch-icon" sizes="60x60" href="{% static 'resources/favicons/apple-touch-icon-60x60.png' %}">
+        <link rel="apple-touch-icon" sizes="72x72" href="{% static 'resources/favicons/apple-touch-icon-72x72.png' %}">
+        <link rel="apple-touch-icon" sizes="76x76" href="{% static 'resources/favicons/apple-touch-icon-76x76.png' %}">
+        <link rel="apple-touch-icon" sizes="114x114" href="{% static 'resources/favicons/apple-touch-icon-114x114.png' %}">
+        <link rel="apple-touch-icon" sizes="120x120" href="{% static 'resources/favicons/apple-touch-icon-120x120.png' %}">
+        <link rel="apple-touch-icon" sizes="144x144" href="{% static 'resources/favicons/apple-touch-icon-144x144.png' %}">
+        <link rel="apple-touch-icon" sizes="152x152" href="{% static 'resources/favicons/apple-touch-icon-152x152.png' %}">
+        <link rel="apple-touch-icon" sizes="180x180" href="{% static 'resources/favicons/apple-touch-icon-180x180.png' %}">
+        <link rel="icon" type="image/png" href="{% static 'resources/favicons/favicon-32x32.png' %}" sizes="32x32">
+        <link rel="icon" type="image/png" href="{% static 'resources/favicons/favicon-194x194.png' %}" sizes="194x194">
+        <link rel="icon" type="image/png" href="{% static 'resources/favicons/favicon-96x96.png' %}" sizes="96x96">
+        <link rel="icon" type="image/png" href="{% static 'resources/favicons/android-chrome-192x192.png' %}" sizes="192x192">
+        <link rel="icon" type="image/png" href="{% static 'resources/favicons/favicon-16x16.png' %}" sizes="16x16">
+        <link rel="manifest" href="{% static 'resources/favicons/manifest.json' %}">
+        <link rel="shortcut icon" href="{% static 'resources/favicons/favicon.ico' %}">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="msapplication-TileImage" content="{% static 'resources/favicons/mstile-144x144.png' %}">
+        <meta name="msapplication-config" content="{% static 'resources/favicons/browserconfig.xml' %}">
+        <meta name="theme-color" content="#ffffff">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+{% block body %}
+
+
+
+
+<body>
+
+{%  include 'index/base_navBar.html' %}
+
+
+<div class="row">
+	<br><br>
+        <h2>Coupons</h2>
+    </div>
+
+<div class="food-dept">
+ <div class="container_12 clearfix" style="margin-center: 80px">
+                 <div  style="width:260px; max-width: 100%; height: 300px; float: left; margin: 10px; text-align: center; padding: 10px ">
+                    <img class="card-img-top" src="{% static 'resources/img/baby_care.jpg' %}" alt="Card image cap" style="height: 200px; width:270px">
+                    <div class="caption"><p style="color:#777777;">aaaa ajaja hajahaj ajjaaj ahahah haha ahaha agaga</p></div>
+                            <div class="caption"><a href="babycare">
+                    <div class="dropdown"> <button class="dropbtn">Save $999</button></div></a>
+		</div>
+                </div>
+                <div  style="width:260px; max-width: 100%; height: 300px; float: left; margin: 10px; text-align: center; padding: 10px ">
+                    <img class="card-img-top" src="{% static 'resources/img/baby_care.jpg' %}" alt="Card image cap" style="height: 200px; width:270px">
+                    <div class="caption"><p style="color:#777777;">aaaa ajaja hajahaj ajjaaj ahahah haha ahaha agaga</p></div>
+                            <div class="caption"><a href="babycare">
+                    <div class="dropdown"> <button class="dropbtn">Save $999</button></div></a>
+		</div>
+                </div> <div  style="width:260px; max-width: 100%; height: 300px; float: left; margin: 10px; text-align: center; padding: 10px ">
+                    <img class="card-img-top" src="{% static 'resources/img/baby_care.jpg' %}" alt="Card image cap" style="height: 200px; width:270px">
+                    <div class="caption"><p style="color:#777777;">aaaa ajaja hajahaj ajjaaj ahahah haha ahaha agaga</p></div>
+                            <div class="caption"><a href="babycare">
+                    <div class="dropdown"> <button class="dropbtn">Save $999</button></div></a>
+		</div>
+                </div> <div  style="width:260px; max-width: 100%; height: 300px; float: left; margin: 10px; text-align: center; padding: 10px ">
+                    <img class="card-img-top" src="{% static 'resources/img/baby_care.jpg' %}" alt="Card image cap" style="height: 200px; width:270px">
+                    <div class="caption"><p style="color:#777777;">aaaa ajaja hajahaj ajjaaj ahahah haha ahaha agaga</p></div>
+                            <div class="caption"><a href="babycare">
+                    <div class="dropdown"> <button class="dropbtn">Save $999</button></div></a>
+		</div>
+                </div> <div  style="width:260px; max-width: 100%; height: 300px; float: left; margin: 10px; text-align: center; padding: 10px ">
+                    <img class="card-img-top" src="{% static 'resources/img/baby_care.jpg' %}" alt="Card image cap" style="height: 200px; width:270px">
+                    <div class="caption"><p style="color:#777777;">aaaa ajaja hajahaj ajjaaj ahahah haha ahaha agaga</p></div>
+                            <div class="caption"><a href="babycare">
+                    <div class="dropdown"> <button class="dropbtn">Save $999</button></div></a>
+		</div>
+                </div> <div  style="width:260px; max-width: 100%; height: 300px; float: left; margin: 10px; text-align: center; padding: 10px ">
+                    <img class="card-img-top" src="{% static 'resources/img/baby_care.jpg' %}" alt="Card image cap" style="height: 200px; width:270px">
+                    <div class="caption"><p style="color:#777777;">aaaa ajaja hajahaj ajjaaj ahahah haha ahaha agaga</p></div>
+                            <div class="caption"><a href="babycare">
+                    <div class="dropdown"> <button class="dropbtn">Save $999</button></div></a>
+		</div>
+                </div> <div  style="width:260px; max-width: 100%; height: 300px; float: left; margin: 10px; text-align: center; padding: 10px ">
+                    <img class="card-img-top" src="{% static 'resources/img/baby_care.jpg' %}" alt="Card image cap" style="height: 200px; width:270px">
+                    <div class="caption"><p style="color:#777777;">aaaa ajaja hajahaj ajjaaj ahahah haha ahaha agaga</p></div>
+                            <div class="caption"><a href="babycare">
+                    <div class="dropdown"> <button class="dropbtn">Save $999</button></div></a>
+		</div>
+                </div>
+</div>
+
+
+
+
+
+{%  include 'index/base_footer.html' %}
+
+</body>
+
+{% endblock %}
+</html>

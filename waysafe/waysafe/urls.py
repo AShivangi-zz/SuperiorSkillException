@@ -22,6 +22,8 @@ This manages the urls
 
 from django.conf.urls import include, url #Include imports from the other url
 from django.contrib import admin
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
@@ -30,4 +32,10 @@ urlpatterns = [
     url(r'^history/', include('history.urls')),
     url(r'^index/', include('index.urls')),
     url(r'^savings/', include('savings.urls')),
+    url(r'^payment/', include('payment.urls')),
+
 ]
+
+# if settings.DEBUG:
+#     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+#     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

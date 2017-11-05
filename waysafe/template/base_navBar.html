@@ -1,0 +1,123 @@
+{% load staticfiles %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    header{
+    background-color: #7f7a7a;
+    height: 30vh;
+   }
+
+   .img{
+   margin: 20px 0;
+   height: 90px;
+   width: 250 px;
+   }
+
+   .dropdown
+{
+	float:right;
+}
+.dropdown .dropbtn
+{
+    border: none;
+    outline: none;
+    color: #ffffff;
+    padding:5px 25px 10px 25px;
+    background-color: #0055a2;
+}
+.dropdown:hover .dropbtn
+{
+    background-color: #7f7a7a;
+	color:#ffffff;
+}
+.dropdown-content
+{
+    display: none;
+    position: absolute;
+    background-color: #7f7a7a;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a
+{
+    float: none;
+    color: #0055a2;
+	background-color: #7f7a7a;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+.dropdown-content a:hover
+{
+    background-color: #0055a2;
+	color:#ececec
+}
+
+.dropdown:hover .dropdown-content
+{
+    display: block;
+}
+
+li{
+float: left;
+margin-left: 0;
+}
+
+.search{
+    margin-left: auto;
+    margin-right: auto;
+    width: 20em
+    }
+.search input{
+    height: 50px;
+    width: 400px;
+}
+.padding{
+    padding: 0 20px 0 20px;
+    }
+
+</style>
+<header>
+    <nav>
+        <div class="padding">
+            <a href="/index"><img  class = "img" src="{% static 'resources/img/logoRR.png' %}" alt="WaySafe logo">
+            </a>
+                <ul class="main-nav js--main-nav">
+
+                <li><a href="/history">Shop by History</a></li>
+                <li><a href="/aisle">Shop by Aisle</a></li>
+                <li><a href="/savings">Online savings</a></li>
+                <li><a href="index/register.html">Sign up</a></li>
+                {#<li><form class="navbar-form navbar-right" role="search">#}
+                    {# <input type="text" class="form-control" placeholder="Search"></form>></li>#}
+
+
+            <li class="nav navbar-nav navbar-right hidden-sm">
+
+		<div class="dropdown">
+		<button class="dropbtn">My Account<i class="fa fa-caret-down" style = "margin-left:5px"></i></button>
+		<div class="dropdown-content">
+		  <a href="#">My Orders</a>
+		  <a href="#">Account Settings</a>
+		  <a href="#">Sign Out</a>
+		</div>
+		</div>
+      </li>
+                </ul>
+            <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
+        </div>
+<center>
+        <form method ="get"  role="search" action="/index/searchresults">
+            <div class="form-group">
+                <input type="text" class="form-control"  id="searchtext" name="q" placeholder="Search" >
+                <button type="submit" class="searchbutton" style = "background-color:#0055a2;margin-left:10px;color:#ececec;width:38px;height:38px;border:none" >
+                <i class="fa fa-search" aria-hidden="true"> </i>
+            </button>
+            </div>
+        </form>
+            </center>
+    </nav>
+
+</header>
