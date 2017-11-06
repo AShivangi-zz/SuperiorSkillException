@@ -19,3 +19,6 @@ from django.db import models
 #     #user_name = models.ForeignKey(customer, on_delete=models.CASCADE, default='NULL')
 #     #itemName = models.ForeignKey(item.item_name, on_delete=models.CASCADE, default='NULL')
 #     #price = models.ForeignKey(item.price, on_delete=models.CASCADE, default='NULL')
+class cart(models.Model):
+    item_list = models.CommaSeparatedIntegerField(max_length=50)
+    quantity = models.CommaSeparatedIntegerField(max_length=50)
