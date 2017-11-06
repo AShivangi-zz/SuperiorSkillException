@@ -49,19 +49,42 @@
 <div class="row">
 <br><br>
 
-{% if all_items %}
+        <h2>Search Results</h2>
+    </div>
+
+ <div class="food-dept" style="height: 155vh;">
+      <div id="page">
+      <table id="cart" style="margin: 0 25%">
+        <thead>
+          <tr >
+            <th class="first" style="padding: 40px 40px 40px 40px">Product</th>
+            <th class="third" style="padding: 40px 40px 40px 40px">Qty</th>
+            <th class="fourth" style="padding: 40px 40px 40px 40px">Price</th>
+            <th class="fifth" style="padding: 40px 40px 40px 40px">&nbsp;</th>
+          </tr>
+        </thead>
+        <tbody>
+        {% if all_items %}
     {% if flagcheck == True %}
-        <div class="container_12 clearfix" style="margin-left: 80px">
-            <div  style="width:260px; max-width: 100%; height: 300px; float: left; margin: 10px; text-align: center; padding: 10px ">
-                <a href="baby_care_subcategory"><div class="dropdown"> <button class="dropbtn">{{ itemname }} </button></div></a>
-            </div>
-        </div>
-    {% else %}
+
+        <tr class="productitm" style="width: 800px; max-width: 500px; border: 3px solid black ; margin: 10px 10px 10px 10px">
+        <td style="padding: 40px 40px 40px 40px"><img src={{ itemlogo}} class="thumb" style="height: 200px;">
+            <br>{{itemname}}</td>
+        <td style="padding: 40px 40px 40px 40px"><input type="number" value="1" min="0" max="99" class="qtyinput"></td>
+        <td style="padding: 40px 40px 40px 40px">${{itemprice|floatformat:2 }}</td>
+        <td style="padding: 40px 40px 40px 40px">
+        <a class="btn btn-full js" href="#" style="border-radius: 25px; padding: 10px; width: 110px; text-align:center;">Add to Cart</a>
+        </td>
+        </tr>
+       {% else %}
         <h1 style="color:#666666;"> Search result for: {{ query }} not found </h1>
     {% endif %}
 {% endif %}
-</div>
 
+        </tbody>
+      </table>
+    </div>
+ </div>
 
 {%  include 'index/base_footer.html' %}
 {% endblock %}

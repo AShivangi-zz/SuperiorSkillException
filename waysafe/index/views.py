@@ -109,6 +109,8 @@ def searchresults(request):
     flagcheck = False
     html =''
     captureword = ''
+    capturelogo = ''
+    captureprice = ''
 
     #   for formatitems in all_items:
     #       holdoriginal = formatitems
@@ -126,9 +128,12 @@ def searchresults(request):
             if str(query) in (modelitems.item_name).lower():
                 flagcheck = True
                 captureword = modelitems.item_name
+                capturelogo = modelitems.item_logo
+                captureprice = modelitems.price
 
         if (flagcheck):
-            context = {'all_items': all_items, 'flagcheck': flagcheck, 'itemname': captureword}
+            context = {'all_items': all_items, 'flagcheck': flagcheck, 'itemname': captureword, 'itemlogo': capturelogo,
+                       'itemprice': captureprice}
             return render(request, 'index/search_results.html', context)
         else:
             newcontext = {'all_items': all_items, 'query': html, 'flagcheck': flagcheck}
