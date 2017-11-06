@@ -78,6 +78,10 @@ margin-left: 0;
     padding: 0 20px 0 20px;
     }
 
+
+
+
+
 </style>
 <header>
     <nav>
@@ -85,26 +89,25 @@ margin-left: 0;
             <a href="/index"><img  class = "img" src="{% static 'resources/img/logoRR.png' %}" alt="WaySafe logo">
             </a>
                 <ul class="main-nav js--main-nav">
+                    {% if user.is_authenticated %}
+                <li><a href="/history">Shop by History</a></li>
+                <li><a href="/aisle">Shop by Aisle</a></li>
+                <li><a href="/savings">Online savings</a></li>
+                    <li><a href="/cart">Cart</a></li>
+                    <li><a href="/index">Sign Out</a></li>
+                {#<li><form class="navbar-form navbar-right" role="search">#}
+                    {# <input type="text" class="form-control" placeholder="Search"></form>></li>#}
 
+                    {% else %}
                 <li><a href="/history">Shop by History</a></li>
                 <li><a href="/aisle">Shop by Aisle</a></li>
                 <li><a href="/savings">Online savings</a></li>
                 <li><a href="/register">Sign up</a></li>
                 {#<li><form class="navbar-form navbar-right" role="search">#}
                     {# <input type="text" class="form-control" placeholder="Search"></form>></li>#}
+                    {% endif %}
 
 
-            <li class="nav navbar-nav navbar-right hidden-sm">
-
-		<div class="dropdown">
-		<button class="dropbtn">My Account<i class="fa fa-caret-down" style = "margin-left:5px"></i></button>
-		<div class="dropdown-content">
-		  <a href="/cart">My Orders</a>
-		  <a href="#">Account Settings</a>
-		  <a href="#">Sign Out</a>
-		</div>
-		</div>
-      </li>
                 </ul>
             <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
         </div>
