@@ -10,7 +10,6 @@ def index(request): #always put in request
     return render(request,template_name)
 
 def aisle(request):
-
     return HttpResponse("<h1>This is the categories</h1>")
 
 
@@ -39,7 +38,13 @@ def pasta_and_grains_subcategory(request):
     return render(request, template_name)
 
 def babycare_item(request):
-    babycareitems = Item.objects.all()
-    template_name = 'aisle/babycare_item.html'
+    babycareitems = Item.objects.raw('SELECT * FROM aisle_item WHERE category = "Baby Care"')
+    template_name = 'aisle/babycare.html'
     context = {"babycareitems": babycareitems}
     return render(request,template_name, context)
+
+def beverage_item(request):
+    beverageitems = Item.objects.raw('SELECT * FROM aisle_item WHERE category = "Beverages"')
+    template_name = 'aisle/beverages.html'
+    context = {"beverageitems": beverageitems}
+    return render(request, template_name, context)
