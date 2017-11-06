@@ -49,10 +49,75 @@
 
 {%  include 'index/base_navBar.html' %}
 
-<section class="section-features js--section-features " id="features">
+<section class="section-form ">
+    <div class="row">
+        <h2>payment information</h2>
+    </div>
+    <div class="row">
+        <form method="post" action="#" class="contact-form">
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <label for="fname">First Name</label>
+                </div>
+                <div class="col span-2-of-3">
+                    <input style = "width:100%" type="text" name="name" id="fname" placeholder="First name" required>
+                </div>
+            </div>
+                <div class="row">
+                <div class="col span-1-of-3">
+                    <label for="lname">First Name</label>
+                </div>
+                <div class="col span-2-of-3">
+                    <input style = "width:100%" type="text" name="name" id="lname" placeholder="Last name" required>
+                </div>
+            </div>
+                <div class="row">
+                <div class="col span-1-of-3">
+                    <label for="ccd">Credit card number</label>
+                </div>
+                <div class="col span-2-of-3">
+                    <input style = "width:100%" type="email" name="email" id="ccd" placeholder="credit card number" required>
+                </div>
+            </div>
+                <div class="row">
+                <div class="col span-1-of-3">
+                    <label for="ccv">CCV</label>
+                </div>
+                <div class="col span-2-of-3">
+                    <input style = "width:100%" type="email" name="email" id="ccv" placeholder="CCV" required>
+                </div>
+            </div>
+                <div class="row">
+                <div class="col span-1-of-3">
+                    <label for="exp">Expiry Date</label>
+                </div>
+                <div class="col span-2-of-3">
+                    <input style = "width:100%" type="email" name="email" id="exp" placeholder="mm/yy" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <label for="email">Email</label>
+                </div>
+                <div class="col span-2-of-3">
+                    <input style = "width:100%" type="email" name="email" id="email" placeholder="Your email" required>
+                </div>
+            </div>
 
-    <br><br>
-    </section>
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <label>&nbsp;</label>
+                </div>
+                <div class="col span-2-of-3">
+
+                    <a class="btn btn-full js--scroll-to-plans" href="/index">Send it</a>
+                </div>
+            </div>
+
+        </form>
+
+    </div>
+</section>
 
 {%  include 'index/base_footer.html' %}
 
