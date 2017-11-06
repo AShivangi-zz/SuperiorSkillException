@@ -31,6 +31,7 @@ urlpatterns = [
     url(r'^aisle/', include('aisle.urls')),
     url(r'^history/', include('history.urls')),
     url(r'^index/', include('index.urls')),
+    url(r'^', include('index.urls')),
     url(r'^savings/', include('savings.urls')),
     url(r'^payment/', include('payment.urls')),
     url(r'^cart/', include('cart.urls')),
