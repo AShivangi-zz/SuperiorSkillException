@@ -70,62 +70,74 @@ table
 {%  include 'index/base_navBar.html' %}
 
 <div class="row">
-	<br/><br/>
-        <h2>Last Orders</h2>
-    </div>
+    <br><br>
+    <h2>cart</h2>
+</div>
 
-{#<div class="sidenav" style = "width:15%; float:left;border:inset;margin-left:5px">#}
-{#  <a href="/history" style = "background-color:#ffffff;color:#0055a2">History</a>#}
-{#    <hr/>#}
-{#  <a href="#">Last Orders</a>#}
-{#  <a href="#">Complete List</a>#}
-{#  <a href="#">Editing List</a>#}
-{#</div>#}
 
- <div  style="height: 145vh;">
+ <div >
       <div>
-      <table style="margin: 0 25%">
+      <table style="margin: 0 20% 3% 20%">
         <thead>
           <tr >
             <th class="first" style="padding: 10px">Product</th>
             <th class="third" style="padding: 10px">Qty</th>
             <th class="fourth" style="padding: 10px">Price</th>
+              <th class="fifth" style="padding: 10px">Total</th>
             <th class="fifth" style="padding: 10px">&nbsp;</th>
           </tr>
         </thead>
         <tbody>
-          <!-- shopping cart contents -->
           <tr class="productitm" style="width: 800px; max-width: 500px; border: 3px solid black ; margin: 10px 10px 10px 10px">
-            <!-- http://www.inkydeals.com/deal/ginormous-bundle/ -->
-            <td style="padding: 10px"><img src="{% static 'resources/img/baby_care.jpg' %}"  class="thumb" style="height: 200px;">
-                    <br>Aveno Wash and Shampoo </td>
-{#            <td style="padding: 10px"><input type="number" value="1" min="0" max="99" class="qtyinput"></td>#}
-            <td style="padding: 10px">$4.95</td>
+            <td style="padding: 10px">
+                    Coca-Cola Classic Soda - 2 Liter </td>
+            <td style="padding: 10px 30px 10px 30px">1</td>
+            <td style="padding: 10px 30px 10px 50px">$1.5</td>
+              <td style="padding: 10px 30px 10px 40px">$1.5</td>
             <td style="padding: 10px">
                <a class="btn btn-full js" href="#" style="border-radius: 25px; padding: 10px; width: 110px; text-align:center;">Delete</a>
        </td>
           </tr>
-
-
         <tr class="productitm" style="width: 800px; max-width: 500px; border: 3px solid black ; margin: 10px 10px 10px 10px">
-            <!-- http://www.inkydeals.com/deal/ginormous-bundle/ -->
-            <td style="padding: 40px 40px 40px 40px"><img src="{% static 'resources/img/baby_care.jpg' %}"  class="thumb" style="height: 200px;">
-                    <br>Aveno Wash and Shampoo </td>
-{#            <td style="padding: 10px"><input type="number" value="1" min="0" max="99" class="qtyinput"></td>#}
-            <td style="padding: 10px">$4.95</td>
+            <td style="padding: 10px">
+                    Birds Eye Steamfresh Superfood Blends Black Rice & Edamame - 10 Oz </td>
+            <td style="padding: 10px 30px 10px 30px">2</td>
+            <td style="padding: 10px 30px 10px 50px">$4.49</td>
+              <td style="padding: 10px 30px 10px 40px">$8.98</td>
             <td style="padding: 10px">
                <a class="btn btn-full js" href="#" style="border-radius: 25px; padding: 10px; width: 110px; text-align:center;">Delete</a>
        </td>
           </tr>
+        <tr class="productitm" style="width: 800px; max-width: 500px; border: 3px solid black ; margin: 10px 10px 10px 10px">
+            <td style="padding: 10px">
+                    Stella Artois Bottle - 22 Fl. Oz.</td>
+            <td style="padding: 10px 30px 10px 30px">1</td>
+            <td style="padding: 10px 30px 10px 50px">$3.49</td>
+              <td style="padding: 10px 30px 10px 40px">$3.49</td>
+            <td style="padding: 10px">
+               <a class="btn btn-full js" href="#" style="border-radius: 25px; padding: 10px; width: 110px; text-align:center;">Delete</a>
+       </td>
+          </tr>
+        <tr class="productitm" style="width: 800px; max-width: 500px; border: 3px solid black ; margin: 10px 10px 10px 10px">
+            <td style="padding: 10px">
+                    Nabisco Ritz Everything - 13.7 Oz </td>
+            <td style="padding: 10px 30px 10px 30px">5</td>
+            <td style="padding: 10px 30px 10px 50px">$2</td>
+              <td style="padding: 10px 30px 10px 40px">$10</td>
+            <td style="padding: 10px">
+               <a class="btn btn-full js" href="#" style="border-radius: 25px; padding: 10px; width: 110px; text-align:center;">Delete</a>
+       </td>
+          </tr>
+
+
+
 
         </tbody>
       </table><br><br>
          <center> <a class="btn btn-full js" href="/payment" style="border-radius: 25px; padding: 10px; width: 110px; text-align:center;">Checkout</a></center>
     </div>
         </div>
-
-
-
+<br><br>
 {%  include 'index/base_footer.html' %}
 
 </body>
