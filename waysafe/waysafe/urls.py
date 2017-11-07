@@ -38,6 +38,7 @@ urlpatterns = [
     url(r'^register/', include('register.urls')),
     url(r'^logout/$', views.logout_view, name='logout'),
 
+
 ]
 
 # if settings.DEBUG:

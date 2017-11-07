@@ -5,3 +5,7 @@ from django.http import HttpResponse
 def index(request): #always put in request
     template_name = 'payment/index.html'
     return render(request,template_name)
+
+def success(request):
+    template_name= "payment/payment_successful.html"
+    return render(request, template_name)
