@@ -107,17 +107,10 @@ def guest(request):
 def searchresults(request):
     all_items = Item.objects.all()
     flagcheck = False
-    html =''
+    html = ''
     captureword = ''
-
-    #   for formatitems in all_items:
-    #       holdoriginal = formatitems
-    ##   {% for originalitems in holdoriginal %}
-    ##        {%  if modelitems in originalitems%}
-    ##        {% endfor    %}
-    ##
-
-
+    capturelogo = ''
+    captureprice = ''
 
     query = request.GET['q']
     html = str(query)
@@ -126,9 +119,13 @@ def searchresults(request):
             if str(query) in (modelitems.item_name).lower():
                 flagcheck = True
                 captureword = modelitems.item_name
+                capturelogo = modelitems.item_logo
+                captureprice = modelitems.price
 
         if (flagcheck):
-            context = {'all_items': all_items, 'flagcheck': flagcheck, 'itemname': captureword}
+            context = {'all_items': all_items, 'flagcheck': flagcheck, 'itemname': captureword,
+                       'itemprice': captureprice,
+                       'itemlogo': capturelogo}
             return render(request, 'index/search_results.html', context)
         else:
             newcontext = {'all_items': all_items, 'query': html, 'flagcheck': flagcheck}
@@ -136,31 +133,4 @@ def searchresults(request):
 
     else:
         return render(request, 'index/index.html')
-
-        # html = " "
-        # query = request.GET['q']
-
-
-        #    if request.method == 'GET':
-
-        #       for modelitems in all_items:
-        #          html += '<a href="" >' + modelitems.item_name + '</a><br>'
-        #          if (modelitems.item_name).find(str(query)):
-        #              return HttpResponse(html)
-
-        #return HttpResponse(html)
-        #return render(request, 'index/index.html')
-        #      return render(request, 'index/search_results.html', context)
-        #  else:
-        #      return render(request, 'index/index.html')
-
-
-
-        #return HttpResponse(html)
-
-        # if request.method == 'GET':
-        #search_query = request.GET.get('q', None)
-        #    return HttpResponse({query})
-        #else:
-        #   return render(request, 'index/index.html')
 
