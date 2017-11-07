@@ -27,13 +27,14 @@
         display: block;
     }
 
+
 </style>
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-          content="Omnifood is a premium food delivery service with the mission to bring affordable and healty meals to as many people as possible.">
+          content="Omnifood is a premium food delivery service with the mission to bring affordable and healthy meals to as many people as possible.">
 
     <link rel="stylesheet" type="text/css" href="{% static 'vendors/css/normalize.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'vendors/css/grid.css' %}">
@@ -68,51 +69,60 @@
 
 </head>
 {% block body %}
-    <body>
+<body>
 
 
-    {% include 'aisle/base_navBar.html' %}
+{% include 'aisle/base_navBar.html' %}
 
 <div class="row">
-	<br><br>
-        <h2>Dairy</h2>
+    <br><br>
+    <h2>Dairy</h2>
+</div>
+
+<div style="height: 155vh;">
+    <div align="center" id="page">
+        <table id="cart" style="margin: 0 25%">
+            <thead>
+            <tr>
+                <th class="first" style="padding: 40px 40px 40px 40px">Product</th>
+                <th class="third" style="padding: 40px 40px 40px 40px">Qty</th>
+                <th class="fourth" style="padding: 40px 40px 40px 40px">Price</th>
+                <th class="fifth" style="padding: 40px 40px 40px 40px">&nbsp;</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% if dairyitems %}
+            {% for items in dairyitems %}
+            <tr class="productitm"
+                style="width: 800px; max-width: 500px; border: 3px solid black ; margin: 10px 10px 10px 10px">
+                <td style="padding: 40px 40px 40px 40px"><img src={{ items.item_logo}} class="thumb"
+                                                              style="height: 200px;">
+                    <br>{{items.item_name}}
+                </td>
+                <td style="padding: 40px 40px 40px 40px"><input type="number" value="1" min="0" max="99"
+                                                                class="qtyinput"></td>
+                <td style="padding: 40px 40px 40px 40px">${{items.price|floatformat:2 }}</td>
+                <td style="padding: 40px 40px 40px 40px">
+                    <a class="btn btn-full js" href="#"
+                       style="border-radius: 25px; padding: 10px; width: 110px; text-align:center;">Add to Cart</a>
+                </td>
+            </tr>
+            {% endfor %}
+            {% endif %}
+
+            </tbody>
+        </table>
+        <div align="center">
+            <a class="btn btn-full js" href="/aisle"
+               style="border-radius: 25px; padding: 10px; width: 150px;  text-align:center;">Back to Aisles</a>
+        </div>
     </div>
+</div>
 
- <div class="food-dept" style="height: 155vh;">
-      <div id="page">
-      <table id="cart" style="margin: 0 25%">
-        <thead>
-          <tr >
-            <th class="first" style="padding: 40px 40px 40px 40px">Product</th>
-            <th class="third" style="padding: 40px 40px 40px 40px">Qty</th>
-            <th class="fourth" style="padding: 40px 40px 40px 40px">Price</th>
-            <th class="fifth" style="padding: 40px 40px 40px 40px">&nbsp;</th>
-          </tr>
-        </thead>
-        <tbody>
-        {% if dairyitems %}
-        {% for items in dairyitems %}
-        <tr class="productitm" style="width: 800px; max-width: 500px; border: 3px solid black ; margin: 10px 10px 10px 10px">
-        <td style="padding: 40px 40px 40px 40px"><img src={{ items.item_logo}} class="thumb" style="height: 200px;">
-            <br>{{items.item_name}}</td>
-        <td style="padding: 40px 40px 40px 40px"><input type="number" value="1" min="0" max="99" class="qtyinput"></td>
-        <td style="padding: 40px 40px 40px 40px">${{items.price|floatformat:2 }}</td>
-        <td style="padding: 40px 40px 40px 40px">
-        <a class="btn btn-full js" href="#" style="border-radius: 25px; padding: 10px; width: 110px; text-align:center;">Add to Cart</a>
-        </td>
-        </tr>
-        {% endfor %}
-        {% endif %}
-
-        </tbody>
-      </table>
-    </div>
- </div>
-
-    {% include 'aisle/base_footer.html' %}
+{% include 'aisle/base_footer.html' %}
 
 
-    </body>
+</body>
 {% endblock %}
 
 </html>
