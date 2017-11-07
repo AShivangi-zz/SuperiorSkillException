@@ -4,6 +4,50 @@
 
 <head>
 
+<style>
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+
+.help{
+  font-size: 12px;
+}
+
+</style>
 <!-- Bootstrap -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -115,14 +159,26 @@
                 </div>
                 <div class="col span-2-of-3">
 
-                    <a class="btn btn-full js--scroll-to-plans" href="/index">Send it</a>
-                    <!--<button type="button"> USE THIS</button>-->
+                    <!--<a class="btn btn-full js&#45;&#45;scroll-to-plans" href="/index">Send it</a>-->
+                    <button id="myBtn">Send It!</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Successfully submitted! </p>
+  </div>
+</div>
+
                 </div>
             </div>
 
         </form>
 
     </div>
+
 </section>
 
 <section class="section-meals">
@@ -176,7 +232,7 @@
     <div class="row">
         <h2>About us</h2>
         <p class="long-copy">
-            Hello, we're WaySafe, your new premium online food shopping service. WaySafe serves as a system for both customers and grocery store owners. We are committed to provide the finest natural ingredients in the market. Our mission is to ensure that you are satisfy we your experience in our stores and online services. Our company is small but our innovation  promotes this company to grow fast and compete our other stores. Our services beat all the leading competitors. We are thankful to be your new premium online food shooping service. We know you're always busy. No time for running to the store. So let us take care of that!We know you will love our stores!
+            Hello, we're WaySafe, your new premium online food shooping service. WaySafe serves as a system for both customers and grocery store owners. We are committed to provide the finest natural ingredients in the market. Our mission is to ensure that you are satisfy we your experience in our stores and online services. Our company is small but our innovation  promotes this company to grow fast and compete our other stores. Our services beat all the leading competitors. We are thankful to be your new premium online food shooping service. We know you're always busy. No time for running to the store. So let us take care of that!We know you will love our stores!
         </p>
     </div>
 
@@ -214,6 +270,36 @@
 </section>
 
 {%  include 'index/base_footer.html' %}
+
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+
 
 </body>
 
