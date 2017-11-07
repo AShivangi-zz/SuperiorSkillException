@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18bb1002-3bb2-4656-91c6-66a58d22f355" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/waysafe/aisle/templates/aisle/index.html" afterPath="$PROJECT_DIR$/waysafe/aisle/templates/aisle/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/waysafe/template/base_footer.html" afterPath="$PROJECT_DIR$/waysafe/template/base_footer.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/waysafe/template/base_head.html" afterPath="$PROJECT_DIR$/waysafe/template/base_head.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/waysafe/template/base_navBar.html" afterPath="$PROJECT_DIR$/waysafe/template/base_navBar.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,6 +18,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
+      <file leaf-file-name="base_navBar.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/waysafe/template/base_navBar.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="123" column="27" lean-forward="false" selection-start-line="123" selection-start-column="27" selection-end-line="123" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="babycare.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/waysafe/aisle/templates/aisle/babycare.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -26,30 +40,60 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/waysafe/aisle/templates/aisle/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="682">
-              <caret line="177" column="76" lean-forward="false" selection-start-line="177" selection-start-column="76" selection-end-line="177" selection-end-column="76" />
+            <state relative-caret-position="223">
+              <caret line="82" column="24" lean-forward="false" selection-start-line="82" selection-start-column="24" selection-end-line="82" selection-end-column="24" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1510045557038" expanded="false" signature="3944:3970" ph="..." />
-                <marker date="1510045557038" expanded="false" signature="4240:4346" ph="..." />
-                <marker date="1510045557038" expanded="false" signature="4522:4548" ph="..." />
-                <marker date="1510045557038" expanded="false" signature="4819:4925" ph="..." />
-                <marker date="1510045557038" expanded="false" signature="5089:5115" ph="..." />
-                <marker date="1510045557038" expanded="false" signature="5376:5480" ph="..." />
-                <marker date="1510045557038" expanded="false" signature="5650:5676" ph="..." />
-                <marker date="1510045557038" expanded="false" signature="5942:6031" ph="..." />
-                <marker date="1510045557038" expanded="false" signature="6199:6225" ph="..." />
-                <marker date="1510045557038" expanded="false" signature="6497:6601" ph="..." />
-                <marker date="1510045557038" expanded="false" signature="6767:6793" ph="..." />
-                <marker date="1510045557038" expanded="false" signature="7056:7160" ph="..." />
-                <marker date="1510045557038" expanded="false" signature="7329:7355" ph="..." />
-                <marker date="1510045557038" expanded="false" signature="7630:7734" ph="..." />
-                <marker date="1510045557038" expanded="false" signature="7901:7927" ph="..." />
+                <marker date="1510046048533" expanded="false" signature="3962:3988" ph="..." />
+                <marker date="1510046048533" expanded="false" signature="4258:4364" ph="..." />
+                <marker date="1510046048533" expanded="false" signature="4540:4566" ph="..." />
+                <marker date="1510046048533" expanded="false" signature="4837:4943" ph="..." />
+                <marker date="1510046048533" expanded="false" signature="5107:5133" ph="..." />
+                <marker date="1510046048533" expanded="false" signature="5394:5498" ph="..." />
+                <marker date="1510046048533" expanded="false" signature="5668:5694" ph="..." />
+                <marker date="1510046048533" expanded="false" signature="5960:6049" ph="..." />
+                <marker date="1510046048533" expanded="false" signature="6217:6243" ph="..." />
+                <marker date="1510046048533" expanded="false" signature="6515:6619" ph="..." />
+                <marker date="1510046048533" expanded="false" signature="6785:6811" ph="..." />
+                <marker date="1510046048533" expanded="false" signature="7074:7178" ph="..." />
+                <marker date="1510046048533" expanded="false" signature="7347:7373" ph="..." />
+                <marker date="1510046048533" expanded="false" signature="7648:7752" ph="..." />
+                <marker date="1510046048533" expanded="false" signature="7919:7945" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base_footer.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/waysafe/index/templates/index/base_footer.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base_footer.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/waysafe/template/base_footer.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="493">
+              <caret line="29" column="92" lean-forward="true" selection-start-line="29" selection-start-column="92" selection-end-line="29" selection-end-column="92" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base_head.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/waysafe/template/base_head.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="133" lean-forward="false" selection-start-line="6" selection-start-column="133" selection-end-line="6" selection-end-column="133" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -131,6 +175,8 @@
       <find>input</find>
       <find>LO</find>
       <find>title</find>
+      <find>{</find>
+      <find>}</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -142,7 +188,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/waysafe/aisle/models.py" />
         <option value="$PROJECT_DIR$/waysafe/index/templates/index/transparent login.html" />
         <option value="$PROJECT_DIR$/waysafe/aisle/templates/aisle/baby_care_subcategory.html" />
         <option value="$PROJECT_DIR$/waysafe/savings/views.py" />
@@ -166,7 +211,6 @@
         <option value="$PROJECT_DIR$/waysafe/history/views.py" />
         <option value="$PROJECT_DIR$/waysafe/history/urls.py" />
         <option value="$PROJECT_DIR$/waysafe/history/templates/history/index.html" />
-        <option value="$PROJECT_DIR$/waysafe/template/base_footer.html" />
         <option value="$PROJECT_DIR$/waysafe/index/templates/index/login.html" />
         <option value="$PROJECT_DIR$/waysafe/cart/models.py" />
         <option value="$PROJECT_DIR$/waysafe/cart/templates/cart/index.html" />
@@ -181,7 +225,6 @@
         <option value="$PROJECT_DIR$/waysafe/aisle/urls.py" />
         <option value="$PROJECT_DIR$/waysafe/index/templates/index/search_results.html" />
         <option value="$PROJECT_DIR$/waysafe/index/views.py" />
-        <option value="$PROJECT_DIR$/waysafe/template/base_navBar.html" />
         <option value="$PROJECT_DIR$/waysafe/waysafe/urls.py" />
         <option value="$PROJECT_DIR$/waysafe/aisle/templates/aisle/base_head.html" />
         <option value="$PROJECT_DIR$/waysafe/aisle/templates/aisle/snacks.html" />
@@ -193,6 +236,9 @@
         <option value="$PROJECT_DIR$/waysafe/aisle/templates/aisle/alcohol.html" />
         <option value="$PROJECT_DIR$/waysafe/aisle/templates/aisle/babycare.html" />
         <option value="$PROJECT_DIR$/waysafe/aisle/templates/aisle/index.html" />
+        <option value="$PROJECT_DIR$/waysafe/template/base_footer.html" />
+        <option value="$PROJECT_DIR$/waysafe/template/base_head.html" />
+        <option value="$PROJECT_DIR$/waysafe/template/base_navBar.html" />
       </list>
     </option>
   </component>
@@ -245,28 +291,34 @@
               <item name="SuperiorSkillException" type="b2602c69:ProjectViewProjectNode" />
               <item name="SuperiorSkillException" type="462c0819:PsiDirectoryNode" />
               <item name="waysafe" type="462c0819:PsiDirectoryNode" />
-              <item name="aisle" type="462c0819:PsiDirectoryNode" />
+              <item name="index" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SuperiorSkillException" type="b2602c69:ProjectViewProjectNode" />
               <item name="SuperiorSkillException" type="462c0819:PsiDirectoryNode" />
               <item name="waysafe" type="462c0819:PsiDirectoryNode" />
-              <item name="aisle" type="462c0819:PsiDirectoryNode" />
+              <item name="index" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SuperiorSkillException" type="b2602c69:ProjectViewProjectNode" />
               <item name="SuperiorSkillException" type="462c0819:PsiDirectoryNode" />
               <item name="waysafe" type="462c0819:PsiDirectoryNode" />
-              <item name="aisle" type="462c0819:PsiDirectoryNode" />
+              <item name="index" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="aisle" type="462c0819:PsiDirectoryNode" />
+              <item name="index" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SuperiorSkillException" type="b2602c69:ProjectViewProjectNode" />
               <item name="SuperiorSkillException" type="462c0819:PsiDirectoryNode" />
               <item name="waysafe" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SuperiorSkillException" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SuperiorSkillException" type="462c0819:PsiDirectoryNode" />
+              <item name="waysafe" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SuperiorSkillException" type="b2602c69:ProjectViewProjectNode" />
@@ -789,31 +841,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/waysafe/register/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="6" column="50" lean-forward="false" selection-start-line="6" selection-start-column="50" selection-end-line="6" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/waysafe/index/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/waysafe/savings/templates/savings/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1800">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/waysafe/template/base_footer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-106">
-          <caret line="4" column="30" lean-forward="false" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -1006,13 +1037,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/waysafe/template/base_navBar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2125">
-          <caret line="125" column="9" lean-forward="false" selection-start-line="125" selection-start-column="9" selection-end-line="125" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/waysafe/waysafe/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
@@ -1149,27 +1173,59 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/waysafe/aisle/templates/aisle/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="682">
-          <caret line="177" column="76" lean-forward="false" selection-start-line="177" selection-start-column="76" selection-end-line="177" selection-end-column="76" />
+        <state relative-caret-position="223">
+          <caret line="82" column="24" lean-forward="false" selection-start-line="82" selection-start-column="24" selection-end-line="82" selection-end-column="24" />
           <folding>
             <element signature="n#style#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1510045557038" expanded="false" signature="3944:3970" ph="..." />
-            <marker date="1510045557038" expanded="false" signature="4240:4346" ph="..." />
-            <marker date="1510045557038" expanded="false" signature="4522:4548" ph="..." />
-            <marker date="1510045557038" expanded="false" signature="4819:4925" ph="..." />
-            <marker date="1510045557038" expanded="false" signature="5089:5115" ph="..." />
-            <marker date="1510045557038" expanded="false" signature="5376:5480" ph="..." />
-            <marker date="1510045557038" expanded="false" signature="5650:5676" ph="..." />
-            <marker date="1510045557038" expanded="false" signature="5942:6031" ph="..." />
-            <marker date="1510045557038" expanded="false" signature="6199:6225" ph="..." />
-            <marker date="1510045557038" expanded="false" signature="6497:6601" ph="..." />
-            <marker date="1510045557038" expanded="false" signature="6767:6793" ph="..." />
-            <marker date="1510045557038" expanded="false" signature="7056:7160" ph="..." />
-            <marker date="1510045557038" expanded="false" signature="7329:7355" ph="..." />
-            <marker date="1510045557038" expanded="false" signature="7630:7734" ph="..." />
-            <marker date="1510045557038" expanded="false" signature="7901:7927" ph="..." />
+            <marker date="1510046048533" expanded="false" signature="3962:3988" ph="..." />
+            <marker date="1510046048533" expanded="false" signature="4258:4364" ph="..." />
+            <marker date="1510046048533" expanded="false" signature="4540:4566" ph="..." />
+            <marker date="1510046048533" expanded="false" signature="4837:4943" ph="..." />
+            <marker date="1510046048533" expanded="false" signature="5107:5133" ph="..." />
+            <marker date="1510046048533" expanded="false" signature="5394:5498" ph="..." />
+            <marker date="1510046048533" expanded="false" signature="5668:5694" ph="..." />
+            <marker date="1510046048533" expanded="false" signature="5960:6049" ph="..." />
+            <marker date="1510046048533" expanded="false" signature="6217:6243" ph="..." />
+            <marker date="1510046048533" expanded="false" signature="6515:6619" ph="..." />
+            <marker date="1510046048533" expanded="false" signature="6785:6811" ph="..." />
+            <marker date="1510046048533" expanded="false" signature="7074:7178" ph="..." />
+            <marker date="1510046048533" expanded="false" signature="7347:7373" ph="..." />
+            <marker date="1510046048533" expanded="false" signature="7648:7752" ph="..." />
+            <marker date="1510046048533" expanded="false" signature="7919:7945" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/waysafe/index/templates/index/base_footer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/waysafe/template/base_footer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="92" lean-forward="true" selection-start-line="29" selection-start-column="92" selection-end-line="29" selection-end-column="92" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/waysafe/template/base_head.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="133" lean-forward="false" selection-start-line="6" selection-start-column="133" selection-end-line="6" selection-end-column="133" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/waysafe/template/base_navBar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="123" column="27" lean-forward="false" selection-start-line="123" selection-start-column="27" selection-end-line="123" selection-end-column="27" />
+          <folding />
         </state>
       </provider>
     </entry>
