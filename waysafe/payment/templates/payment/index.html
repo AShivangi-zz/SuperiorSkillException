@@ -23,11 +23,11 @@
 /* Modal Content */
 .modal-content {
     position: relative;
-    background-color: #fefefe;
+    background-color: #ffffff;
     margin: auto;
     padding: 0;
-    border: 1px solid #888;
-    width: 80%;
+    border: 1px solid #808080;
+    width: 50%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
@@ -63,7 +63,7 @@
 
 .modal-header {
     padding: 2px 16px;
-    background-color: #0000ff;
+    background-color: #00b2ee;
     color: white;
 }
 
@@ -71,7 +71,7 @@
 
 .modal-footer {
     padding: 2px 16px;
-    background-color: #0000ff;
+    background-color: #00b2ee; //theme blue #0055a2
     color: white;
 }
 
@@ -208,13 +208,15 @@ a.button {
       <span class="close">&times;</span>
       <h2>Payment Confirmation</h2>
     </div>
-    <div class="modal-body">s
-        <p>Are you sure you want to make this payment?</p>
+    <div class="modal-body"><br><br>
+        <p style="text-align: center">Are you sure you want to make this payment?</p>
+        <br><br>
     </div>
     <div align="center" class="modal-footer">
-        <a href="/payment/payment_successful.html" class="button">Try this</a>
-      <p><button type="submit" class="inline">Yes</button>
-        <p><button type="submit" class="inline" href="/payment">No</button>
+
+      <p><br><a href="/payment/payment_successful.html" class="button">&nbsp;&nbsp;&nbsp;Yes&nbsp;&nbsp;&nbsp;</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="/index" class="button">&nbsp;&nbsp;&nbsp;No&nbsp;&nbsp;&nbsp;</a><br><br></p>
     </div>
   </div>
 
