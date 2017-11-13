@@ -2,25 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18bb1002-3bb2-4656-91c6-66a58d22f355" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/waysafe/aisle/static/resources/css/img/cd-remove-item.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/waysafe/aisle/static/resources/img/cd-remove-item.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/waysafe/aisle/static/resources/css/img/cd-cart.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/waysafe/aisle/static/resources/css/img/cd-icon-arrow-next.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/waysafe/aisle/static/resources/css/img/cd-icon-select.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/waysafe/aisle/static/resources/css/img/cd-icons-cart-close.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/waysafe/aisle/static/resources/css/reset1.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/waysafe/aisle/static/resources/css/style24.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/waysafe/aisle/static/resources/img/cd-cart.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/waysafe/aisle/static/resources/img/cd-icon-arrow-next.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/waysafe/aisle/static/resources/img/cd-icon-select.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/waysafe/aisle/static/resources/img/cd-icons-cart-close.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/waysafe/aisle/static/resources/js/jquery-3.0.0.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/waysafe/aisle/static/resources/js/main1.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/waysafe/static/resources/js/jquery-3.0.0.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/waysafe/static/resources/js/main1.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/waysafe/index/static/images/1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/waysafe/index/static/images/2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/waysafe/index/static/images/3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/waysafe/index/static/images/4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/waysafe/index/static/images/5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/waysafe/index/static/images/6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/waysafe/index/static/images/7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/waysafe/index/static/images/8.jpg" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/waysafe/db.sqlite3" afterPath="$PROJECT_DIR$/waysafe/db.sqlite3" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/waysafe/index/static/resources/css/img/market.jpg" afterPath="$PROJECT_DIR$/waysafe/index/static/resources/css/img/market.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/waysafe/static/resources/img/1.jpg" afterPath="$PROJECT_DIR$/waysafe/static/resources/img/1.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addCart123.html" afterPath="$PROJECT_DIR$/addCart123.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/waysafe/.idea/workspace.xml" afterPath="$PROJECT_DIR$/waysafe/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/waysafe/aisle/models.py" afterPath="$PROJECT_DIR$/waysafe/aisle/models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/waysafe/aisle/templates/aisle/babycare.html" afterPath="$PROJECT_DIR$/waysafe/aisle/templates/aisle/babycare.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/waysafe/aisle/urls.py" afterPath="$PROJECT_DIR$/waysafe/aisle/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/waysafe/aisle/views.py" afterPath="$PROJECT_DIR$/waysafe/aisle/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/waysafe/cart/models.py" afterPath="$PROJECT_DIR$/waysafe/cart/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/waysafe/index/templates/index/index.html" afterPath="$PROJECT_DIR$/waysafe/index/templates/index/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/waysafe/payment/templates/payment/index.html" afterPath="$PROJECT_DIR$/waysafe/payment/templates/payment/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/waysafe/savings/templates/savings/index.html" afterPath="$PROJECT_DIR$/waysafe/savings/templates/savings/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,48 +32,43 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DockManager">
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file leaf-file-name="addCart123.html" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/addCart123.html">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="-1875">
-                    <caret line="51" column="22" lean-forward="false" selection-start-line="51" selection-start-column="22" selection-end-line="51" selection-end-column="22" />
-                    <folding />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="1920x500.gif" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/waysafe/aisle/static/images/1920x500.gif">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cd-cart.svg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/waysafe/aisle/static/resources/css/img/cd-cart.svg">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/waysafe/aisle/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="276">
+              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#57#0" expanded="true" />
+                <marker date="1510613165312" expanded="true" signature="856:909" ph="SELECT * FRO... aisle_item" />
+                <marker date="1510613165312" expanded="true" signature="1118:1171" ph="SELECT * FRO... aisle_item" />
+                <marker date="1510613165312" expanded="true" signature="1374:1422" ph="SELECT * FRO... aisle_item" />
+                <marker date="1510613165312" expanded="true" signature="1615:1665" ph="SELECT * FRO... aisle_item" />
+                <marker date="1510613165312" expanded="true" signature="1862:1911" ph="SELECT * FRO... aisle_item" />
+                <marker date="1510613165312" expanded="true" signature="2105:2154" ph="SELECT * FRO... aisle_item" />
+                <marker date="1510613165312" expanded="true" signature="2350:2400" ph="SELECT * FRO... aisle_item" />
+                <marker date="1510613165312" expanded="true" signature="2601:2652" ph="SELECT * FRO... aisle_item" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cd-cart.svg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/waysafe/aisle/static/resources/img/cd-cart.svg">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/waysafe/homepage/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tests.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/waysafe/homepage/tests.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -80,63 +77,57 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jquery-3.0.0.min.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/waysafe/aisle/static/resources/js/jquery-3.0.0.min.js">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/waysafe/homepage/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="1" column="2056" lean-forward="false" selection-start-line="1" selection-start-column="2056" selection-end-line="1" selection-end-column="2056" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="babycare.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/waysafe/aisle/templates/aisle/babycare.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="213" column="84" lean-forward="false" selection-start-line="213" selection-start-column="84" selection-end-line="213" selection-end-column="84" />
-              <folding>
-                <element signature="n#style#0;n#a#0;n#main#0;n#td#3;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1510533626954" expanded="false" signature="9823:9891" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main1.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/waysafe/static/resources/js/main1.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1500">
-              <caret line="10" column="55" lean-forward="false" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="55" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/waysafe/aisle/views.py">
+        <entry file="file://$PROJECT_DIR$/waysafe/history/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="18" column="48" lean-forward="false" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="48" />
+            <state relative-caret-position="-99">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
-                <marker date="1510527921245" expanded="true" signature="456:509" ph="SELECT * FRO... aisle_item" />
-                <marker date="1510527921245" expanded="true" signature="718:771" ph="SELECT * FRO... aisle_item" />
-                <marker date="1510527921245" expanded="true" signature="974:1022" ph="SELECT * FRO... aisle_item" />
-                <marker date="1510527921245" expanded="true" signature="1215:1265" ph="SELECT * FRO... aisle_item" />
-                <marker date="1510527921245" expanded="true" signature="1462:1511" ph="SELECT * FRO... aisle_item" />
-                <marker date="1510527921245" expanded="true" signature="1705:1754" ph="SELECT * FRO... aisle_item" />
-                <marker date="1510527921245" expanded="true" signature="1950:2000" ph="SELECT * FRO... aisle_item" />
-                <marker date="1510527921245" expanded="true" signature="2201:2252" ph="SELECT * FRO... aisle_item" />
+                <element signature="e#0#35#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style24.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/waysafe/aisle/static/resources/css/style24.css">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/waysafe/register/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3675">
-              <caret line="17" column="24" lean-forward="false" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/waysafe/homepage/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/waysafe/aisle/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="350">
+              <caret line="15" column="29" lean-forward="false" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -145,8 +136,18 @@
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/waysafe/aisle/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="17" column="10" lean-forward="false" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="10" />
+            <state relative-caret-position="250">
+              <caret line="14" column="29" lean-forward="true" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="babycare.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/waysafe/aisle/templates/aisle/babycare.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="350">
+              <caret line="160" column="59" lean-forward="true" selection-start-line="160" selection-start-column="59" selection-end-line="160" selection-end-column="59" />
               <folding />
             </state>
           </provider>
@@ -164,7 +165,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>css</find>
       <find>html</find>
       <find>homepage</find>
       <find>{%</find>
@@ -192,6 +192,9 @@
       <find>use</find>
       <find>send</find>
       <find>reset</find>
+      <find>price</find>
+      <find>baby_care</find>
+      <find>babycare_item</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -203,7 +206,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/waysafe/homepage/templates/homepage/index.html" />
         <option value="$PROJECT_DIR$/waysafe/static/resources/css/style.css" />
         <option value="$PROJECT_DIR$/waysafe/savings/templates/savings/index.html" />
         <option value="$PROJECT_DIR$/waysafe/index/templates/index/signup.html" />
@@ -222,13 +224,10 @@
         <option value="$PROJECT_DIR$/waysafe/history/templates/history/lastOrders.html" />
         <option value="$PROJECT_DIR$/waysafe/history/views.py" />
         <option value="$PROJECT_DIR$/waysafe/history/urls.py" />
-        <option value="$PROJECT_DIR$/waysafe/cart/models.py" />
         <option value="$PROJECT_DIR$/waysafe/history/templates/history/lastOrder.html" />
         <option value="$PROJECT_DIR$/waysafe/history/templates/history/editingList.html" />
         <option value="$PROJECT_DIR$/waysafe/history/templates/history/completeList.html" />
         <option value="$PROJECT_DIR$/waysafe/index/templates/index/logout.html" />
-        <option value="$PROJECT_DIR$/waysafe/aisle/views.py" />
-        <option value="$PROJECT_DIR$/waysafe/aisle/urls.py" />
         <option value="$PROJECT_DIR$/waysafe/index/templates/index/search_results.html" />
         <option value="$PROJECT_DIR$/waysafe/aisle/templates/aisle/base_head.html" />
         <option value="$PROJECT_DIR$/waysafe/template/base_footer.html" />
@@ -253,6 +252,10 @@
         <option value="$PROJECT_DIR$/waysafe/payment/templates/payment/payment_successful.html" />
         <option value="$PROJECT_DIR$/waysafe/payment/templates/payment/index.html" />
         <option value="$PROJECT_DIR$/addCart123.html" />
+        <option value="$PROJECT_DIR$/waysafe/aisle/models.py" />
+        <option value="$PROJECT_DIR$/waysafe/cart/models.py" />
+        <option value="$PROJECT_DIR$/waysafe/aisle/views.py" />
+        <option value="$PROJECT_DIR$/waysafe/aisle/urls.py" />
         <option value="$PROJECT_DIR$/waysafe/aisle/templates/aisle/babycare.html" />
       </list>
     </option>
@@ -331,24 +334,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="template" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SuperiorSkillException7" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SuperiorSkillException7" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="waysafe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="static" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -398,6 +383,60 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SuperiorSkillException7" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SuperiorSkillException7" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="waysafe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="register" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SuperiorSkillException7" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SuperiorSkillException7" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="waysafe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="homepage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SuperiorSkillException7" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SuperiorSkillException7" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="waysafe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="history" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -510,30 +549,8 @@
               <option name="myItemId" value="static" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SuperiorSkillException7" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SuperiorSkillException7" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="waysafe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="aisle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
+              <option name="myItemId" value="vendors" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -563,7 +580,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
+              <option name="myItemId" value="vendors" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -589,11 +606,97 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
+              <option name="myItemId" value="vendors" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SuperiorSkillException7" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SuperiorSkillException7" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="waysafe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="aisle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SuperiorSkillException7" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SuperiorSkillException7" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="waysafe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="aisle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SuperiorSkillException7" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SuperiorSkillException7" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="waysafe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="aisle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -636,19 +739,19 @@
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Tyler\PycharmProjects\SuperiorSkillException7\waysafe\aisle\static\resources\img" />
-      <recent name="C:\Users\Tyler\PycharmProjects\SuperiorSkillException7\waysafe\aisle\static\resources\css\img" />
-      <recent name="C:\Users\Tyler\PycharmProjects\SuperiorSkillException7\waysafe\aisle\static\resources\css" />
-      <recent name="C:\Users\Tyler\PycharmProjects\SuperiorSkillException7\waysafe\aisle\static\resources\js" />
-      <recent name="C:\Users\Tyler\PycharmProjects\SuperiorSkillException7\waysafe\static\resources\js" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Shivangi\Desktop\CMPE 133\SuperiorSkillException\waysafe\index\static\images" />
       <recent name="C:\Users\Avani Bhatnagar\Documents\GitHub\SuperiorSkillException\waysafe\index\static\images" />
       <recent name="C:\Users\Tyler\PycharmProjects\WaySafe\waysafe\homepage\static\images" />
       <recent name="C:\Users\Tyler\PycharmProjects\WaySafe\waysafe\static" />
       <recent name="C:\Users\Tyler\PycharmProjects\WaySafe\waysafe\payment\templates\payment" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Tyler\PycharmProjects\SuperiorSkillException7\waysafe\aisle\static\resources\img" />
+      <recent name="C:\Users\Tyler\PycharmProjects\SuperiorSkillException7\waysafe\aisle\static\resources\css\img" />
+      <recent name="C:\Users\Tyler\PycharmProjects\SuperiorSkillException7\waysafe\aisle\static\resources\css" />
+      <recent name="C:\Users\Tyler\PycharmProjects\SuperiorSkillException7\waysafe\aisle\static\resources\js" />
+      <recent name="C:\Users\Tyler\PycharmProjects\SuperiorSkillException7\waysafe\static\resources\js" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -1055,14 +1158,15 @@
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Debug Logs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14044943" sideWeight="0.5125" order="15" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14044943" sideWeight="0.5125" order="15" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14044943" sideWeight="0.4875" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14044943" sideWeight="0.4875" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Execute Anonymous" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22666667" sideWeight="0.49791667" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.051041666" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.346875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1154,56 +1258,17 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/waysafe/index/templates/index/guest.html" />
-    <entry file="file://$PROJECT_DIR$/waysafe/index/templates/index/base_navBar.html" />
-    <entry file="file://$PROJECT_DIR$/waysafe/aisle/templates/aisle/base_head.html" />
-    <entry file="file://$PROJECT_DIR$/waysafe/aisle/templates/aisle/base_navBar.html" />
-    <entry file="file://$PROJECT_DIR$/waysafe/aisle/templates/aisle/detail.html" />
-    <entry file="file://$PROJECT_DIR$/waysafe/index/templates/index/base_footer.html" />
-    <entry file="file://$PROJECT_DIR$/waysafe/template/base_footer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="92" lean-forward="true" selection-start-line="29" selection-start-column="92" selection-end-line="29" selection-end-column="92" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/waysafe/template/base_head.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="133" lean-forward="false" selection-start-line="6" selection-start-column="133" selection-end-line="6" selection-end-column="133" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/waysafe/aisle/tests.py" />
-    <entry file="file://$PROJECT_DIR$/waysafe/aisle/static/resources/css/style.css" />
-    <entry file="file://$PROJECT_DIR$/waysafe/homepage/templates/homepage/index.html" />
-    <entry file="file://$PROJECT_DIR$/waysafe/aisle/templates/aisle/meat.html" />
-    <entry file="file://$PROJECT_DIR$/waysafe/aisle/templates/aisle/index.html" />
-    <entry file="file://$PROJECT_DIR$/waysafe/aisle/templates/aisle/beverages.html" />
-    <entry file="file://$PROJECT_DIR$/waysafe/aisle/templates/aisle/frozen.html" />
-    <entry file="file://$PROJECT_DIR$/waysafe/aisle/templates/aisle/dairy.html" />
-    <entry file="file://$PROJECT_DIR$/waysafe/aisle/templates/aisle/snacks.html" />
     <entry file="file://$PROJECT_DIR$/waysafe/aisle/templates/aisle/alcohol.html" />
     <entry file="file://$PROJECT_DIR$/waysafe/index/templates/index/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1725">
           <caret line="69" column="38" lean-forward="false" selection-start-line="69" selection-start-column="38" selection-end-line="69" selection-end-column="38" />
-          <folding>
-            <element signature="n#style#0;n#h2#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#3940#3946#1" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/waysafe/aisle/templates/aisle/pasta.html" />
     <entry file="file://$PROJECT_DIR$/waysafe/register/urls.py" />
-    <entry file="file://$PROJECT_DIR$/waysafe/aisle/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/waysafe/index/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -1311,14 +1376,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/waysafe/cart/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-74">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/waysafe/cart/templates/cart/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1200">
@@ -1331,18 +1388,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3425">
           <caret line="137" column="21" lean-forward="false" selection-start-line="137" selection-start-column="21" selection-end-line="137" selection-end-column="21" />
-          <folding>
-            <element signature="n#style#0;n#h2#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#div#1;n#div#0;n#form#0;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#div#1;n#div#1;n#form#0;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#div#1;n#div#2;n#form#0;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#div#1;n#div#3;n#form#0;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#div#1;n#div#4;n#form#0;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#div#1;n#div#5;n#form#0;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#div#1;n#div#6;n#form#0;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#div#1;n#div#7;n#form#0;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#7814#7820#1" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1350,7 +1396,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1358,13 +1403,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main1.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1150">
+        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -1374,7 +1418,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="500">
           <caret line="1" column="2090" lean-forward="false" selection-start-line="1" selection-start-column="2090" selection-end-line="1" selection-end-column="2090" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1382,32 +1425,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="500">
           <caret line="1" column="2056" lean-forward="false" selection-start-line="1" selection-start-column="2056" selection-end-line="1" selection-end-column="2056" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/waysafe/aisle/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="18" column="48" lean-forward="false" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="48" />
-          <folding>
-            <marker date="1510527921245" expanded="true" signature="456:509" ph="SELECT * FRO... aisle_item" />
-            <marker date="1510527921245" expanded="true" signature="718:771" ph="SELECT * FRO... aisle_item" />
-            <marker date="1510527921245" expanded="true" signature="974:1022" ph="SELECT * FRO... aisle_item" />
-            <marker date="1510527921245" expanded="true" signature="1215:1265" ph="SELECT * FRO... aisle_item" />
-            <marker date="1510527921245" expanded="true" signature="1462:1511" ph="SELECT * FRO... aisle_item" />
-            <marker date="1510527921245" expanded="true" signature="1705:1754" ph="SELECT * FRO... aisle_item" />
-            <marker date="1510527921245" expanded="true" signature="1950:2000" ph="SELECT * FRO... aisle_item" />
-            <marker date="1510527921245" expanded="true" signature="2201:2252" ph="SELECT * FRO... aisle_item" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/waysafe/aisle/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="17" column="10" lean-forward="false" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1415,7 +1432,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1423,7 +1439,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1431,15 +1446,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3675">
           <caret line="17" column="24" lean-forward="false" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/waysafe/static/resources/js/main1.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1500">
-          <caret line="10" column="55" lean-forward="false" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="55" />
-          <folding />
+        <state relative-caret-position="456">
+          <caret line="89" column="0" lean-forward="false" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
+          <folding>
+            <marker date="1510606555171" expanded="true" signature="34:5931" ph="{...}" />
+            <marker date="1510606555171" expanded="true" signature="2698:3699" ph="{...}" />
+            <marker date="1510606555171" expanded="true" signature="3734:4453" ph="{...}" />
+            <marker date="1510606555171" expanded="true" signature="4366:4442" ph="{...}" />
+            <marker date="1510606555171" expanded="true" signature="4483:4912" ph="{...}" />
+            <marker date="1510606555171" expanded="true" signature="4580:4778" ph="{...}" />
+            <marker date="1510606555171" expanded="true" signature="4961:5727" ph="{...}" />
+            <marker date="1510606555171" expanded="true" signature="5003:5527" ph="{...}" />
+            <marker date="1510606555171" expanded="true" signature="5117:5211" ph="{...}" />
+            <marker date="1510606555171" expanded="true" signature="5217:5523" ph="{...}" />
+            <marker date="1510606555171" expanded="true" signature="5286:5339" ph="{...}" />
+            <marker date="1510606555171" expanded="true" signature="5374:5425" ph="{...}" />
+            <marker date="1510606555171" expanded="true" signature="5460:5511" ph="{...}" />
+            <marker date="1510606555171" expanded="true" signature="5533:5724" ph="{...}" />
+            <marker date="1510606555171" expanded="true" signature="5768:5929" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1450,20 +1480,213 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/addCart123.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1875">
-          <caret line="51" column="22" lean-forward="false" selection-start-line="51" selection-start-column="22" selection-end-line="51" selection-end-column="22" />
+        <state relative-caret-position="550">
+          <caret line="152" column="73" lean-forward="false" selection-start-line="152" selection-start-column="73" selection-end-line="152" selection-end-column="73" />
+          <folding>
+            <marker date="1510606555130" expanded="true" signature="8429:8445" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/waysafe/aisle/static/resources/js/main1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2145">
+          <caret line="101" column="18" lean-forward="false" selection-start-line="101" selection-start-column="18" selection-end-line="101" selection-end-column="18" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/waysafe/aisle/static/resources/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1350">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cd-icon-select.svg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/waysafe/cart/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jquery-3.0.0.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/waysafe/cart/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="20" column="26" lean-forward="false" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/waysafe/aisle/templates/aisle/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="96" column="49" lean-forward="false" selection-start-line="96" selection-start-column="49" selection-end-line="96" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/waysafe/aisle/apps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/waysafe/aisle/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/waysafe/aisle/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/waysafe/aisle/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/waysafe/cart/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/waysafe/homepage/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/waysafe/homepage/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/waysafe/homepage/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/waysafe/homepage/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/waysafe/history/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-99">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/waysafe/register/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/waysafe/aisle/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="14" column="29" lean-forward="true" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/waysafe/aisle/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#57#0" expanded="true" />
+            <marker date="1510613165312" expanded="true" signature="856:909" ph="SELECT * FRO... aisle_item" />
+            <marker date="1510613165312" expanded="true" signature="1118:1171" ph="SELECT * FRO... aisle_item" />
+            <marker date="1510613165312" expanded="true" signature="1374:1422" ph="SELECT * FRO... aisle_item" />
+            <marker date="1510613165312" expanded="true" signature="1615:1665" ph="SELECT * FRO... aisle_item" />
+            <marker date="1510613165312" expanded="true" signature="1862:1911" ph="SELECT * FRO... aisle_item" />
+            <marker date="1510613165312" expanded="true" signature="2105:2154" ph="SELECT * FRO... aisle_item" />
+            <marker date="1510613165312" expanded="true" signature="2350:2400" ph="SELECT * FRO... aisle_item" />
+            <marker date="1510613165312" expanded="true" signature="2601:2652" ph="SELECT * FRO... aisle_item" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/waysafe/aisle/templates/aisle/babycare.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="213" column="84" lean-forward="false" selection-start-line="213" selection-start-column="84" selection-end-line="213" selection-end-column="84" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#main#0;n#td#3;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1510533626954" expanded="false" signature="9823:9891" ph="..." />
-          </folding>
+        <state relative-caret-position="350">
+          <caret line="160" column="59" lean-forward="true" selection-start-line="160" selection-start-column="59" selection-end-line="160" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/waysafe/aisle/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="15" column="29" lean-forward="false" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
     </entry>

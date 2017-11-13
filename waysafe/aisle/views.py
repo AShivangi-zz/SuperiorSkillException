@@ -1,7 +1,11 @@
+from django.contrib.auth.decorators import login_required
+from django.shortcuts import get_object_or_404
 from django.shortcuts import render
 from django.http import HttpResponse
 from .models import Item
 from django.template import loader
+from cart.models import cart
+
 
 # Create your views here.
 # Create your views here.
@@ -11,6 +15,14 @@ def index(request): #always put in request
 
 def aisle(request):
     return HttpResponse("<h1>This is the categories</h1>")
+
+@login_required
+def add_to_cart(request,item_name):
+
+    item = get_object_or_404(item, pk = item_name)
+    cart, created = cart.objects.get_or_create(user=request.user,active = True)
+    cart.save()
+    message.success(request, "Added" + item_name + " to cart!")
 
 def babycare_item(request):
     babycareitems = Item.objects.raw('SELECT * FROM aisle_item WHERE category = "Baby Care"')

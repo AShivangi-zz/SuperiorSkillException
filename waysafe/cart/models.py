@@ -1,6 +1,6 @@
 from django.db import models
 #from homepage.models import customer
-#from aisle.models import item
+from aisle.models import Item
 
 
 # # Create your models here.
@@ -20,5 +20,12 @@ from django.db import models
 #     #itemName = models.ForeignKey(item.item_name, on_delete=models.CASCADE, default='NULL')
 #     #price = models.ForeignKey(item.price, on_delete=models.CASCADE, default='NULL')
 class cart(models.Model):
-    item_list = models.CommaSeparatedIntegerField(max_length=50)
-    quantity = models.CommaSeparatedIntegerField(max_length=50)
+    item = models.ForeignKey(Item, on_delete=models.CASCADE, primary_key = True)
+    quantity = models.IntegerField(default = 0)
+
+    def __str__(self):
+        return self.item.item_name
+
+
+
+

@@ -16,10 +16,10 @@ from django.contrib import messages
 
 # Create your models here.
 class Item(models.Model):
-    item_name = models.CharField(max_length = 40)
-    category = models.CharField(max_length = 40)
-    sub_category = models.CharField(max_length = 40)
-    item_logo = models.CharField(max_length = 1000)
+    item_name = models.CharField(max_length = 40,primary_key = True,default = "NULL")
+    category = models.CharField(max_length = 40 , default = "NULL")
+    sub_category = models.CharField(max_length = 40, default = "NULL")
+    item_logo = models.CharField(max_length = 1000, default = "NULL")
     price = models.DecimalField(max_digits=10, decimal_places=3, default='0')
 
     def __str__(self):
