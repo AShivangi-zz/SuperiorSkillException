@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+{% load staticfiles %}
+<head>
+    <meta charset="UTF-8">
+    <title>Log In Form</title>
+	 <link rel="stylesheet" type="text/css" href="{% static 'vendors/css/normalize.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'vendors/css/grid.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'vendors/css/ionicons.min.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'vendors/css/animate.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'resources/css/style.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'resources/css/queries.css' %}">
+        <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
+        <title>WaySafe</title>
+
+        <link rel="apple-touch-icon" sizes="57x57" href="{% static 'resources/favicons/apple-touch-icon-57x57.png' %}">
+        <link rel="apple-touch-icon" sizes="60x60" href="{% static 'resources/favicons/apple-touch-icon-60x60.png' %}">
+        <link rel="apple-touch-icon" sizes="72x72" href="{% static 'resources/favicons/apple-touch-icon-72x72.png' %}">
+        <link rel="apple-touch-icon" sizes="76x76" href="{% static 'resources/favicons/apple-touch-icon-76x76.png' %}">
+        <link rel="apple-touch-icon" sizes="114x114" href="{% static 'resources/favicons/apple-touch-icon-114x114.png' %}">
+        <link rel="apple-touch-icon" sizes="120x120" href="{% static 'resources/favicons/apple-touch-icon-120x120.png' %}">
+        <link rel="apple-touch-icon" sizes="144x144" href="{% static 'resources/favicons/apple-touch-icon-144x144.png' %}">
+        <link rel="apple-touch-icon" sizes="152x152" href="{% static 'resources/favicons/apple-touch-icon-152x152.png' %}">
+        <link rel="apple-touch-icon" sizes="180x180" href="{% static 'resources/favicons/apple-touch-icon-180x180.png' %}">
+        <link rel="icon" type="image/png" href="{% static 'resources/favicons/favicon-32x32.png' %}" sizes="32x32">
+        <link rel="icon" type="image/png" href="{% static 'resources/favicons/favicon-194x194.png' %}" sizes="194x194">
+        <link rel="icon" type="image/png" href="{% static 'resources/favicons/favicon-96x96.png' %}" sizes="96x96">
+        <link rel="icon" type="image/png" href="{% static 'resources/favicons/android-chrome-192x192.png' %}" sizes="192x192">
+        <link rel="icon" type="image/png" href="{% static 'resources/favicons/favicon-16x16.png' %}" sizes="16x16">
+        <link rel="manifest" href="{% static 'resources/favicons/manifest.json' %}">
+        <link rel="shortcut icon" href="{% static 'resources/favicons/favicon.ico' %}">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="msapplication-TileImage" content="{% static 'resources/favicons/mstile-144x144.png' %}">
+        <meta name="msapplication-config" content="{% static 'resources/favicons/browserconfig.xml' %}">
+        <meta name="theme-color" content="#ffffff">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<style>
+    body
+    {
+        margin: 0;
+        padding: 0;
+
+    }
+    .loginBox
+    {
+        position: float;
+        top: 50%;
+        left: 50%;
+        transform: translate(140%);
+        width: 350px;
+        height: 420px;
+        padding: 80px 40px;
+        box-sizing: border-box;
+        background: rgba(0,0,0,.5);
+    }
+
+.user
+{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	overflow: hidden;
+	position: absolute;
+	top: calc(-100px/2);
+	left: calc(50% - 50px);
+}
+
+h2
+{
+	margin:0;
+	padding: 0 0 20px;
+	color: #efed40;
+	text-align: center;
+}
+	.loginBox p
+	{
+		margin: 0;
+		padding: 0;
+		font-weight: bold;
+		color: #fff;
+	}
+
+	.loginBox input
+	{
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	.loginBox input[type="text"]
+	.loginBox input[type="password"]
+	{
+		border: none;
+		border-bottom: 1px solid #fff;
+		background: transparent;
+		outline:none;
+		height: 40px;
+		color: #fff;
+		font-size: 16px;
+	}
+
+	::placeholder
+	{
+		color: rgba(255,255,255, .5)
+	}
+	.loginBox input[type="submit"]
+	{
+		border: none;
+		outline: none;
+		height: 40px;
+		color:#fff;
+		font-size: 16px;
+		background: #ff267e;
+		cursor: pointer;
+		border-radius: 20px;
+	}
+	.loginBox input[type="submit"]:hover
+	{
+		background: #efed40;
+		color: #262626;
+	}
+	.loginBox a
+	{
+		color: #fff;
+		font-size: 14px;
+		font-weight: bold;
+		text-decoration: none;
+	}
+</style>
+{% block body %}
+<body>
+
+{%  include 'index/base_navBar.html' %}
+
+<section class="section-form ">
+    <div class="row">
+        <h2 style="color:#666666;">Sign Up</h2>
+    </div>
+    <div class="row">
+        <form method="post" action="#" class="contact-form">
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <label for="name">Name</label>
+                </div>
+                <div class="col span-2-of-3">
+                    <input style = "width:100%" type="text" name="name" id="name" placeholder="Your name" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <label for="streetAddress">Street Address</label>
+                </div>
+                <div class="col span-2-of-3">
+                    <input style = "width:100%" type="text" name="streetAddress" id="streetAddress" placeholder="Your name" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <label for="city">City</label>
+                </div>
+                <div class="col span-2-of-3">
+                    <input style = "width:100%" type="text" name="city" id="city" placeholder="Your name" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <label for="state">State</label>
+                </div>
+                <div class="col span-2-of-3">
+                    <input style = "width:100%" type="text" name="state" id="state" placeholder="Your name" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <label for="zipcode">Zip Code</label>
+                </div>
+                <div class="col span-2-of-3">
+                    <input style = "width:100%" type="text" name="zipcode" id="zipcode" placeholder="Your name" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <label for="email">Email</label>
+                </div>
+                <div class="col span-2-of-3">
+                    <input style = "width:100%" type="email" name="email" id="email" placeholder="Your email" required>
+                </div>
+            </div>
+           <div class="row">
+                <div class="col span-1-of-3">
+                    <label for="password">Password</label>
+                </div>
+                <div class="col span-2-of-3">
+                    <input style = "width:100%" type="password" name="password" id="password" placeholder="Your name" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <label for="phonenumber">Phone Number</label>
+                </div>
+                <div class="col span-2-of-3">
+                    <input style = "width:100%" type="text" name="phonenumber" id="phonenumber" placeholder="Your name" required>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <label>&nbsp;</label>
+                </div>
+                <div class="col span-2-of-3">
+                    <input type="submit" value="Send it!">
+                </div>
+            </div>
+
+        </form>
+
+    </div>
+</section>
+
+{%  include 'index/base_footer.html' %}
+</body>
+
+{% endblock %}
+</html>
+

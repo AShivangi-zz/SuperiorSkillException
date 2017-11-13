@@ -24,6 +24,7 @@ from django.conf.urls import include, url #Include imports from the other url
 from django.contrib import admin
 from django.conf import settings
 from django.conf.urls.static import static
+from index import views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
@@ -33,6 +34,10 @@ urlpatterns = [
     url(r'^index/', include('index.urls')),
     url(r'^savings/', include('savings.urls')),
     url(r'^payment/', include('payment.urls')),
+    url(r'^cart/', include('cart.urls')),
+    url(r'^register/', include('register.urls')),
+    url(r'^logout/$', views.logout_view, name='logout'),
+
 
 ]
 

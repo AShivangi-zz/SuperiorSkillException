@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'index.apps.IndexConfig',
     'history.apps.HistoryConfig',
     'aisle.apps.AisleConfig',
+    'register.apps.RegisterConfig',
+    'cart.apps.CartConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

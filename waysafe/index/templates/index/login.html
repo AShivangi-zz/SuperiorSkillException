@@ -51,17 +51,16 @@
 
 <section class="section-form ">
     <div class="row">
-        <h2 style="color:#666666;">Log in</h2>
+        <h2 style="color:#666666;">{{title}}</h2>
     </div>
 
 
 {% load crispy_forms_tags %}
-<div class="row">
-
+<div class="row" style="margin: 0 0 0 15%">
     <form method='POST' action='' enctype='multipart/form-data'><div class="col span-1-of-3">{% csrf_token %}</div>
         <div class="col span-2-of-3">
             {{ form|crispy }}</div>
-        <div class="row">
+        <div class="row" >
                 <div class="col span-1-of-3">
                     <label>&nbsp;</label>
                 </div>
@@ -73,7 +72,10 @@
                 </div>
             </div>
     </form>
-
+    <div class="row" style="margin: 0 0 0 32%">
+    <a href="/register">Don't have an account?</a>
+        <a href="/index/login.html">Have an account?</a>
+</div>
      </section>
 
 {%  include 'index/base_footer.html' %}
