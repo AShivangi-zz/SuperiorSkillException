@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+{% load static %}
+<style>
+
+    .dropdown {
+        float: left;
+    }
+
+    .dropdown .dropbtn {
+        border: none;
+        outline: none;
+        color: #ffffff;
+        padding: 5px 25px 10px 25px;
+        background-color: #0055a2;
+        width: 220px;
+    }
+
+    .dropdown:hover .dropbtn {
+        background-color: #7f7a7a;
+        color: #ffffff;
+    }
+
+    .dropdown:hover {
+        display: block;
+    }
+
+
+</style>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+          content="Omnifood is a premium food delivery service with the mission to bring affordable and healthy meals to as many people as possible.">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'vendors/css/normalize.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'vendors/css/grid.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'vendors/css/ionicons.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'vendors/css/animate.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'resources/css/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'resources/css/queries.css' %}">
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
+    <title>WaySafe</title>
+
+    <link rel="apple-touch-icon" sizes="57x57" href="{% static 'resources/favicons/apple-touch-icon-57x57.png' %}">
+    <link rel="apple-touch-icon" sizes="60x60" href="{% static 'resources/favicons/apple-touch-icon-60x60.png' %}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{% static 'resources/favicons/apple-touch-icon-72x72.png' %}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{% static 'resources/favicons/apple-touch-icon-76x76.png' %}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{% static 'resources/favicons/apple-touch-icon-114x114.png' %}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{% static 'resources/favicons/apple-touch-icon-120x120.png' %}">
+    <link rel="apple-touch-icon" sizes="144x144" href="{% static 'resources/favicons/apple-touch-icon-144x144.png' %}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{% static 'resources/favicons/apple-touch-icon-152x152.png' %}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'resources/favicons/apple-touch-icon-180x180.png' %}">
+    <link rel="icon" type="image/png" href="{% static 'resources/favicons/favicon-32x32.png' %}" sizes="32x32">
+    <link rel="icon" type="image/png" href="{% static 'resources/favicons/favicon-194x194.png' %}" sizes="194x194">
+    <link rel="icon" type="image/png" href="{% static 'resources/favicons/favicon-96x96.png' %}" sizes="96x96">
+    <link rel="icon" type="image/png" href="{% static 'resources/favicons/android-chrome-192x192.png' %}"
+          sizes="192x192">
+    <link rel="icon" type="image/png" href="{% static 'resources/favicons/favicon-16x16.png' %}" sizes="16x16">
+    <link rel="manifest" href="{% static 'resources/favicons/manifest.json' %}">
+    <link rel="shortcut icon" href="{% static 'resources/favicons/favicon.ico' %}">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="{% static 'resources/favicons/mstile-144x144.png' %}">
+    <meta name="msapplication-config" content="{% static 'resources/favicons/browserconfig.xml' %}">
+    <meta name="theme-color" content="#ffffff">
+
+</head>
+{% block body %}
+<body>
+
+
+{% include 'aisle/base_navBar.html' %}
+
+<div class="row">
+    <br><br>
+    <h2>Meat</h2>
+</div>
+
+<div >
+    <div align="center" id="page">
+        <table id="cart" style="margin: 0 25%">
+            <thead>
+            <tr>
+                <th class="first" style="padding: 40px 40px 40px 40px">Product</th>
+                <th class="third" style="padding: 40px 40px 40px 40px">Qty</th>
+                <th class="fourth" style="padding: 40px 40px 40px 40px">Price</th>
+                <th class="fifth" style="padding: 40px 40px 40px 40px">&nbsp;</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% if meatitems %}
+            {% for items in meatitems %}
+            <tr class="productitm"
+                style="width: 800px; max-width: 500px; border: 3px solid black ; margin: 10px 10px 10px 10px">
+                <td style="padding: 40px 40px 40px 40px"><img src={{ items.item_logo}} class="thumb"
+                                                              style="height: 200px;">
+                    <br>{{items.item_name}}
+                </td>
+                <td style="padding: 40px 40px 40px 40px"><input type="number" value="1" min="0" max="99"
+                                                                class="qtyinput"></td>
+                <td style="padding: 40px 40px 40px 40px">${{items.price|floatformat:2 }}</td>
+                <td style="padding: 40px 40px 40px 40px">
+                    <a class="btn btn-full js" href="#"
+                       style="border-radius: 25px; padding: 10px; width: 110px; text-align:center;">Add to Cart</a>
+                </td>
+            </tr>
+            {% endfor %}
+            {% endif %}
+
+            </tbody>
+        </table>
+        <br><br>
+        <div align="center">
+            <a class="btn btn-full js" href="/aisle"
+               style="border-radius: 25px; padding: 10px; width: 150px;  text-align:center;">Back to Aisles</a><br><br>
+        </div>
+    </div>
+</div>
+
+{% include 'aisle/base_footer.html' %}
+
+
+</body>
+{% endblock %}
+
+</html>
+
