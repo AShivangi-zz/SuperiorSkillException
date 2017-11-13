@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load staticfiles %}
+
+<head>
+
+<style>
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #ffffff;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #808080;
+    width: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #00b2ee;
+    color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #00b2ee; //theme blue #0055a2
+    color: white;
+}
+
+.inline {
+   display:inline-block;
+   margin-right:5px;
+}
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: initial;
+}
+
+</style>
+<!-- Bootstrap -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Omnifood is a premium food delivery service with the mission to bring affordable and healty meals to as many people as possible.">
+
+
+
+        <link rel="stylesheet" type="text/css" href="{% static 'vendors/css/normalize.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'vendors/css/grid.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'vendors/css/ionicons.min.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'vendors/css/animate.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'resources/css/style.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'resources/css/queries.css' %}">
+        <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
+        <title>WaySafe</title>
+
+        <link rel="apple-touch-icon" sizes="57x57" href="{% static 'resources/favicons/apple-touch-icon-57x57.png' %}">
+        <link rel="apple-touch-icon" sizes="60x60" href="{% static 'resources/favicons/apple-touch-icon-60x60.png' %}">
+        <link rel="apple-touch-icon" sizes="72x72" href="{% static 'resources/favicons/apple-touch-icon-72x72.png' %}">
+        <link rel="apple-touch-icon" sizes="76x76" href="{% static 'resources/favicons/apple-touch-icon-76x76.png' %}">
+        <link rel="apple-touch-icon" sizes="114x114" href="{% static 'resources/favicons/apple-touch-icon-114x114.png' %}">
+        <link rel="apple-touch-icon" sizes="120x120" href="{% static 'resources/favicons/apple-touch-icon-120x120.png' %}">
+        <link rel="apple-touch-icon" sizes="144x144" href="{% static 'resources/favicons/apple-touch-icon-144x144.png' %}">
+        <link rel="apple-touch-icon" sizes="152x152" href="{% static 'resources/favicons/apple-touch-icon-152x152.png' %}">
+        <link rel="apple-touch-icon" sizes="180x180" href="{% static 'resources/favicons/apple-touch-icon-180x180.png' %}">
+        <link rel="icon" type="image/png" href="{% static 'resources/favicons/favicon-32x32.png' %}" sizes="32x32">
+        <link rel="icon" type="image/png" href="{% static 'resources/favicons/favicon-194x194.png' %}" sizes="194x194">
+        <link rel="icon" type="image/png" href="{% static 'resources/favicons/favicon-96x96.png' %}" sizes="96x96">
+        <link rel="icon" type="image/png" href="{% static 'resources/favicons/android-chrome-192x192.png' %}" sizes="192x192">
+        <link rel="icon" type="image/png" href="{% static 'resources/favicons/favicon-16x16.png' %}" sizes="16x16">
+        <link rel="manifest" href="{% static 'resources/favicons/manifest.json' %}">
+        <link rel="shortcut icon" href="{% static 'resources/favicons/favicon.ico' %}">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="msapplication-TileImage" content="{% static 'resources/favicons/mstile-144x144.png' %}">
+        <meta name="msapplication-config" content="{% static 'resources/favicons/browserconfig.xml' %}">
+        <meta name="theme-color" content="#ffffff">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+{% block body %}
+
+
+<body>
+
+{%  include 'index/base_navBar.html' %}
+
+<section class="section-form ">
+    <div class="row">
+        <h2>payment information</h2>
+    </div>
+    <div class="row">
+        <form method="post" action="#" class="contact-form">
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <label for="fname">First Name</label>
+                </div>
+                <div class="col span-2-of-3">
+                    <input style = "width:100%" type="text" name="name" id="fname" placeholder="First name" required>
+                </div>
+            </div>
+                <div class="row">
+                <div class="col span-1-of-3">
+                    <label for="lname">Last Name</label>
+                </div>
+                <div class="col span-2-of-3">
+                    <input style = "width:100%" type="text" name="name" id="lname" placeholder="Last name" required>
+                </div>
+            </div>
+                <div class="row">
+                <div class="col span-1-of-3">
+                    <label for="ccd">Credit card number</label>
+                </div>
+                <div class="col span-2-of-3">
+                    <input style = "width:100%" type="text" name="email" id="ccd" placeholder="credit card number" required>
+                </div>
+            </div>
+                <div class="row">
+                <div class="col span-1-of-3">
+                    <label for="ccv">CCV</label>
+                </div>
+                <div class="col span-2-of-3">
+                    <input style = "width:100%" type="text" name="email" id="ccv" placeholder="CCV" required>
+                </div>
+            </div>
+                <div class="row">
+                <div class="col span-1-of-3">
+                    <label for="exp">Expiry Date</label>
+                </div>
+                <div class="col span-2-of-3">
+                    <input style = "width:100%" type="text" name="email" id="exp" placeholder="mm/yy" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <label for="email">Email</label>
+                </div>
+                <div class="col span-2-of-3">
+                    <input style = "width:100%" type="email" name="email" id="email" placeholder="Your email" required>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <label>&nbsp;</label>
+                </div>
+                <div class="col span-2-of-3">
+
+                     <button id="myBtn" type="button">Send It!</button>
+                  <!-- <a class="btn btn-full js--scroll-to-plans" href="payment_successful.html">Submit</a> forsuccessful on another page-->
+                    <!-- Trigger/Open The Modal -->
+<!--this is code for popup-->
+
+<div id="myModal" class="modal">
+
+
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>Payment Confirmation</h2>
+    </div>
+    <div class="modal-body"><br><br>
+        <p style="text-align: center">Are you sure you want to make this payment?</p>
+        <br><br>
+    </div>
+    <div align="center" class="modal-footer">
+
+      <p><br><a href="/payment/payment_successful.html" class="button">&nbsp;&nbsp;&nbsp;Yes&nbsp;&nbsp;&nbsp;</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="/index" class="button">&nbsp;&nbsp;&nbsp;No&nbsp;&nbsp;&nbsp;</a><br><br></p>
+    </div>
+  </div>
+
+</div>
+<!--until here-->
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+                </div>
+            </div>
+
+        </form>
+
+    </div>
+</section>
+
+{%  include 'index/base_footer.html' %}
+
+</body>
+
+{% endblock %}
+</html>
