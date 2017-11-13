@@ -43,7 +43,12 @@
     <link rel="stylesheet" type="text/css" href="{% static 'resources/css/style.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'resources/css/queries.css' %}">
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
     <title>WaySafe</title>
+
+    <link rel="stylesheet" href="{% static 'resources/css/reset1.css' %}"> <!-- CSS reset -->
+    <link rel="stylesheet" href="{% static 'resources/css/style24.css' %}"> <!-- Resource style -->
 
     <link rel="apple-touch-icon" sizes="57x57" href="{% static 'resources/favicons/apple-touch-icon-57x57.png' %}">
     <link rel="apple-touch-icon" sizes="60x60" href="{% static 'resources/favicons/apple-touch-icon-60x60.png' %}">
@@ -59,9 +64,9 @@
     <link rel="icon" type="image/png" href="{% static 'resources/favicons/favicon-96x96.png' %}" sizes="96x96">
     <link rel="icon" type="image/png" href="{% static 'resources/favicons/android-chrome-192x192.png' %}"
           sizes="192x192">
-    <link rel="icon" type="image/png" href="{% static 'resources/favicons/favicon-16x16.png' %}" sizes="16x16">
-    <link rel="manifest" href="{% static 'resources/favicons/manifest.json' %}">
-    <link rel="shortcut icon" href="{% static 'resources/favicons/favicon.ico' %}">
+    <link rel="icon" type="image/png" href="{% static '/resources/favicons/favicon-16x16.png' %}" sizes="16x16">
+    <link rel="manifest" href="{% static '/resources/favicons/manifest.json' %}">
+    <link rel="shortcut icon" href="{% static '/resources/favicons/favicon.ico' %}">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-TileImage" content="{% static 'resources/favicons/mstile-144x144.png' %}">
     <meta name="msapplication-config" content="{% static 'resources/favicons/browserconfig.xml' %}">
@@ -151,8 +156,41 @@
                                                                 class="qtyinput"></td>
                 <td style="padding: 40px 40px 40px 40px">${{items.price|floatformat:2 }}</td>
                 <td style="padding: 40px 40px 40px 40px">
-                    <a class="btn btn-full js" href="#"
-                       style="border-radius: 25px; padding: 10px; width: 110px; text-align:center;">Add to Cart</a>
+
+                    <main>
+                        <a href="#0" class="cd-add-to-cart" data-price="14.99"style="background-color:#0055A2; font-size: 14px; color: #ffffff; padding-bottom: 14px;">Add To Cart</a>
+                    </main>
+
+                    <div class="cd-cart-container empty">
+                                <a href="#0" class="cd-cart-trigger">
+                                    Cart
+                                    <ul class="count"> <!-- cart items count -->
+                                        <li>0</li>
+                                        <li>0</li>
+                                    </ul> <!-- .count -->
+                                </a>
+
+                                <div class="cd-cart">
+                                    <div class="wrapper">
+                                        <header>
+                                            <h2>Cart</h2>
+                                            <span class="undo">Item removed. <a href="#0">Undo</a></span>
+                                        </header>
+
+                                        <div class="body">
+                                            <ul>
+                                                <!-- products added to the cart will be inserted here using JavaScript -->
+                                            </ul>
+                                        </div>
+
+                                        <footer>
+                                            <a href="#0" class="checkout btn"><em>Checkout - $<span>0</span></em></a>
+                                        </footer>
+                                    </div>
+                                </div> <!-- .cd-cart -->
+                            </div> <!-- cd-cart-container -->
+{#                    <a class="btn btn-full js" href="#"#}
+{#                       style="border-radius: 25px; padding: 10px; width: 110px; text-align:center;">Add to Cart</a>#}
                 </td>
             </tr>
             {% endfor %}
@@ -170,6 +208,12 @@
     </section>
 
 {% include 'aisle/base_footer.html' %}
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script>
+	if( !window.jQuery ) document.write('<script src={% static 'resources/js/jquery-3.0.0.min.js' %}><\/script>');
+</script>
+<script src="{% static 'resources/js/main1.js' %}"></script> <!-- Resource jQuery -->
 
 
 </body>

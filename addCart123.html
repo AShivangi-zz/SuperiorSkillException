@@ -1,28 +1,32 @@
 <!DOCTYPE html>
+
+{% load staticfiles %}
+
+
 <html lang="en">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
-        <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
-        <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
-        <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
-        <link rel="stylesheet" type="text/css" href="resources/css/style.css">
-        <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
+        <link rel="stylesheet" type="text/css" href="{% static 'vendors/css/normalize.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'vendors/css/grid.css' %}vendors/css/grid.css">
+        <link rel="stylesheet" type="text/css" href="{% static 'vendors/css/ionicons.min.css' %}vendors/css/ionicons.min.css">
+        <link rel="stylesheet" type="text/css" href="{% static 'vendors/css/animate.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'resources/css/style.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'resources/css/queries.css' %}">
         <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
         
-        <link rel="stylesheet" href="resources/css/reset1.css"> <!-- CSS reset -->
-	   <link rel="stylesheet" href="resources/css/style24.css"> <!-- Resource style -->
+        <link rel="stylesheet" href="{% static 'resources/css/reset1.css' %}"> <!-- CSS reset -->
+	   <link rel="stylesheet" href="{% static 'resources/css/style24.css' %}"> <!-- Resource style -->
         
         <title>WaySafe</title>
-        <link rel="icon" type="image/png" href="/resources/favicons/favicon-16x16.png" sizes="16x16">
-        <link rel="manifest" href="/resources/favicons/manifest.json">
-        <link rel="shortcut icon" href="/resources/favicons/favicon.ico">
+        <link rel="icon" type="image/png" href="{% static '/resources/favicons/favicon-16x16.png' %}" sizes="16x16">
+        <link rel="manifest" href="{% static '/resources/favicons/manifest.json' %}">
+        <link rel="shortcut icon" href="{% static '/resources/favicons/favicon.ico' %}">
         <meta name="msapplication-TileColor" content="#da532c">
-        <meta name="msapplication-TileImage" content="/resources/favicons/mstile-144x144.png">
-        <meta name="msapplication-config" content="/resources/favicons/browserconfig.xml">
+        <meta name="msapplication-TileImage" content="{% static '/resources/favicons/mstile-144x144.png' %}">
+        <meta name="msapplication-config" content="{% static '/resources/favicons/browserconfig.xml' %}">
         <meta name="theme-color" content="#ffffff">
 
     </head>
