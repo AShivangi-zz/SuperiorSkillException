@@ -14,8 +14,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/aisle/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="24" column="25" lean-forward="false" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
+            <state relative-caret-position="225">
+              <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -33,34 +33,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/aisle/urls.py">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cart/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="375">
+              <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="babycare.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/aisle/templates/aisle/babycare.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3735">
-              <caret line="249" column="0" lean-forward="false" selection-start-line="249" selection-start-column="0" selection-end-line="249" selection-end-column="0" />
-              <folding>
-                <element signature="n#style#0;n#button#0;n#main#0;n#form#0;n#td#3;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main1.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main1.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/aisle/static/vendors/js/main1.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3975">
+            <state relative-caret-position="1749">
               <caret line="265" column="3" lean-forward="false" selection-start-line="265" selection-start-column="3" selection-end-line="265" selection-end-column="3" />
               <folding />
             </state>
@@ -121,6 +107,7 @@
         <option value="$PROJECT_DIR$/aisle/templates/aisle/babycare.html" />
         <option value="$PROJECT_DIR$/aisle/static/vendors/js/script.js" />
         <option value="$PROJECT_DIR$/aisle/static/vendors/js/main1.js" />
+        <option value="$PROJECT_DIR$/cart/models.py" />
       </list>
     </option>
   </component>
@@ -131,8 +118,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="69" />
-    <option name="y" value="27" />
+    <option name="x" value="132" />
+    <option name="y" value="23" />
     <option name="width" value="1280" />
     <option name="height" value="732" />
   </component>
@@ -151,58 +138,24 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="waysafe14" type="b2602c69:ProjectViewProjectNode" />
-              <item name="waysafe14" type="462c0819:PsiDirectoryNode" />
+              <item name="waysafeagain" type="b2602c69:ProjectViewProjectNode" />
+              <item name="waysafeagain" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="waysafe14" type="b2602c69:ProjectViewProjectNode" />
-              <item name="waysafe14" type="462c0819:PsiDirectoryNode" />
-              <item name="aisle" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="waysafe14" type="b2602c69:ProjectViewProjectNode" />
-              <item name="waysafe14" type="462c0819:PsiDirectoryNode" />
-              <item name="aisle" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="waysafe14" type="b2602c69:ProjectViewProjectNode" />
-              <item name="waysafe14" type="462c0819:PsiDirectoryNode" />
-              <item name="aisle" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="vendors" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="waysafe14" type="b2602c69:ProjectViewProjectNode" />
-              <item name="waysafe14" type="462c0819:PsiDirectoryNode" />
-              <item name="aisle" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="vendors" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="waysafe14" type="b2602c69:ProjectViewProjectNode" />
-              <item name="waysafe14" type="462c0819:PsiDirectoryNode" />
-              <item name="aisle" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="waysafe14" type="b2602c69:ProjectViewProjectNode" />
-              <item name="waysafe14" type="462c0819:PsiDirectoryNode" />
-              <item name="aisle" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="aisle" type="462c0819:PsiDirectoryNode" />
+              <item name="waysafeagain" type="b2602c69:ProjectViewProjectNode" />
+              <item name="waysafeagain" type="462c0819:PsiDirectoryNode" />
+              <item name="cart" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -245,7 +198,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="69" y="27" width="1280" height="732" extended-state="1" />
+    <frame x="132" y="23" width="1280" height="732" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22578125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -300,7 +253,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/template/staticBase.html" />
     <entry file="file://$PROJECT_DIR$/index/static/resources/css/queries.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -477,7 +429,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="732">
           <caret line="253" column="10" lean-forward="false" selection-start-line="253" selection-start-column="10" selection-end-line="253" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -485,7 +436,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="14" lean-forward="false" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -494,25 +444,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aisle/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="25" column="13" lean-forward="false" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aisle/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="24" column="25" lean-forward="false" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#0#32#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -522,7 +454,7 @@
         <state relative-caret-position="3735">
           <caret line="249" column="0" lean-forward="false" selection-start-line="249" selection-start-column="0" selection-end-line="249" selection-end-column="0" />
           <folding>
-            <element signature="n#style#0;n#button#0;n#main#0;n#form#0;n#td#3;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#main#0;n#form#0;n#td#3;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -537,8 +469,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/aisle/static/vendors/js/main1.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3975">
+        <state relative-caret-position="1749">
           <caret line="265" column="3" lean-forward="false" selection-start-line="265" selection-start-column="3" selection-end-line="265" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aisle/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aisle/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="25" column="13" lean-forward="false" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cart/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding />
         </state>
       </provider>
