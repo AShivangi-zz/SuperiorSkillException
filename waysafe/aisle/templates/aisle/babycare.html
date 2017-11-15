@@ -128,84 +128,109 @@
             </div>
     </section>-->
 <section class="section-features js--section-features" >
-<div class="row">
-    <h2>Baby Care</h2>
-</div>
+    <div class="row">
+        <h2>Baby Care</h2>
+    </div>
 
-<div >
-    <div align="center" id="page">
-        <table id="cart" style="margin: 0 0 2% 2% ">
-            <thead>
-            <tr>
-                <th class="first" style="padding: 40px 40px 40px 40px">Product</th>
-                <th class="third" style="padding: 40px 40px 40px 40px">Qty</th>
-                <th class="fourth" style="padding: 40px 40px 40px 40px">Price</th>
-                <th class="fifth" style="padding: 40px 40px 40px 40px">&nbsp;</th>
-            </tr>
-            </thead>
-            <tbody>
-            {% if babycareitems %}
-            {% for items in babycareitems %}
-            <tr class="productitm"
-                style="width: 800px; max-width: 500px; border: 3px solid black ; margin: 10px 10px 10px 10px">
-                <td style="padding: 40px 40px 40px 40px"><img src={{ items.item_logo}} class="thumb"
-                                                              style="height: 200px;">
-                    <br>{{items.item_name}}
-                </td>
-                <td style="padding: 40px 40px 40px 40px"><input type="number" value="1" min="0" max="99"
-                                                                class="qtyinput"></td>
-                <td style="padding: 40px 40px 40px 40px">${{items.price|floatformat:2 }}</td>
-                <td style="padding: 40px 40px 40px 40px">
+    <div >
+        <div align="center" id="page">
+            <table id="cart" style="margin: 0 0 2% 2% ">
+                <thead>
+                <tr>
+                    <th class="first" style="padding: 40px 40px 40px 40px">Product</th>
+                    <th class="third" style="padding: 40px 40px 40px 40px">Qty</th>
+                    <th class="fourth" style="padding: 40px 40px 40px 40px">Price</th>
+                    <th class="fifth" style="padding: 40px 40px 40px 40px">&nbsp;</th>
+                </tr>
+                </thead>
+                <tbody>
 
-                    <main>
-                        <a href="#0" class="cd-add-to-cart" data-price="14.99"style="background-color:#0055A2; font-size: 14px; color: #ffffff; padding-bottom: 14px;">Add To Cart</a>
-                    </main>
+                {% if babycareitems %}
+                {% for items in babycareitems %}
 
-                    <div class="cd-cart-container empty">
-                                <a href="#0" class="cd-cart-trigger">
-                                    Cart
-                                    <ul class="count"> <!-- cart items count -->
-                                        <li>0</li>
-                                        <li>0</li>
-                                    </ul> <!-- .count -->
-                                </a>
+                <tr class="productitm"
+                    style="width: 800px; max-width: 500px; border: 3px solid black ; margin: 10px 10px 10px 10px">
+                    <td style="padding: 40px 40px 40px 40px"><img src={{ items.item_logo}} class="thumb" style="height: 200px;">
+                        <div class="testcontainer">
+                            <br class="itemname" id="items.item_name">{{items.item_name}}
+                            <script>
+                            var check = '{{ items.item_name}}'
+                        </script>
+                        </div>
 
-                                <div class="cd-cart">
-                                    <div class="wrapper">
-                                        <header>
-                                            <h2>Cart</h2>
-                                            <span class="undo">Item removed. <a href="#0">Undo</a></span>
-                                        </header>
+                    </td>
+                    <td style="padding: 40px 40px 40px 40px"><input type="number" value="1" min="0" max="99"
+                                                                    class="qtyinput"></td>
+                    <td style="padding: 40px 40px 40px 40px">${{items.price|floatformat:2 }}</td>
+                    <td style="padding: 40px 40px 40px 40px">
 
-                                        <div class="body">
-                                            <ul>
-                                                <!-- products added to the cart will be inserted here using JavaScript -->
-                                            </ul>
-                                        </div>
+                        {# <form method="POST" > #}
+                        <main>
+                            <button type="submit" onclick="myFunction({{items.id}})" value ="{{ items.id }}"class="cd-add-to-cart" data-info="{{ items.item_name }}"data-price="{{ items.price }}"style="background-color:#0055A2; font-size: 14px; color: #ffffff; padding-bottom: 14px;">
+                                Add To Cart
+                            </button>
+                        </main>
 
-                                        <footer>
-                                            <a href="#0" class="checkout btn"><em>Checkout - $<span>0</span></em></a>
-                                        </footer>
-                                    </div>
-                                </div> <!-- .cd-cart -->
-                            </div> <!-- cd-cart-container -->
-{#                    <a class="btn btn-full js" href="#"#}
-{#                       style="border-radius: 25px; padding: 10px; width: 110px; text-align:center;">Add to Cart</a>#}
-                </td>
-            </tr>
-            {% endfor %}
-            {% endif %}
+                        {# </form>#}
 
-            </tbody>
-        </table>
-        <br><br>
-        <div align="center">
-            <a class="btn btn-full js" href="/aisle"
-               style="border-radius: 25px; padding: 10px; width: 150px;  text-align:center;">Back to Aisles</a>
+
+                        {#                    <a class="btn btn-full js" href="#"#}
+                                                 {#                       style="border-radius: 25px; padding: 10px; width: 110px; text-align:center;">Add to Cart</a>#}
+                    </td>
+                </tr>
+                {% endfor %}
+                {% endif %}
+
+                <script>
+                function myFunction(nameofid){
+
+                 // alert("ID value is" + nameofid);
+                  var idvalue = nameofid
+                }
+            </script>
+
+                <!-- cd-cart-container -->
+                <div class="cd-cart-container empty">
+                    <a href="#0" class="cd-cart-trigger">
+                        Cart
+                        <ul class="count"> <!-- cart items count -->
+                            <li>0</li>
+                            <li>0</li>
+                        </ul> <!-- .count -->
+                    </a>
+
+                    <!-- .cd-cart -->
+                    <div class="cd-cart">
+                        <div class="wrapper">
+                            <header>
+                                <h2>Cart</h2>
+                                <span class="undo">Item removed. <a href="#0">Undo</a></span>
+                            </header>
+
+                            <div class="body">
+                                <ul>
+                                    <!-- products added to the cart will be inserted here using JavaScript -->
+                                </ul>
+                            </div>
+
+                            <footer>
+                                <a href="#0" class="checkout btn"><em>Checkout - $<span>0</span></em></a>
+                            </footer>
+                        </div>
+                    </div> <!-- .cd-cart -->
+
+                </div> <!-- cd-cart-container -->
+
+                </tbody>
+            </table>
+            <br><br>
+            <div align="center">
+                <a class="btn btn-full js" href="/aisle"
+                   style="border-radius: 25px; padding: 10px; width: 150px;  text-align:center;">Back to Aisles</a>
+            </div>
         </div>
     </div>
-</div>
-    </section>
+</section>
 
 {% include 'aisle/base_footer.html' %}
 
@@ -213,6 +238,7 @@
 <script>
 	if( !window.jQuery ) document.write('<script src={% static 'resources/js/jquery-3.0.0.min.js' %}><\/script>');
 </script>
+
 <script src="{% static 'resources/js/main1.js' %}"></script> <!-- Resource jQuery -->
 
 
