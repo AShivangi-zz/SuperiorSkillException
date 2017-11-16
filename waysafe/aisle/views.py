@@ -1,6 +1,8 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from .models import Item
+from cart.models import cart
+
 from django.template import loader
 
 # Create your views here.
@@ -13,9 +15,19 @@ def aisle(request):
     return HttpResponse("<h1>This is the categories</h1>")
 
 def babycare_item(request):
+
+    c = cart()
     babycareitems = Item.objects.raw('SELECT * FROM aisle_item WHERE category = "Baby Care"')
     template_name = 'aisle/babycare.html'
+
     context = {"babycareitems": babycareitems}
+
+    if request.is_ajax():
+        requestajax = request.POST.get('key')
+        c.item_list = requestajax
+        c.save()
+        #return render(request, 'aisle/beverages.html')
+
     return render(request,template_name, context)
 
 def beverage_item(request):
