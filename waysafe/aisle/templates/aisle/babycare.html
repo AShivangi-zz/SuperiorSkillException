@@ -166,7 +166,7 @@
 
                         {# <form method="POST" > #}
                         <main>
-                            <button type="submit" onclick="myFunction({{items.id}})" value ="{{ items.id }}"class="cd-add-to-cart" data-info="{{ items.item_name }}"data-price="{{ items.price }}"style="background-color:#0055A2; font-size: 14px; color: #ffffff; padding-bottom: 14px;">
+                            <button type="submit" onclick= "myFunction({{items.id}})" value ="{{ items.id }}"class="cd-add-to-cart" data-info="{{ items.item_name }}"data-price="{{ items.price }}"style="background-color:#0055A2; font-size: 14px; color: #ffffff; padding-bottom: 14px;">
                                 Add To Cart
                             </button>
                         </main>
@@ -184,7 +184,7 @@
                 <script>
                 function myFunction(nameofid){
 
-                 // alert("ID value is" + nameofid);
+                //  alert("ID value is" + nameofid);
                   var idvalue = nameofid
                 }
             </script>
@@ -236,7 +236,7 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script>
-	if( !window.jQuery ) document.write('<script src={% static 'resources/js/jquery-3.0.0.min.js' %}><\/script>');
+   if( !window.jQuery ) document.write('<script src={% static 'resources/js/jquery-3.0.0.min.js' %}><\/script>');
 </script>
 
 <script src="{% static 'resources/js/main1.js' %}"></script> <!-- Resource jQuery -->
@@ -246,4 +246,3 @@
 {% endblock %}
 
 </html>
-
