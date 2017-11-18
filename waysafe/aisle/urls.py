@@ -1,11 +1,12 @@
 from django.conf.urls import url
 from . import views
+from django.views.decorators.csrf import csrf_exempt
 
 urlpatterns = [
     #^$ means this is the default homepage page of the section..
     #/aisle/
     url(r'^$', views.index, name='index'),
-    url(r'^babycare/$', views.babycare_item, name='babycare'),
+    url(r'^babycare/$', csrf_exempt(views.babycare_item), name='babycare'),
     url(r'^beverages/$', views.beverage_item, name='beverages'),
 url(r'^frozen/$', views.frozen_item, name='frozen'),
 url(r'^snacks/$', views.snacks_item, name='snacks'),
