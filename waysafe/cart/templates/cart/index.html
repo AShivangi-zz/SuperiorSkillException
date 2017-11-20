@@ -90,19 +90,46 @@ table
         </thead>
         <tbody>
 
-        {% for i in cartitemsid %}
+        {% for item in cartitemsid %}
         <tr class="productitm" style="width: 800px; max-width: 500px; border: 3px solid black ; margin: 10px 10px 10px 10px">
-            <td style="padding: 10px">{{ i.item_list }} </td>
-            <td style="padding: 10px">{{ i.item_name}}</td>
-            <td style="padding: 10px 30px 10px 30px">{{ i.quantity }}</td>
-            <td style="padding: 10px 30px 10px 50px">${{ i.price|floatformat:2 }}</td>
-            <td style="padding: 10px 30px 10px 40px">${{ i.price|floatformat:2 }}</td>
+            <td style="padding: 10px">{{ item.id }} </td>
+            <td style="padding: 10px">{{ item.item_name}}</td>
+            <td style="padding: 10px 30px 10px 30px">{{ item.quantity }}</td>
+            <td style="padding: 10px 30px 10px 50px">${{ item.price|floatformat:2 }}</td>
+            <td style="padding: 10px 30px 10px 40px">${{ item.price|floatformat:2 }}</td>
             <td style="padding: 10px">
-                <a class="btn btn-full js" class = "delete-button" value = "{{ i.item_list }}" href="#" style="border-radius: 25px; padding: 10px; width: 110px; text-align:center;">Delete</a>
+{#                <a class="btn btn-full js" class = "delete-button" value = "{{ i.item_list }}" href="#" style="border-radius: 25px; padding: 10px; width: 110px; text-align:center;">Delete</a>#}
+{#                <button style="background-color:#0055A2; border: 1px solid #0055A2; color:#fff; border-radius:200px; padding:10px 30px" type="submit" onclick= "myFunction({{ items.id }})" name = "{{ items.item_name }}" value ="{{ items.id }}"class="delete-button" data-info="{{ items.item_name }}"data-price="{{ items.price }}"style="background-color:#0055A2; font-size: 14px; color: #ffffff; padding-bottom: 14px;">#}
+{#                <button style="background-color:#0055A2; border: 1px solid #0055A2; color:#fff; border-radius:200px; padding:10px 30px" type="submit" onclick = "myFunction({{ items.id}})" id= "{{ items.id }}" name = "{{ items.item_name }}" value ="{{ items.id }}"class="delete-button" data-info="{{ items.item_name }}"data-price="{{ items.price }}"style="background-color:#0055A2; font-size: 14px; color: #ffffff; padding-bottom: 14px;">#}
+{#                <button style="background-color:#0055A2; border: 1px solid #0055A2; color:#fff; border-radius:200px; padding:10px 30px" type="submit" onclick = "myFunction({{ item.id}})" id="{{ item.id }}" name = "{{ item.item_name }}" value ="{{ item.id }}"class="delete-button" data-info="{{ item.item_name }}"data-price="{{ item.price }}"style="background-color:#0055A2; font-size: 14px; color: #ffffff; padding-bottom: 14px;">#}
+                <button style="background-color:#0055A2; border: 1px solid #0055A2; color:#fff; border-radius:200px; padding:10px 30px" type="submit"  id = "{{ item.id }}" name = "{{ item.item_name }}" quantity ="{{ item.quantity}}"class="delete-button" data-info="{{ item.item_name }}"data-price="{{ item.price }}"style="background-color:#0055A2; font-size: 14px; color: #ffffff; padding-bottom: 14px;">
+
+                    Delete
+                </button>
+{#                <button style="background-color:#0055A2; border: 1px solid #0055A2; color:#fff; border-radius:200px; padding:10px 30px" type="submit" onclick = "myFunction({{ items.id}})" id= "{{ items.id }}" name = "{{ items.item_name }}" value ="{{ items.id }}"class="delete-button" data-info="{{ items.item_name }}"data-price="{{ items.price }}"style="background-color:#0055A2; font-size: 14px; color: #ffffff; padding-bottom: 14px;">#}
+
             </td>
+
+            <script>
+                function myFunction(test){
+                  //var quantityamount = document.getElementById(test).value
+                  //var a = 234;
+                   //alert(quantityamount);
+                }
+                </script>
         </tr>
-        </tbody>
+
           {% endfor %}
+          <tr class="productitm" style="width: 800px; max-width: 500px; border: 3px solid black ; margin: 10px 10px 10px 10px">
+            <td style="padding: 10px"> </td>
+            <td style="padding: 10px">10% off for $50 purchase</td>
+            <td style="padding: 10px 30px 10px 30px"></td>
+            <td style="padding: 10px 30px 10px 50px"></td>
+            <td style="padding: 10px 30px 10px 40px">-$10</td>
+              <td style="padding: 10px 30px 10px 25px">Will be applied at checkout</td>
+
+        </tr>
+          </tbody>
 
 
 
@@ -118,6 +145,11 @@ table
 {%  include 'index/base_footer.html' %}
 
 </body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script>
+   if( !window.jQuery ) document.write('<script src={% static 'resources/js/jquery-3.0.0.min.js' %}><\/script>');
+</script>
 
 <script src="{% static 'resources/js/delete.js' %}"></script>
 
