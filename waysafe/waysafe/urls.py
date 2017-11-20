@@ -28,10 +28,11 @@ from index import views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^home/', include('homepage.urls')), #TB set this so that when you go to xxx.x.x.x:8000 it directs directly to homepage page
+    # url(r'^home/', include('homepage.urls')), #TB set this so that when you go to xxx.x.x.x:8000 it directs directly to homepage page
     url(r'^aisle/', include('aisle.urls')),
     url(r'^history/', include('history.urls')),
     url(r'^index/', include('index.urls')),
+    url(r'^$', include('index.urls')),
     url(r'^savings/', include('savings.urls')),
     url(r'^payment/', include('payment.urls')),
     url(r'^cart/', include('cart.urls')),
