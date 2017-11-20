@@ -1,9 +1,13 @@
 jQuery(document).ready(function($){
 
-
    var cartWrapper = $('.cd-cart-container');
    var test = $('.testcontainer');
    ///////////////////////
+
+   // var quantityamount = document.getElementById('amount').value;
+
+
+
 
    function getCookie(name) {
         var cookieValue = null;
@@ -49,14 +53,25 @@ jQuery(document).ready(function($){
       var addToCartBtn = $('.cd-add-to-cart');
       var undo = cartWrapper.find('.undo');
       var undoTimeoutId;
+      var here = $('.qtyinput');
+
+      //var quantityamount = $('.qtyinput');
+     //var quantityamount = $("#amount").val();
 
 
+       /*quantityamount.on('keyup mouseup' ,function (event){
+            event.preventDefault();
+            alert("IN HERE");
+       }).trigger('mouseup');*/
 
 
       //add product to cart
       addToCartBtn.on('click', function(event){
          event.preventDefault();
             thisdata = $(this).attr('value');
+            name = $(this).attr('name');
+            var quantityamount = document.getElementById(thisdata).value;
+
             //alert(thisdata);
            /* $.ajax({
                         method: 'POST',
@@ -83,7 +98,7 @@ jQuery(document).ready(function($){
                        // addToCart($(this), thisdata);
              });*/
 
-            addToCart($(this), thisdata);
+            addToCart($(this), thisdata, quantityamount, name);
 
       });
 
@@ -143,10 +158,10 @@ jQuery(document).ready(function($){
       }
    }
 
-   function addToCart(trigger, thisdata) {
+   function addToCart(trigger, thisdata, quantityamount, name) {
       var cartIsEmpty = cartWrapper.hasClass('empty');
       //update cart product list
-      addProduct(thisdata);
+      addProduct(thisdata, quantityamount, name);
       //update number of items
       updateCartCount(cartIsEmpty);
       //update total price
@@ -155,12 +170,16 @@ jQuery(document).ready(function($){
       cartWrapper.removeClass('empty');
    }
 
-   function addProduct(thisdata) {
+   function addProduct(thisdata, quantityamount, name) {
       //this is just a product placeholder
       //you should insert an item with the selected product info
       //replace productId, productName, price and url with your real product info
+
       productId = productId + 1;
         var result ="";
+
+        //alert(quantityamount);
+
 
 
         //alert(thisdata);
@@ -168,12 +187,15 @@ jQuery(document).ready(function($){
                     method: 'POST',
                     //type: 'POST',
                     url: '/aisle/babycare/',
-                    data: {'key': thisdata},
+                    data: {'key': thisdata, 'amount': quantityamount},
                     //data: {'key': JSON.stringify(thisdata)},
                     csrfmiddlewaretoken: '{{ csrf_token }}',
                     success: function(data){
                             // IT WORKED thidata[0] get the actual id value of the cart
-                        alert("What is thisdata:" + thisdata + " It worked: " + thisdata[0]);
+                        //alert("What is thisdata:" + thisdata + " It worked: " + thisdata[0] + " Amount is: " + quantityamount);
+                        alert(quantityamount + " of "+ name + " has been added to your cart")
+                        // “<quantity> of <item_name> has been added to your cart”
+                       // alert(thidata[0]);
                     },
                     error: function(data){
                         alert("Failed");
