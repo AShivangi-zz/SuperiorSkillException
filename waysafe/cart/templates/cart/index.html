@@ -92,27 +92,17 @@ table
 
         {% for i in cartitemsid %}
         <tr class="productitm" style="width: 800px; max-width: 500px; border: 3px solid black ; margin: 10px 10px 10px 10px">
-            <td style="padding: 10px">{{ i.id }} </td>
+            <td style="padding: 10px">{{ i.item_list }} </td>
             <td style="padding: 10px">{{ i.item_name}}</td>
-            <td style="padding: 10px 30px 10px 30px">1</td>
+            <td style="padding: 10px 30px 10px 30px">{{ i.quantity }}</td>
             <td style="padding: 10px 30px 10px 50px">${{ i.price|floatformat:2 }}</td>
             <td style="padding: 10px 30px 10px 40px">${{ i.price|floatformat:2 }}</td>
             <td style="padding: 10px">
                 <a class="btn btn-full js" class = "delete-button" value = "{{ i.item_list }}" href="#" style="border-radius: 25px; padding: 10px; width: 110px; text-align:center;">Delete</a>
             </td>
         </tr>
-
+        </tbody>
           {% endfor %}
-          <tr class="productitm" style="width: 800px; max-width: 500px; border: 3px solid black ; margin: 10px 10px 10px 10px">
-            <td style="padding: 10px"> </td>
-            <td style="padding: 10px">10% off for $50 purchase</td>
-            <td style="padding: 10px 30px 10px 30px"></td>
-            <td style="padding: 10px 30px 10px 50px"></td>
-            <td style="padding: 10px 30px 10px 40px">-$10</td>
-              <td style="padding: 10px 30px 10px 25px">Will be applied at checkout</td>
-
-        </tr>
-          </tbody>
 
 
 
