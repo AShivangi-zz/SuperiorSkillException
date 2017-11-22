@@ -60,6 +60,9 @@ table
 {
     border-collapse:initial
 }
+
+.w3-light-grey,.w3-hover-light-grey:hover,.w3-light-gray,.w3-hover-light-gray:hover{color:#000!important;background-color:#f1f1f1!important}
+.w3-green,.w3-hover-green:hover{color:#fff!important;background-color:#0055a2!important}
 </style>
 </head>
 {% block body %}
@@ -138,9 +141,55 @@ table
          <center><hr width="60%"></center>
           <br><br>
 <h2>Total Cost: ${{total|floatformat:2}} </h2>
-         <center> <a class="btn btn-full js" href="/payment" style="border-radius: 25px; padding: 10px; width: 110px; text-align:center;">Checkout</a></center>
-    </div>
+          <center> <input type="button" onclick="move()" id="btnRedirect" style="background-color:#0055A2; border: 1px solid #0055A2; color:#fff; border-radius:200px; padding:10px 30px"   value="Checkout" /></center>
+              </div>
         </div>
+<br><br>
+<div class="w3-light-grey" style="width:50%;  margin: 0 auto">
+    <div id="myBar" class="w3-green" style="height:24px;width:0"></div>
+  </div>
+  <br>
+
+</div>
+
+<div id="dvCountDown" style="display: none">
+    <center>You will be redirected after <span id="lblCount"></span>&nbsp;seconds.</center>
+</div>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript">
+$(function () {
+    $("#btnRedirect").click(function () {
+        var seconds = 3;
+        $("#dvCountDown").show();
+        $("#lblCount").html(seconds);
+        setInterval(function () {
+            seconds--;
+            $("#lblCount").html(seconds);
+            if (seconds == 0) {
+                $("#dvCountDown").hide();
+                window.location = "/payment";
+            }
+        }, 1000);
+    });
+});
+
+function move() {
+  var elem = document.getElementById("myBar");
+  var width = 1;
+  var id = setInterval(frame, 23);
+  function frame() {
+    if (width >= 100) {
+      clearInterval(id);
+    } else {
+      width++;
+      elem.style.width = width + '%';
+    }
+  }
+}
+</script>
+
+
+
 <br><br>
 {%  include 'index/base_footer.html' %}
 
