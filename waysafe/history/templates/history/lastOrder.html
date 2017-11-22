@@ -41,6 +41,8 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
+{% block body %}
+
 <body>
 
 {%  include 'index/base_navBar.html' %}
@@ -58,7 +60,8 @@
                     <th class="fifth" style="padding: 0px 40px 0px 40px">&nbsp;</th>
           </tr>
         </thead>
-        <tbody>
+{#        <tbody>#}
+
 
         {% for i in cartitemsid %}
         <tr class="productitm" style="width: 800px; max-width: 500px; margin: 0 10px 0 10px">
@@ -74,17 +77,19 @@
 
                     </td>
         </tr>
-        </tbody>
+{#        </tbody>#}
           {% endfor %}
            <script>
                 function myFunction(nameofid){
-                  var idvalue = nameofid
+{#                  var idvalue = nameofid#}
                 }
             </script>
 
-                <!-- cd-cart-container -->
-                <div class="cd-cart-container empty">
-                    <a href="#0" class="cd-cart-trigger">
+{#                <!-- cd-cart-container -->#}
+{#                <div class="cd-cart-container empty">#}
+{#                    <a href="#0" class="cd-cart-trigger">#}
+{#                    </a>#}
+{#                </div>#}
 
 
       </table>
@@ -93,10 +98,22 @@
                    style="border-radius: 25px; padding: 10px; width: 200px;  text-align:center;">Back to History</a>
             </div>
           <br><br>
+      </div>
+ </div>
 
 
 
 {%  include 'index/base_footer.html' %}
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script>
+   if( !window.jQuery ) document.write('<script src={% static 'resources/js/jquery-3.0.0.min.js' %}><\/script>');
+</script>
+
+<script src="{% static 'resources/js/main1.js' %}"></script> <!-- Resource jQuery -->
+
 </body>
+
+{% endblock %}
+
 </html>
