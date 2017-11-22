@@ -24,7 +24,9 @@ def babycare_item(request):
 
     if request.is_ajax():
         requestajax = request.POST.get('key')
+        requestajaxamount = request.POST.get('amount')
         c.item_list = requestajax
+        c.quantity = requestajaxamount
         c.save()
         #return render(request, 'aisle/beverages.html')
 
