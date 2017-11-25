@@ -83,7 +83,7 @@ jQuery(document).ready(function($){
     var deleteitembutton = $('.delete-button');
     deleteitembutton.on('click', function(event){
         event.preventDefault();
-            alert("This is awesome pawesome!");
+
             id = $(this).attr('id');
             quantity = $(this).attr('quantity');
             name = $(this).attr('name');
