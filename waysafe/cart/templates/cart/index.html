@@ -105,10 +105,18 @@ table
 {#                <button style="background-color:#0055A2; border: 1px solid #0055A2; color:#fff; border-radius:200px; padding:10px 30px" type="submit" onclick= "myFunction({{ items.id }})" name = "{{ items.item_name }}" value ="{{ items.id }}"class="delete-button" data-info="{{ items.item_name }}"data-price="{{ items.price }}"style="background-color:#0055A2; font-size: 14px; color: #ffffff; padding-bottom: 14px;">#}
 {#                <button style="background-color:#0055A2; border: 1px solid #0055A2; color:#fff; border-radius:200px; padding:10px 30px" type="submit" onclick = "myFunction({{ items.id}})" id= "{{ items.id }}" name = "{{ items.item_name }}" value ="{{ items.id }}"class="delete-button" data-info="{{ items.item_name }}"data-price="{{ items.price }}"style="background-color:#0055A2; font-size: 14px; color: #ffffff; padding-bottom: 14px;">#}
 {#                <button style="background-color:#0055A2; border: 1px solid #0055A2; color:#fff; border-radius:200px; padding:10px 30px" type="submit" onclick = "myFunction({{ item.id}})" id="{{ item.id }}" name = "{{ item.item_name }}" value ="{{ item.id }}"class="delete-button" data-info="{{ item.item_name }}"data-price="{{ item.price }}"style="background-color:#0055A2; font-size: 14px; color: #ffffff; padding-bottom: 14px;">#}
-                <button style="background-color:#0055A2; border: 1px solid #0055A2; color:#fff; border-radius:200px; padding:10px 30px" type="submit"  id = "{{ item.id }}" name = "{{ item.item_name }}" quantity ="{{ item.quantity}}"class="delete-button" data-info="{{ item.item_name }}"data-price="{{ item.price }}"style="background-color:#0055A2; font-size: 14px; color: #ffffff; padding-bottom: 14px;">
+                <a href="delete/{{ item.id }}"
+                        style="background-color:#0055A2; border: 1px solid #0055A2; color:#fff; border-radius:200px; padding:10px 30px"
+                        id = "{{ item.id }}"
+                        name = "{{ item.item_name }}"
+                        quantity ="{{ item.quantity}}"
+                        class="delete-button"
+                        data-info="{{ item.item_name }}"
+                        data-price="{{ item.price }}"
+                        style="background-color:#0055A2; font-size: 14px; color: #ffffff; padding-bottom: 14px;">
 
                     Delete
-                </button>
+                </a>
 {#                <button style="background-color:#0055A2; border: 1px solid #0055A2; color:#fff; border-radius:200px; padding:10px 30px" type="submit" onclick = "myFunction({{ items.id}})" id= "{{ items.id }}" name = "{{ items.item_name }}" value ="{{ items.id }}"class="delete-button" data-info="{{ items.item_name }}"data-price="{{ items.price }}"style="background-color:#0055A2; font-size: 14px; color: #ffffff; padding-bottom: 14px;">#}
 
             </td>
