@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from .models import cart
 from aisle.models import Item
+from django.http import HttpResponseRedirect
 
 # Create your views here.
 # Create your views here.
@@ -26,6 +27,18 @@ def index(request): #always put in request
     context = {"cartitemsid": cartitemsid, "total": total}
 
     template_name = 'cart/index.html'
+    print("This view was loaded")
     return render(request,template_name, context)
+
+
+def delete_item(request, item_id):
+    print("Item loaded")
+    print(item_id)
+    item = cart.objects.get(id=item_id)
+    item.delete()
+
+    return HttpResponseRedirect("/cart")
+
+
 
 

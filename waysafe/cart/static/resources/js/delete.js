@@ -81,18 +81,18 @@ jQuery(document).ready(function($){
 
 
     var deleteitembutton = $('.delete-button');
-    deleteitembutton.on('click', function(event){
-        event.preventDefault();
-            alert("This is awesome pawesome!");
-            id = $(this).attr('id');
-            quantity = $(this).attr('quantity');
-            name = $(this).attr('name');
-            // var quantityamount = document.getElementById(thisdata).value;
-            // var quantityamount = id = $(this).attr('id');
+//     deleteitembutton.on('click', function(event){
+//         event.preventDefault();
 
-            removeFromCart($(this), id,quantity);
+//             id = $(this).attr('id');
+//             quantity = $(this).attr('quantity');
+//             name = $(this).attr('name');
+//             // var quantityamount = document.getElementById(thisdata).value;
+//             // var quantityamount = id = $(this).attr('id');
 
-    });
+//             removeFromCart($(this), id,quantity);
+
+//     });
 
     function removeFromCart(trigger, id,quantity){
         var cartIsEmpty = cartWrapper.hasClass('empty');

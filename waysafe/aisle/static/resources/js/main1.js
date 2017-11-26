@@ -43,7 +43,7 @@ jQuery(document).ready(function($){
 
    if( cartWrapper.length > 0 ) {
       //store jQuery objects
-      var cartTestItemName = test.find('.itemname')
+      var cartTestItemName = test.find('.itemname');
       //alert(cartTestItemName);
       var cartBody = cartWrapper.find('.body');
       var cartList = cartBody.find('ul').eq(0);
@@ -70,6 +70,8 @@ jQuery(document).ready(function($){
          event.preventDefault();
             thisdata = $(this).attr('value');
             name = $(this).attr('name');
+
+
             var quantityamount = document.getElementById(thisdata).value;
 
             //alert(thisdata);
@@ -202,8 +204,8 @@ jQuery(document).ready(function($){
                     }
 
                  });
-      var productAdded = $('<li class="product"><div class="product-image"><a href="#0"><img src="img/product-preview.png" alt="placeholder"></a></div><div class="product-details"><a href="#0" id="replace"></a><span class="price">$25.99</span><div class="actions"><a href="#0" class="delete-item">Delete</a><div class="quantity"><label for="cd-product-'+ productId +'">Qty</label><span class="select"><select id="cd-product-'+ productId +'" name="quantity"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option></select></span></div></div></div></li>');
-
+      // var productAdded = $('<li class="product"><div class="product-image"><a href="#0"><img src="img/product-preview.png" alt="placeholder"></a></div><div class="product-details"><a href="#0" id="replace"></a><span class="price">$25.99</span><div class="actions"><a href="#0" class="delete-item">Delete</a><div class="quantity"><label for="cd-product-'+ productId +'">Qty</label><span class="select"><select id="cd-product-'+ productId +'" name="quantity"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option></select></span></div></div></div></li>');
+      //
       //var productAdded = ('\a');
 
       /////       /////

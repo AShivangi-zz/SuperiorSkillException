@@ -6,7 +6,6 @@ jQuery(document).ready(function($){
 
    // var quantityamount = document.getElementById('amount').value;
 
-    alert("Its a trap");
 
 
    function getCookie(name) {
@@ -41,8 +40,8 @@ jQuery(document).ready(function($){
    //product id - you don't need a counter in your real project but you can use your real product id
    var productId = 0;
 
-   if( cartWrapper.length > 0 ) {
-      //store jQuery objects
+   // if( cartWrapper.length > 0 ) {
+   //    //store jQuery objects
       var cartTestItemName = test.find('.itemname');
       //alert(cartTestItemName);
       var cartBody = cartWrapper.find('.body');
@@ -67,9 +66,12 @@ jQuery(document).ready(function($){
 
       //add product to cart
       addToCartBtn.on('click', function(event){
+
          event.preventDefault();
             thisdata = $(this).attr('value');
             name = $(this).attr('name');
+
+
             var quantityamount = document.getElementById(thisdata).value;
 
             //alert(thisdata);
@@ -136,7 +138,7 @@ jQuery(document).ready(function($){
          });
          undo.removeClass('visible');
       });
-   }
+   //}
 
    function toggleCart(bool) {
       var cartIsOpen = ( typeof bool === 'undefined' ) ? cartWrapper.hasClass('cart-open') : bool;
@@ -160,6 +162,7 @@ jQuery(document).ready(function($){
    }
 
    function addToCart(trigger, thisdata, quantityamount, name) {
+
       var cartIsEmpty = cartWrapper.hasClass('empty');
       //update cart product list
       addProduct(thisdata, quantityamount, name);
