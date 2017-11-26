@@ -11,6 +11,7 @@ def index(request): #always put in request
 
 
     total = 0.0
+    itemtotal =0.0
 
     #cartitemsid = cart.objects.raw('SELECT item_list from cart_cart')
     #cartitemsid  = cart.objects.raw('SELECT item_list, item_name, price from cart_cart INNER JOIN aisle_item '
@@ -22,7 +23,8 @@ def index(request): #always put in request
     #return HttpResponse(test)
     #
     for i in cartitemsid:
-        total = total + float(i.price)
+        itemtotal=float(i.price) * float(i.quantity)
+        total = total + itemtotal
 
     context = {"cartitemsid": cartitemsid, "total": total}
 
