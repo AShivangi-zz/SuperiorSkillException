@@ -69,8 +69,9 @@
             {% for i in cartitemsid %}
                 <tr class="productitm" style="width: 800px; max-width: 500px; margin: 0 10px 0 10px">
                     <td style="padding: 10px; text-align:center">{{ i.item_name }}</td>
-                    <td style="padding: 40px 40px 40px 40px"><input type="number" value="1" min="0" max="99"
-                                                                        class="qtyinput"></td>
+                    <td style="padding: 40px 40px 40px 40px"><input type="number" name="{{ i.item_list }}"
+                                                id="{{ i.item_list}}" value="1"
+                                                min="0" max="99" class="qtyinput"></td>
                     <td style="padding: 10px 30px 10px 50px">${{ i.price|floatformat:2 }}</td>
                     <td style="padding: 10px 10px 10px 10px">
                         <main>
