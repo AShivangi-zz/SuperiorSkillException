@@ -3,6 +3,8 @@ from django.http import HttpResponse
 from aisle.models import Item
 from django.shortcuts import render, redirect
 from django.views.generic import View
+from cart.models import cart
+
 
 from django.contrib.auth import (
     authenticate,
@@ -112,6 +114,14 @@ def searchresults(request):
     capturelogo = ''
     captureprice = ''
 
+    c = cart()
+    if request.is_ajax():
+        requestajax = request.POST.get('key')
+        requestajaxamount = request.POST.get('amount')
+        c.item_list = requestajax
+        c.quantity = requestajaxamount
+        c.save()
+
     query = request.GET['q']
     html = str(query)
     if request.method == 'GET' and query != '':
@@ -121,10 +131,12 @@ def searchresults(request):
                 captureword = modelitems.item_name
                 capturelogo = modelitems.item_logo
                 captureprice = modelitems.price
+                captureid = modelitems.id
+
 
         if (flagcheck):
             context = {'all_items': all_items, 'flagcheck': flagcheck, 'itemname': captureword,
-                       'itemprice': captureprice,
+                       'itemprice': captureprice, 'id':captureid,
                        'itemlogo': capturelogo}
             return render(request, 'index/search_results.html', context)
         else:
