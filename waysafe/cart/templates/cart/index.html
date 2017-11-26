@@ -95,7 +95,7 @@ table
 
         {% for item in cartitemsid %}
         <tr class="productitm" style="width: 800px; max-width: 500px; border: 3px solid black ; margin: 10px 10px 10px 10px">
-            <td style="padding: 10px">{{ item.id }} </td>
+            <td style="padding: 10px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ item.item_list }} </td>
             <td style="padding: 10px">{{ item.item_name}}</td>
             <td style="padding: 10px 30px 10px 30px">{{ item.quantity }}</td>
             <td style="padding: 10px 30px 10px 50px">${{ item.price|floatformat:2 }}</td>
