@@ -1,5 +1,5 @@
 jQuery(document).ready(function($){
-    alert ("here");
+
    var cartWrapper = $('.cd-cart-container');
    var test = $('.testcontainer');
    ///////////////////////
@@ -70,6 +70,8 @@ jQuery(document).ready(function($){
          event.preventDefault();
             thisdata = $(this).attr('value');
             name = $(this).attr('name');
+
+
             var quantityamount = document.getElementById(thisdata).value;
 
             //alert(thisdata);

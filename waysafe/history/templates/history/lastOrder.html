@@ -73,14 +73,16 @@
                                                                         class="qtyinput"></td>
                     <td style="padding: 10px 30px 10px 50px">${{ i.price|floatformat:2 }}</td>
                     <td style="padding: 10px 10px 10px 10px">
-                        <button style="background-color:#0055A2; border: 1px solid #0055A2; color:#fff; border-radius:200px; padding:10px 30px"
-                                        type="submit" onclick="myFunction({{ i.id }})"
-                                        name="{{ i.item_name }}" value="{{ i.id }}"
-                                        class="cd-add-to-cart" data-info="{{ i.item_name }}"
-                                        data-price="{{ i.price }}"
-                                        style="background-color:#0055A2; font-size: 14px; color: #ffffff; padding-bottom: 14px;">
-                                    Add To Cart
-                        </button>
+                        <main>
+                            <button style="background-color:#0055A2; border: 1px solid #0055A2; color:#fff; border-radius:200px; padding:10px 30px"
+                                    type="submit" onclick="myFunction({{ i.item_list }})"
+                                    name="{{ i.item_name }}" value="{{ i.item_list }}"
+                                    class="cd-add-to-cart" data-info="{{ i.item_name }}"
+                                    data-price="{{ i.price }}"
+                                    style="background-color:#0055A2; font-size: 14px; color: #ffffff; padding-bottom: 14px;">
+                                Add To Cart
+                            </button>
+                        </main>
                     </td>
                     <script>
                         function myFunction(test){
