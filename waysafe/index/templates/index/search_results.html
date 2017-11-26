@@ -58,7 +58,7 @@
 
             {% if all_items %}
                 {% if flagcheck == True %}
-                    <table id="cart" style="margin: 0 25%">
+                    <table id="cart" style="margin: 0 20% 0 20%">
                     <thead>
                     <tr>
                         <th class="first" style="padding: 40px 40px 40px 40px">Product</th>
@@ -78,7 +78,7 @@
                                                 id="{{ id }}" value="1"
                                                 min="0" max="99" class="qtyinput"></td>
                         <td style="padding: 40px 40px 40px 40px">${{ itemprice|floatformat:2 }}</td>
-                        <td style="padding: 40px 40px 40px 40px">
+                        <td style="padding: 40px 40px 40px 40px; width: 230px">
                             <main>
                                 <button style="background-color:#0055A2; border: 1px solid #0055A2; color:#fff; border-radius:200px; padding:10px 30px"
                                         type="submit" onclick="myFunction({{ id }})"
