@@ -14,7 +14,8 @@ def success(request):
     cartitemsid = cart.objects.raw('SELECT * from cart_cart INNER JOIN aisle_item ON aisle_item.id = item_list')
 
     for i in cartitemsid:
-        total = total + float(i.price)
+        itemtotal = float(i.price) * float(i.quantity)
+        total = total + float(itemtotal)
 
     offer = total - (0.10*total)
 
