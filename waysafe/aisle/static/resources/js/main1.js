@@ -1,9 +1,13 @@
 jQuery(document).ready(function($){
 
-
    var cartWrapper = $('.cd-cart-container');
    var test = $('.testcontainer');
    ///////////////////////
+
+   // var quantityamount = document.getElementById('amount').value;
+
+
+
 
    function getCookie(name) {
         var cookieValue = null;
@@ -39,7 +43,7 @@ jQuery(document).ready(function($){
 
    if( cartWrapper.length > 0 ) {
       //store jQuery objects
-      var cartTestItemName = test.find('.itemname')
+      var cartTestItemName = test.find('.itemname');
       //alert(cartTestItemName);
       var cartBody = cartWrapper.find('.body');
       var cartList = cartBody.find('ul').eq(0);
@@ -49,14 +53,27 @@ jQuery(document).ready(function($){
       var addToCartBtn = $('.cd-add-to-cart');
       var undo = cartWrapper.find('.undo');
       var undoTimeoutId;
+      var here = $('.qtyinput');
+
+      //var quantityamount = $('.qtyinput');
+     //var quantityamount = $("#amount").val();
 
 
+       /*quantityamount.on('keyup mouseup' ,function (event){
+            event.preventDefault();
+            alert("IN HERE");
+       }).trigger('mouseup');*/
 
 
       //add product to cart
       addToCartBtn.on('click', function(event){
          event.preventDefault();
             thisdata = $(this).attr('value');
+            name = $(this).attr('name');
+
+
+            var quantityamount = document.getElementById(thisdata).value;
+
             //alert(thisdata);
            /* $.ajax({
                         method: 'POST',
@@ -83,7 +100,7 @@ jQuery(document).ready(function($){
                        // addToCart($(this), thisdata);
              });*/
 
-            addToCart($(this), thisdata);
+            addToCart($(this), thisdata, quantityamount, name);
 
       });
 
@@ -143,10 +160,10 @@ jQuery(document).ready(function($){
       }
    }
 
-   function addToCart(trigger, thisdata) {
+   function addToCart(trigger, thisdata, quantityamount, name) {
       var cartIsEmpty = cartWrapper.hasClass('empty');
       //update cart product list
-      addProduct(thisdata);
+      addProduct(thisdata, quantityamount, name);
       //update number of items
       updateCartCount(cartIsEmpty);
       //update total price
@@ -155,12 +172,16 @@ jQuery(document).ready(function($){
       cartWrapper.removeClass('empty');
    }
 
-   function addProduct(thisdata) {
+   function addProduct(thisdata, quantityamount, name) {
       //this is just a product placeholder
       //you should insert an item with the selected product info
       //replace productId, productName, price and url with your real product info
+
       productId = productId + 1;
         var result ="";
+
+        //alert(quantityamount);
+
 
 
         //alert(thisdata);
@@ -168,20 +189,23 @@ jQuery(document).ready(function($){
                     method: 'POST',
                     //type: 'POST',
                     url: '/aisle/babycare/',
-                    data: {'key': thisdata},
+                    data: {'key': thisdata, 'amount': quantityamount},
                     //data: {'key': JSON.stringify(thisdata)},
                     csrfmiddlewaretoken: '{{ csrf_token }}',
                     success: function(data){
                             // IT WORKED thidata[0] get the actual id value of the cart
-                        alert("What is thisdata:" + thisdata + " It worked: " + thisdata[0]);
+                        //alert("What is thisdata:" + thisdata + " It worked: " + thisdata[0] + " Amount is: " + quantityamount);
+                        alert(quantityamount + " of "+ name + " has been added to your cart")
+                        // “<quantity> of <item_name> has been added to your cart”
+                       // alert(thidata[0]);
                     },
                     error: function(data){
                         alert("Failed");
                     }
 
                  });
-      var productAdded = $('<li class="product"><div class="product-image"><a href="#0"><img src="img/product-preview.png" alt="placeholder"></a></div><div class="product-details"><a href="#0" id="replace"></a><span class="price">$25.99</span><div class="actions"><a href="#0" class="delete-item">Delete</a><div class="quantity"><label for="cd-product-'+ productId +'">Qty</label><span class="select"><select id="cd-product-'+ productId +'" name="quantity"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option></select></span></div></div></div></li>');
-
+      // var productAdded = $('<li class="product"><div class="product-image"><a href="#0"><img src="img/product-preview.png" alt="placeholder"></a></div><div class="product-details"><a href="#0" id="replace"></a><span class="price">$25.99</span><div class="actions"><a href="#0" class="delete-item">Delete</a><div class="quantity"><label for="cd-product-'+ productId +'">Qty</label><span class="select"><select id="cd-product-'+ productId +'" name="quantity"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option></select></span></div></div></div></li>');
+      //
       //var productAdded = ('\a');
 
       /////       /////

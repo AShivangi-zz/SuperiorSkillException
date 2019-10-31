@@ -23,3 +23,4 @@ class cart(models.Model):
     item_list = models.CharField(max_length = 40)
     quantity = models.CommaSeparatedIntegerField(max_length=50)
 
+

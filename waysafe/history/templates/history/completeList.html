@@ -1,54 +1,350 @@
 <!DOCTYPE html>
 <html lang="en">
 {% load staticfiles %}
+
+
 <head>
     <!-- Bootstrap -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Omnifood is a premium food delivery service with the mission to bring affordable and healty meals to as many people as possible.">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+          content="Omnifood is a premium food delivery service with the mission to bring affordable and healty meals to as many people as possible.">
 
 
+    <link rel="stylesheet" type="text/css" href="{% static 'vendors/css/normalize.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'vendors/css/grid.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'vendors/css/ionicons.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'vendors/css/animate.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'resources/css/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'resources/css/queries.css' %}">
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
+    <title>WaySafe</title>
 
-        <link rel="stylesheet" type="text/css" href="{% static 'vendors/css/normalize.css' %}">
-        <link rel="stylesheet" type="text/css" href="{% static 'vendors/css/grid.css' %}">
-        <link rel="stylesheet" type="text/css" href="{% static 'vendors/css/ionicons.min.css' %}">
-        <link rel="stylesheet" type="text/css" href="{% static 'vendors/css/animate.css' %}">
-        <link rel="stylesheet" type="text/css" href="{% static 'resources/css/style.css' %}">
-        <link rel="stylesheet" type="text/css" href="{% static 'resources/css/queries.css' %}">
-        <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
-        <title>WaySafe</title>
-
-        <link rel="apple-touch-icon" sizes="57x57" href="{% static 'resources/favicons/apple-touch-icon-57x57.png' %}">
-        <link rel="apple-touch-icon" sizes="60x60" href="{% static 'resources/favicons/apple-touch-icon-60x60.png' %}">
-        <link rel="apple-touch-icon" sizes="72x72" href="{% static 'resources/favicons/apple-touch-icon-72x72.png' %}">
-        <link rel="apple-touch-icon" sizes="76x76" href="{% static 'resources/favicons/apple-touch-icon-76x76.png' %}">
-        <link rel="apple-touch-icon" sizes="114x114" href="{% static 'resources/favicons/apple-touch-icon-114x114.png' %}">
-        <link rel="apple-touch-icon" sizes="120x120" href="{% static 'resources/favicons/apple-touch-icon-120x120.png' %}">
-        <link rel="apple-touch-icon" sizes="144x144" href="{% static 'resources/favicons/apple-touch-icon-144x144.png' %}">
-        <link rel="apple-touch-icon" sizes="152x152" href="{% static 'resources/favicons/apple-touch-icon-152x152.png' %}">
-        <link rel="apple-touch-icon" sizes="180x180" href="{% static 'resources/favicons/apple-touch-icon-180x180.png' %}">
-        <link rel="icon" type="image/png" href="{% static 'resources/favicons/favicon-32x32.png' %}" sizes="32x32">
-        <link rel="icon" type="image/png" href="{% static 'resources/favicons/favicon-194x194.png' %}" sizes="194x194">
-        <link rel="icon" type="image/png" href="{% static 'resources/favicons/favicon-96x96.png' %}" sizes="96x96">
-        <link rel="icon" type="image/png" href="{% static 'resources/favicons/android-chrome-192x192.png' %}" sizes="192x192">
-        <link rel="icon" type="image/png" href="{% static 'resources/favicons/favicon-16x16.png' %}" sizes="16x16">
-        <link rel="manifest" href="{% static 'resources/favicons/manifest.json' %}">
-        <link rel="shortcut icon" href="{% static 'resources/favicons/favicon.ico' %}">
-        <meta name="msapplication-TileColor" content="#da532c">
-        <meta name="msapplication-TileImage" content="{% static 'resources/favicons/mstile-144x144.png' %}">
-        <meta name="msapplication-config" content="{% static 'resources/favicons/browserconfig.xml' %}">
-        <meta name="theme-color" content="#ffffff">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="{% static 'resources/favicons/apple-touch-icon-57x57.png' %}">
+    <link rel="apple-touch-icon" sizes="60x60" href="{% static 'resources/favicons/apple-touch-icon-60x60.png' %}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{% static 'resources/favicons/apple-touch-icon-72x72.png' %}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{% static 'resources/favicons/apple-touch-icon-76x76.png' %}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{% static 'resources/favicons/apple-touch-icon-114x114.png' %}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{% static 'resources/favicons/apple-touch-icon-120x120.png' %}">
+    <link rel="apple-touch-icon" sizes="144x144" href="{% static 'resources/favicons/apple-touch-icon-144x144.png' %}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{% static 'resources/favicons/apple-touch-icon-152x152.png' %}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'resources/favicons/apple-touch-icon-180x180.png' %}">
+    <link rel="icon" type="image/png" href="{% static 'resources/favicons/favicon-32x32.png' %}" sizes="32x32">
+    <link rel="icon" type="image/png" href="{% static 'resources/favicons/favicon-194x194.png' %}" sizes="194x194">
+    <link rel="icon" type="image/png" href="{% static 'resources/favicons/favicon-96x96.png' %}" sizes="96x96">
+    <link rel="icon" type="image/png" href="{% static 'resources/favicons/android-chrome-192x192.png' %}"
+          sizes="192x192">
+    <link rel="icon" type="image/png" href="{% static 'resources/favicons/favicon-16x16.png' %}" sizes="16x16">
+    <link rel="manifest" href="{% static 'resources/favicons/manifest.json' %}">
+    <link rel="shortcut icon" href="{% static 'resources/favicons/favicon.ico' %}">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="{% static 'resources/favicons/mstile-144x144.png' %}">
+    <meta name="msapplication-config" content="{% static 'resources/favicons/browserconfig.xml' %}">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
-<body>
 
-{%  include 'index/base_navBar.html' %}
+{% block body %}
+
+    <body>
+
+    {% include 'index/base_navBar.html' %}
+    <br><br>
+    <h2>Previous Orders</h2>
+
+    <div>
+        <div>
+            <table style="margin: 0 22% 3% 17%">
+                <thead>
+                <tr>
+                    <th class="first" style="padding: 0px 40px 0px 40px">Product</th>
+                    <th class="third" style="padding: 0px 40px 0px 40px">Qty</th>
+                    <th class="fourth" style="padding: 0px 40px 0px 40px">Price</th>
+                    <th class="fifth" style="padding: 0px 40px 0px 40px">&nbsp;</th>
+                </tr>
+                </thead>
+            <tbody>
+
+                   <tr class="productitm" style="width: 800px; max-width: 500px; margin: 0 10px 0 10px">
+                    <td style="padding: 10px; text-align:center; width:400px">Coca-Cola Classic Soda - 2 Liter</td>
+                    <td style="padding: 40px 40px 40px 40px"><input type="number" name="6"
+                                                id="6" value="1"
+                                                min="0" max="99" class="qtyinput"></td>
+                    <td style="padding: 10px 30px 10px 50px">$1.50</td>
+                    <td style="padding: 10px 10px 10px 10px">
+                        <main>
+                            <button style="background-color:#0055A2; border: 1px solid #0055A2; color:#fff; border-radius:200px; padding:10px 30px"
+                                    type="submit" onclick="myFunction(6)"
+                                    name="Coca-Cola Classic Soda - 2 Liter" value="6"
+                                    class="cd-add-to-cart" data-info="Coca-Cola Classic Soda - 2 Liter"
+                                    data-price="1.5"
+                                    style="background-color:#0055A2; border: 1px solid #0055A2; color:#fff; border-radius:20px; padding:10px 30px">
+                                Add To Cart
+                            </button>
+                        </main>
+                    </td>
+
+
+            <tr class="productitm" style="width: 800px; max-width: 500px; margin: 0 10px 0 10px">
+                    <td style="padding: 10px; text-align:center; width:400px">O Organics Organic Beans Pinto - 16 Oz</td>
+                    <td style="padding: 40px 40px 40px 40px"><input type="number" name="15"
+                                                id="15" value="1"
+                                                min="0" max="99" class="qtyinput"></td>
+                    <td style="padding: 10px 30px 10px 50px">$2.30</td>
+                    <td style="padding: 10px 10px 10px 10px">
+                        <main>
+                            <button style="background-color:#0055A2; border: 1px solid #0055A2; color:#fff; border-radius:200px; padding:10px 30px"
+                                    type="submit" onclick="myFunction(15)"
+                                    name="O Organics Organic Beans Pinto - 16 Oz" value="15"
+                                    class="cd-add-to-cart" data-info="O Organics Organic Beans Pinto - 16 Oz"
+                                    data-price="2.3"
+                                    style="background-color:#0055A2; border: 1px solid #0055A2; color:#fff; border-radius:20px; padding:10px 30px">
+                                Add To Cart
+                            </button>
+                        </main>
+                    </td>
+
+            <tr class="productitm" style="width: 800px; max-width: 500px; margin: 0 10px 0 10px">
+                    <td style="padding: 10px; text-align:center; width:400px">Nabisco Ritz Everything - 13.7 Oz</td>
+                    <td style="padding: 40px 40px 40px 40px"><input type="number" name="19"
+                                                id="19" value="1"
+                                                min="0" max="99" class="qtyinput"></td>
+                    <td style="padding: 10px 30px 10px 50px">$2.00</td>
+                    <td style="padding: 10px 10px 10px 10px">
+                        <main>
+                            <button style="background-color:#0055A2; border: 1px solid #0055A2; color:#fff; border-radius:200px; padding:10px 30px"
+                                    type="submit" onclick="myFunction(19)"
+                                    name="Nabisco Ritz Everything - 13.7 Oz" value="19"
+                                    class="cd-add-to-cart" data-info="Nabisco Ritz Everything - 13.7 Oz"
+                                    data-price="2"
+                                    style="background-color:#0055A2; border: 1px solid #0055A2; color:#fff; border-radius:20px; padding:10px 30px">
+                                Add To Cart
+                            </button>
+                        </main>
+                    </td>
+
+            <tr class="productitm" style="width: 800px; max-width: 500px; margin: 0 10px 0 10px">
+                    <td style="padding: 10px; text-align:center; width:400px">Bieler Pere Et Fils Sabine Rose Wine - 750 Ml</td>
+                    <td style="padding: 40px 40px 40px 40px"><input type="number" name="23"
+                                                id="23" value="1"
+                                                min="0" max="99" class="qtyinput"></td>
+                    <td style="padding: 10px 30px 10px 50px">$11.32</td>
+                    <td style="padding: 10px 10px 10px 10px">
+                        <main>
+                            <button style="background-color:#0055A2; border: 1px solid #0055A2; color:#fff; border-radius:200px; padding:10px 30px"
+                                    type="submit" onclick="myFunction(23)"
+                                    name="Bieler Pere Et Fils Sabine Rose Wine - 750 Ml" value="23"
+                                    class="cd-add-to-cart" data-info="Bieler Pere Et Fils Sabine Rose Wine - 750 Ml"
+                                    data-price="11.32"
+                                    style="background-color:#0055A2; border: 1px solid #0055A2; color:#fff; border-radius:20px; padding:10px 30px">
+                                Add To Cart
+                            </button>
+                        </main>
+                    </td>
+
+                        <tr class="productitm" style="width: 800px; max-width: 500px; margin: 0 10px 0 10px">
+                    <td style="padding: 10px; text-align:center; width:400px">Clover Organic Milk Fat Free - Gallon</td>
+                    <td style="padding: 40px 40px 40px 40px"><input type="number" name="16"
+                                                id="16" value="1"
+                                                min="0" max="99" class="qtyinput"></td>
+                    <td style="padding: 10px 30px 10px 50px">$8.99</td>
+                    <td style="padding: 10px 10px 10px 10px">
+                        <main>
+                            <button style="background-color:#0055A2; border: 1px solid #0055A2; color:#fff; border-radius:200px; padding:10px 30px"
+                                    type="submit" onclick="myFunction(16)"
+                                    name="Clover Organic Milk Fat Free - Gallon" value="16"
+                                    class="cd-add-to-cart" data-info="Clover Organic Milk Fat Free - Gallon"
+                                    data-price="8.99"
+                                    style="background-color:#0055A2; border: 1px solid #0055A2; color:#fff; border-radius:20px; padding:10px 30px">
+                                Add To Cart
+                            </button>
+                        </main>
+                    </td>
+
+
+                       <tr class="productitm" style="width: 800px; max-width: 500px; margin: 0 10px 0 10px">
+                    <td style="padding: 10px; text-align:center; width:400px">Feeding Bottle</td>
+                    <td style="padding: 40px 40px 40px 40px"><input type="number" name="16"
+                                                id="1" value="1"
+                                                min="0" max="99" class="qtyinput"></td>
+                    <td style="padding: 10px 30px 10px 50px">$10.00</td>
+                    <td style="padding: 10px 10px 10px 10px">
+                        <main>
+                            <button style="background-color:#0055A2; border: 1px solid #0055A2; color:#fff; border-radius:200px; padding:10px 30px"
+                                    type="submit" onclick="myFunction(16)"
+                                    name="Clover Organic Milk Fat Free - Gallon" value="16"
+                                    class="cd-add-to-cart" data-info="Clover Organic Milk Fat Free - Gallon"
+                                    data-price="8.99"
+                                    style="background-color:#0055A2; border: 1px solid #0055A2; color:#fff; border-radius:20px; padding:10px 30px">
+                                Add To Cart
+                            </button>
+                        </main>
+                    </td>
+
+
+
+                       <tr class="productitm" style="width: 800px; max-width: 500px; margin: 0 10px 0 10px">
+                    <td style="padding: 10px; text-align:center; width:400px">Bigelow Green Tea</td>
+                    <td style="padding: 40px 40px 40px 40px"><input type="number" name="16"
+                                                id="4" value="1"
+                                                min="0" max="99" class="qtyinput"></td>
+                    <td style="padding: 10px 30px 10px 50px">$4.5</td>
+                    <td style="padding: 10px 10px 10px 10px">
+                        <main>
+                            <button style="background-color:#0055A2; border: 1px solid #0055A2; color:#fff; border-radius:200px; padding:10px 30px"
+                                    type="submit" onclick="myFunction(16)"
+                                    name="Clover Organic Milk Fat Free - Gallon" value="16"
+                                    class="cd-add-to-cart" data-info="Clover Organic Milk Fat Free - Gallon"
+                                    data-price="8.99"
+                                    style="background-color:#0055A2; border: 1px solid #0055A2; color:#fff; border-radius:20px; padding:10px 30px">
+                                Add To Cart
+                            </button>
+                        </main>
+                    </td>
 
 
 
 
-{%  include 'index/base_footer.html' %}
+                       <tr class="productitm" style="width: 800px; max-width: 500px; margin: 0 10px 0 10px">
+                    <td style="padding: 10px; text-align:center; width:400px">0.75 LB Sole Dover Fillet Fresh</td>
+                    <td style="padding: 40px 40px 40px 40px"><input type="number" name="16"
+                                                id="9" value="1"
+                                                min="0" max="99" class="qtyinput"></td>
+                    <td style="padding: 10px 30px 10px 50px">$6.74</td>
+                    <td style="padding: 10px 10px 10px 10px">
+                        <main>
+                            <button style="background-color:#0055A2; border: 1px solid #0055A2; color:#fff; border-radius:200px; padding:10px 30px"
+                                    type="submit" onclick="myFunction(16)"
+                                    name="Clover Organic Milk Fat Free - Gallon" value="16"
+                                    class="cd-add-to-cart" data-info="Clover Organic Milk Fat Free - Gallon"
+                                    data-price="8.99"
+                                    style="background-color:#0055A2; border: 1px solid #0055A2; color:#fff; border-radius:20px; padding:10px 30px">
+                                Add To Cart
+                            </button>
+                        </main>
+                    </td>
 
-</body>
+
+
+
+                       <tr class="productitm" style="width: 800px; max-width: 500px; margin: 0 10px 0 10px">
+                    <td style="padding: 10px; text-align:center; width:400px">Barilla Pasta Campanelle No. 99 - 16 Oz</td>
+                    <td style="padding: 40px 40px 40px 40px"><input type="number" name="16"
+                                                id="13" value="1"
+                                                min="0" max="99" class="qtyinput"></td>
+                    <td style="padding: 10px 30px 10px 50px">$1.5</td>
+                    <td style="padding: 10px 10px 10px 10px">
+                        <main>
+                            <button style="background-color:#0055A2; border: 1px solid #0055A2; color:#fff; border-radius:200px; padding:10px 30px"
+                                    type="submit" onclick="myFunction(16)"
+                                    name="Clover Organic Milk Fat Free - Gallon" value="16"
+                                    class="cd-add-to-cart" data-info="Clover Organic Milk Fat Free - Gallon"
+                                    data-price="8.99"
+                                    style="background-color:#0055A2; border: 1px solid #0055A2; color:#fff; border-radius:20px; padding:10px 30px">
+                                Add To Cart
+                            </button>
+                        </main>
+                    </td>
+
+
+
+                       <tr class="productitm" style="width: 800px; max-width: 500px; margin: 0 10px 0 10px">
+                    <td style="padding: 10px; text-align:center; width:400px">ucerne Cage Free Large AA Shell Eggs - 18 Count</td>
+                    <td style="padding: 40px 40px 40px 40px"><input type="number" name="16"
+                                                id="17" value="1"
+                                                min="0" max="99" class="qtyinput"></td>
+                    <td style="padding: 10px 30px 10px 50px">$4.49</td>
+                    <td style="padding: 10px 10px 10px 10px">
+                        <main>
+                            <button style="background-color:#0055A2; border: 1px solid #0055A2; color:#fff; border-radius:200px; padding:10px 30px"
+                                    type="submit" onclick="myFunction(16)"
+                                    name="Clover Organic Milk Fat Free - Gallon" value="16"
+                                    class="cd-add-to-cart" data-info="Clover Organic Milk Fat Free - Gallon"
+                                    data-price="8.99"
+                                    style="background-color:#0055A2; border: 1px solid #0055A2; color:#fff; border-radius:20px; padding:10px 30px">
+                                Add To Cart
+                            </button>
+                        </main>
+                    </td>
+
+
+
+                       <tr class="productitm" style="width: 800px; max-width: 500px; margin: 0 10px 0 10px">
+                    <td style="padding: 10px; text-align:center; width:400px">Stella Artois Bottle - 22 Fl. Oz.</td>
+                    <td style="padding: 40px 40px 40px 40px"><input type="number" name="16"
+                                                id="24" value="1"
+                                                min="0" max="99" class="qtyinput"></td>
+                    <td style="padding: 10px 30px 10px 50px">$3.49</td>
+                    <td style="padding: 10px 10px 10px 10px">
+                        <main>
+                            <button style="background-color:#0055A2; border: 1px solid #0055A2; color:#fff; border-radius:200px; padding:10px 30px"
+                                    type="submit" onclick="myFunction(16)"
+                                    name="Clover Organic Milk Fat Free - Gallon" value="16"
+                                    class="cd-add-to-cart" data-info="Clover Organic Milk Fat Free - Gallon"
+                                    data-price="8.99"
+                                    style="background-color:#0055A2; border: 1px solid #0055A2; color:#fff; border-radius:20px; padding:10px 30px">
+                                Add To Cart
+                            </button>
+                        </main>
+                    </td>
+
+            {% for i in cartitemsid %}
+                <tr class="productitm" style="width: 800px; max-width: 500px; margin: 0 10px 0 10px">
+                    <td style="padding: 10px; text-align:center; width:300px">{{ i.item_name }}</td>
+                    <td style="padding: 40px 40px 40px 40px"><input type="number" name="{{ i.item_list }}"
+                                                id="{{ i.item_list}}" value="1"
+                                                min="0" max="99" class="qtyinput"></td>
+                    <td style="padding: 10px 30px 10px 50px">${{ i.price|floatformat:2 }}</td>
+                    <td style="padding: 10px 10px 10px 10px">
+                        <main>
+                            <button style="background-color:#0055A2; border: 1px solid #0055A2; color:#fff; border-radius:200px; padding:10px 30px"
+                                    type="submit" onclick="myFunction({{ i.item_list }})"
+                                    name="{{ i.item_name }}" value="{{ i.item_list }}"
+                                    class="cd-add-to-cart" data-info="{{ i.item_name }}"
+                                    data-price="{{ i.price }}"
+                                    style="background-color:#0055A2; border: 1px solid #0055A2; color:#fff; border-radius:20px; padding:10px 30px">
+                                Add To Cart
+                            </button>
+                        </main>
+                    </td>
+                    <script>
+                        function myFunction(test){
+                          //var quantityamount = document.getElementById(test).value
+                          //var a = 234;
+                           //alert(quantityamount);
+                        }
+                    </script>
+
+                </tr>
+                    {#        </tbody>#}
+                {% endfor %}
+
+
+
+
+            </table>
+            <div align="center">
+                <a class="btn btn-full js" href="/history"
+                   style="border-radius: 25px; padding: 10px; width: 200px;  text-align:center;">Back to History</a>
+            </div>
+            <br><br>
+        </div>
+    </div>
+
+
+    {% include 'index/base_footer.html' %}
+    </body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script>
+        if (!window.jQuery) document.write('<script src={% static 'resources/js/jquery-3.0.0.min.js' %}><\/script>');
+    </script>
+
+    <script src="{% static 'resources/js/main2.js' %}"></script> <!-- Resource jQuery -->
+
+
+
+{% endblock %}
+
 </html>

@@ -60,6 +60,9 @@ table
 {
     border-collapse:initial
 }
+
+.w3-light-grey,.w3-hover-light-grey:hover,.w3-light-gray,.w3-hover-light-gray:hover{color:#000!important;background-color:#f1f1f1!important}
+.w3-green,.w3-hover-green:hover{color:#fff!important;background-color:#0055a2!important}
 </style>
 </head>
 {% block body %}
@@ -80,7 +83,8 @@ table
       <table style="margin: 0 20% 3% 20%">
         <thead>
           <tr >
-            <th class="first" style="padding: 10px">Product</th>
+            <th class="first" style="padding: 10px">Product ID</th>
+              <th class="first" style="padding: 10px">Name</th>
             <th class="third" style="padding: 10px">Qty</th>
             <th class="fourth" style="padding: 10px">Price</th>
               <th class="fifth" style="padding: 10px">Total</th>
@@ -88,59 +92,123 @@ table
           </tr>
         </thead>
         <tbody>
-          <tr class="productitm" style="width: 800px; max-width: 500px; border: 3px solid black ; margin: 10px 10px 10px 10px">
-            <td style="padding: 10px">
-                    Coca-Cola Classic Soda - 2 Liter </td>
-            <td style="padding: 10px 30px 10px 30px">1</td>
-            <td style="padding: 10px 30px 10px 50px">$1.5</td>
-              <td style="padding: 10px 30px 10px 40px">$1.5</td>
-            <td style="padding: 10px">
-               <a class="btn btn-full js" href="#" style="border-radius: 25px; padding: 10px; width: 110px; text-align:center;">Delete</a>
-       </td>
-          </tr>
-        <tr class="productitm" style="width: 800px; max-width: 500px; border: 3px solid black ; margin: 10px 10px 10px 10px">
-            <td style="padding: 10px">
-                    Birds Eye Steamfresh Superfood Blends Black Rice & Edamame - 10 Oz </td>
-            <td style="padding: 10px 30px 10px 30px">2</td>
-            <td style="padding: 10px 30px 10px 50px">$4.49</td>
-              <td style="padding: 10px 30px 10px 40px">$8.98</td>
-            <td style="padding: 10px">
-               <a class="btn btn-full js" href="#" style="border-radius: 25px; padding: 10px; width: 110px; text-align:center;">Delete</a>
-       </td>
-          </tr>
-        <tr class="productitm" style="width: 800px; max-width: 500px; border: 3px solid black ; margin: 10px 10px 10px 10px">
-            <td style="padding: 10px">
-                    Stella Artois Bottle - 22 Fl. Oz.</td>
-            <td style="padding: 10px 30px 10px 30px">1</td>
-            <td style="padding: 10px 30px 10px 50px">$3.49</td>
-              <td style="padding: 10px 30px 10px 40px">$3.49</td>
-            <td style="padding: 10px">
-               <a class="btn btn-full js" href="#" style="border-radius: 25px; padding: 10px; width: 110px; text-align:center;">Delete</a>
-       </td>
-          </tr>
-        <tr class="productitm" style="width: 800px; max-width: 500px; border: 3px solid black ; margin: 10px 10px 10px 10px">
-            <td style="padding: 10px">
-                    Nabisco Ritz Everything - 13.7 Oz </td>
-            <td style="padding: 10px 30px 10px 30px">5</td>
-            <td style="padding: 10px 30px 10px 50px">$2</td>
-              <td style="padding: 10px 30px 10px 40px">$10</td>
-            <td style="padding: 10px">
-               <a class="btn btn-full js" href="#" style="border-radius: 25px; padding: 10px; width: 110px; text-align:center;">Delete</a>
-       </td>
-          </tr>
 
-        </tbody>
+        {% for item in cartitemsid %}
+        <tr class="productitm" style="width: 800px; max-width: 500px; border: 3px solid black ; margin: 10px 10px 10px 10px">
+            <td style="padding: 10px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ item.item_list }} </td>
+            <td style="padding: 10px">{{ item.item_name}}</td>
+            <td style="padding: 10px 30px 10px 30px">{{ item.quantity }}</td>
+            <td style="padding: 10px 30px 10px 50px">${{ item.price|floatformat:2 }}</td>
+            <td style="padding: 10px 30px 10px 40px">${% widthratio item.quantity 1 item.price %}</td>
+            <td style="padding: 20px">
+{#                <a class="btn btn-full js" class = "delete-button" value = "{{ i.item_list }}" href="#" style="border-radius: 25px; padding: 10px; width: 110px; text-align:center;">Delete</a>#}
+{#                <button style="background-color:#0055A2; border: 1px solid #0055A2; color:#fff; border-radius:200px; padding:10px 30px" type="submit" onclick= "myFunction({{ items.id }})" name = "{{ items.item_name }}" value ="{{ items.id }}"class="delete-button" data-info="{{ items.item_name }}"data-price="{{ items.price }}"style="background-color:#0055A2; font-size: 14px; color: #ffffff; padding-bottom: 14px;">#}
+{#                <button style="background-color:#0055A2; border: 1px solid #0055A2; color:#fff; border-radius:200px; padding:10px 30px" type="submit" onclick = "myFunction({{ items.id}})" id= "{{ items.id }}" name = "{{ items.item_name }}" value ="{{ items.id }}"class="delete-button" data-info="{{ items.item_name }}"data-price="{{ items.price }}"style="background-color:#0055A2; font-size: 14px; color: #ffffff; padding-bottom: 14px;">#}
+{#                <button style="background-color:#0055A2; border: 1px solid #0055A2; color:#fff; border-radius:200px; padding:10px 30px" type="submit" onclick = "myFunction({{ item.id}})" id="{{ item.id }}" name = "{{ item.item_name }}" value ="{{ item.id }}"class="delete-button" data-info="{{ item.item_name }}"data-price="{{ item.price }}"style="background-color:#0055A2; font-size: 14px; color: #ffffff; padding-bottom: 14px;">#}
+                <a href="delete/{{ item.id }}"
+                        style="background-color:#0055A2; border: 1px solid #0055A2; color:#fff; border-radius:200px; padding:10px 30px"
+                        id = "{{ item.id }}"
+                        name = "{{ item.item_name }}"
+                        quantity ="{{ item.quantity}}"
+                        class="delete-button"
+                        data-info="{{ item.item_name }}"
+                        data-price="{{ item.price }}"
+                        style="background-color:#0055A2; font-size: 14px; color: #ffffff; padding-bottom: 14px;">
+
+                    Delete
+                </a>
+{#                <button style="background-color:#0055A2; border: 1px solid #0055A2; color:#fff; border-radius:200px; padding:10px 30px" type="submit" onclick = "myFunction({{ items.id}})" id= "{{ items.id }}" name = "{{ items.item_name }}" value ="{{ items.id }}"class="delete-button" data-info="{{ items.item_name }}"data-price="{{ items.price }}"style="background-color:#0055A2; font-size: 14px; color: #ffffff; padding-bottom: 14px;">#}
+
+            </td>
+
+            <script>
+                function myFunction(test){
+                  //var quantityamount = document.getElementById(test).value
+                  //var a = 234;
+                   //alert(quantityamount);
+                }
+                </script>
+        </tr>
+
+          {% endfor %}
+          <tr class="productitm" style="width: 800px; max-width: 500px; border: 3px solid black ; margin: 10px 10px 10px 10px">
+            <td style="padding: 10px"> </td>
+            <td style="padding: 10px">10% off for $50 purchase</td>
+            <td style="padding: 10px 30px 10px 30px"></td>
+            <td style="padding: 10px 30px 10px 50px"></td>
+            <td style="padding: 10px 30px 10px 40px">-$10</td>
+              <td style="padding: 10px 30px 10px 25px">Will be applied at checkout</td>
+
+        </tr>
+          </tbody>
+
+
+
+
       </table>
          <center><hr width="60%"></center>
           <br><br>
-<h2>Total Cost: 23.97</h2>
-         <center> <a class="btn btn-full js" href="/payment" style="border-radius: 25px; padding: 10px; width: 110px; text-align:center;">Checkout</a></center>
-    </div>
+<h2>Total Cost: ${{total|floatformat:2}} </h2>
+          <center> <input type="button" onclick="move()" id="btnRedirect" style="background-color:#0055A2; border: 1px solid #0055A2; color:#fff; border-radius:200px; padding:10px 30px"   value="Checkout" /></center>
+              </div>
         </div>
+<br><br>
+<div class="w3-light-grey" style="width:50%;  margin: 0 auto">
+    <div id="myBar" class="w3-green" style="height:24px;width:0"></div>
+  </div>
+  <br>
+
+</div>
+
+<div id="dvCountDown" style="display: none">
+    <center>You will be redirected after <span id="lblCount"></span>&nbsp;seconds.</center>
+</div>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript">
+$(function () {
+    $("#btnRedirect").click(function () {
+        var seconds = 3;
+        $("#dvCountDown").show();
+        $("#lblCount").html(seconds);
+        setInterval(function () {
+            seconds--;
+            $("#lblCount").html(seconds);
+            if (seconds == 0) {
+                $("#dvCountDown").hide();
+                window.location = "/payment";
+            }
+        }, 1000);
+    });
+});
+
+function move() {
+  var elem = document.getElementById("myBar");
+  var width = 1;
+  var id = setInterval(frame, 23);
+  function frame() {
+    if (width >= 100) {
+      clearInterval(id);
+    } else {
+      width++;
+      elem.style.width = width + '%';
+    }
+  }
+}
+</script>
+
+
+
 <br><br>
 {%  include 'index/base_footer.html' %}
 
 </body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script>
+   if( !window.jQuery ) document.write('<script src={% static 'resources/js/jquery-3.0.0.min.js' %}><\/script>');
+</script>
+
+<script src="{% static 'resources/js/delete.js' %}"></script>
 
 {% endblock %}
 </html>

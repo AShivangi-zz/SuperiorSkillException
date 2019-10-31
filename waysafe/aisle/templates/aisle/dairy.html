@@ -101,22 +101,31 @@
                     style="width: 800px; max-width: 500px; border: 3px solid black ; margin: 10px 10px 10px 10px">
                     <td style="padding: 40px 40px 40px 40px"><img src={{ items.item_logo}} class="thumb" style="height: 200px;">
                         <div class="testcontainer">
-                            <br class="itemname" id="items.item_name">{{items.item_name}}
+                            <div style="max-width:250px; word-wrap;break-word;">{{items.item_name}}</div>
                             <script>
                             var check = '{{ items.item_name}}'
                         </script>
                         </div>
 
                     </td>
-                    <td style="padding: 40px 40px 40px 40px"><input type="number" value="1" min="0" max="99"
-                                                                    class="qtyinput"></td>
+                   <form id="quantityvalue">
+                                    <td style="padding: 40px 40px 40px 40px"><input type="number" name="{{ items.id }}"
+                                                                                    id="{{ items.id }}" value="1"
+                                                                                    min="0" max="99" class="qtyinput">
+                                    </td>
+                                </form>
                     <td style="padding: 40px 40px 40px 40px">${{items.price|floatformat:2 }}</td>
                     <td style="padding: 40px 40px 40px 40px">
                         <main>
-                            <button style="background-color:#0055A2; border: 1px solid #0055A2; color:#fff; border-radius:200px; padding:10px 30px" type="submit" onclick= "myFunction({{items.id}})" value ="{{ items.id }}"class="cd-add-to-cart" data-info="{{ items.item_name }}"data-price="{{ items.price }}"style="background-color:#0055A2; font-size: 14px; color: #ffffff; padding-bottom: 14px;">
-                                Add To Cart
-                            </button>
-                        </main>
+                                        <button style="background-color:#0055A2; border: 1px solid #0055A2; color:#fff; border-radius:200px; padding:10px 30px"
+                                                type="submit" onclick="myFunction({{ items.id }})"
+                                                name="{{ items.item_name }}" value="{{ items.id }}"
+                                                class="cd-add-to-cart" data-info="{{ items.item_name }}"
+                                                data-price="{{ items.price }}"
+                                                style="background-color:#0055A2; font-size: 14px; color: #ffffff; padding-bottom: 14px;">
+                                            Add To Cart
+                                        </button>
+                                    </main>
 
                     </td>
                 </tr>
@@ -124,10 +133,12 @@
                 {% endif %}
 
                 <script>
-                function myFunction(nameofid){
-                  var idvalue = nameofid
-                }
-            </script>
+                        function myFunction(test) {
+                            //var quantityamount = document.getElementById(test).value
+                            //var a = 234;
+                            //alert(quantityamount);
+                        }
+                    </script>
 
                 <!-- cd-cart-container -->
                 <div class="cd-cart-container empty">
